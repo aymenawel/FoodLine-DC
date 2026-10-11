@@ -106,13 +106,13 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
       <h1 className="sr-only">FoodLine text line</h1>
       <header className="flex items-center justify-between gap-3 border-b border-line px-4 pb-3 pt-4">
         <div className="flex min-w-0 items-center gap-2">
-          <span aria-hidden className="grid size-9 place-items-center rounded-full bg-accent font-serif text-xl text-accent-ink">F</span>
+          <span aria-hidden className="grid size-9 place-items-center rounded-full bg-cta font-serif text-xl text-cta-ink">F</span>
           <div>
             <p className="font-semibold leading-tight">FoodLine</p>
             <p className="text-[15px] text-muted">Simulated text line · Wards 7 &amp; 8</p>
           </div>
         </div>
-        <div role="group" aria-label="Language / Idioma" className="flex rounded-full border border-[#4a5a51] p-0.5 text-base">
+        <div role="group" aria-label="Language / Idioma" className="flex rounded-full border border-line-strong p-0.5 text-base">
           <button onClick={() => switchLang('en')} aria-pressed={lang === 'en'} aria-label="English"
             className={`min-h-9 rounded-full px-3 font-semibold ${lang === 'en' ? 'bg-ink text-bg' : 'text-muted'}`}>EN</button>
           <button onClick={() => switchLang('es')} aria-pressed={lang === 'es'} aria-label="Español" lang="es"
@@ -129,7 +129,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
                 className={`flex flex-col ${m.from === 'me' ? 'items-end' : 'items-start'}`}>
                 <span className="sr-only">{m.from === 'me' ? 'You:' : 'FoodLine:'}</span>
                 <div className={`max-w-[86%] whitespace-pre-wrap rounded-[20px] px-3.5 py-2.5 text-[18px] leading-snug ${
-                  m.from === 'me' ? 'rounded-br-md bg-accent font-medium text-accent-ink' : 'rounded-bl-md bg-panel-2 text-ink'}`}>
+                  m.from === 'me' ? 'rounded-br-md bg-cta font-medium text-cta-ink' : 'rounded-bl-md bg-panel-2 text-ink'}`}>
                   <Linkified text={m.text} lang={m.lang} />
                 </div>
                 <span aria-hidden className="mt-1 px-1 text-[13px] text-faint">{m.from === 'me' ? `Delivered ${time(m.at)}` : time(m.at)}</span>
@@ -151,7 +151,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
       <div role="group" aria-label={t.chips} lang={lang} className="flex gap-2 overflow-x-auto px-3 py-1.5">
         {chips.map((c) => (
           <button key={c} data-chip onClick={() => send(c)} aria-disabled={typing}
-            className="min-h-10 shrink-0 rounded-full border border-[#4a5a51] px-3 text-base text-ink transition hover:border-accent aria-disabled:opacity-50">
+            className="min-h-10 shrink-0 rounded-full border border-line-strong px-3 text-base text-ink transition hover:border-cta aria-disabled:opacity-50">
             {c}
           </button>
         ))}
@@ -160,9 +160,9 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
         <label htmlFor="msg" className="sr-only" lang={lang}>{t.message}</label>
         <input id="msg" ref={input} value={text} onChange={(e) => setText(e.target.value)} autoComplete="off" enterKeyHint="send" lang={lang}
           placeholder={t.placeholder}
-          className="min-h-11 flex-1 rounded-full border border-[#64746b] bg-panel px-4 text-base text-ink placeholder:text-faint focus:border-accent" />
+          className="min-h-11 flex-1 rounded-full border border-line-strong bg-panel px-4 text-base text-ink placeholder:text-faint focus:border-cta" />
         <button type="submit" disabled={!text.trim() || typing} aria-label={t.send} lang={lang}
-          className="grid size-11 place-items-center rounded-full bg-accent text-accent-ink transition active:scale-95 disabled:opacity-40">
+          className="grid size-11 place-items-center rounded-full bg-cta text-cta-ink transition active:scale-95 disabled:opacity-40">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M12 19V5M5 12l7-7 7 7" /></svg>
         </button>
       </form>
@@ -172,8 +172,8 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
   if (!framed) return <div className="h-full w-full">{screen}</div>;
   // Full-screen on a phone; drawn as a device on larger screens.
   return (
-    <div className="relative h-dvh w-full sm:h-[min(780px,calc(100dvh-48px))] sm:w-[380px] sm:rounded-[52px] sm:bg-[#070b09] sm:p-3 sm:shadow-[0_40px_80px_-30px_rgba(0,0,0,.8),inset_0_0_0_1.5px_#2a3a32]">
-      <div aria-hidden className="absolute left-1/2 top-5 z-10 hidden h-6 w-24 -translate-x-1/2 rounded-full bg-[#070b09] sm:block" />
+    <div className="relative h-dvh w-full sm:h-[min(780px,calc(100dvh-48px))] sm:w-[380px] sm:rounded-[52px] sm:bg-ink sm:p-3 sm:shadow-[0_30px_60px_-25px_rgba(35,54,52,.55)]">
+      <div aria-hidden className="absolute left-1/2 top-5 z-10 hidden h-6 w-24 -translate-x-1/2 rounded-full bg-ink sm:block" />
       <div className="h-full overflow-hidden sm:rounded-[42px] sm:pt-6">{screen}</div>
     </div>
   );

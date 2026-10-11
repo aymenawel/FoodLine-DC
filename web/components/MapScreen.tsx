@@ -30,10 +30,10 @@ function Source({ s }: { s: Pick<Stat, 'source' | 'url'> }) {
 
 function Legend({ view }: { view: MapView }) {
   const items: [string, string, string?][] = view === 'city'
-    ? [['#e9e3d0', 'Full-service grocery store'], ['#7fd1a8', 'Grocery store east of the river']]
-    : [['#e9e3d0', 'Grocery store'], ['#8fc3ff', 'Free food (pantry, free market)', 'ring'], ['#7fd1a8', 'Farmers or mobile market'],
-       ['#9fb5a9', 'Corner store with produce'], ['#f4b740', 'Request (live)'], ['#b98a34', 'Request (sample)'],
-       ...(view === 'focus' ? [['#e26848', 'Low food access area (DC, 2017)', 'square'] as [string, string, string]] : [])];
+    ? [['#233634', 'Full-service grocery store'], ['#2f7a2b', 'Grocery store east of the river']]
+    : [['#233634', 'Grocery store'], ['#1f7a8c', 'Free food (pantry, free market)', 'ring'], ['#479442', 'Farmers or mobile market'],
+       ['#8c7a5b', 'Corner store with produce'], ['#fe5921', 'Request (live)'], ['#c98a12', 'Request (sample)'],
+       ...(view === 'focus' ? [['#d9531e', 'Low food access area (DC, 2017)', 'square'] as [string, string, string]] : [])];
   return (
     <ul className="grid gap-1.5 text-base text-muted">
       {items.map(([c, l, shape]) => (
@@ -119,12 +119,12 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
 
       {/* Left editorial panel */}
       <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>
-        <div className="pointer-events-auto -mx-4 -mt-16 w-[calc(100%+32px)] bg-gradient-to-b from-bg via-bg/85 to-transparent px-4 pb-6 pt-16 md:mx-0 md:mt-0 md:w-[min(640px,calc(100vw-48px))] md:bg-none md:p-0">
+        <div className="pointer-events-auto -mx-4 -mt-16 w-[calc(100%+32px)] bg-gradient-to-b from-bg via-bg/90 to-transparent px-4 pb-6 pt-16 md:mx-0 md:mt-0 md:w-[min(640px,calc(100vw-48px))] md:bg-none md:p-0">
           <p className="kicker hidden md:block">FoodLine DC · {view === 'city' ? 'All of DC' : 'Wards 7 & 8, east of the Anacostia'}</p>
           <AnimatePresence mode="wait">
             <motion.h1 key={view} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.35 }}
               className={`mt-3 font-serif leading-[1.02] tracking-[-0.01em] ${compact ? 'text-[38px]' : 'text-[34px] sm:text-[50px]'}`}>
-              {t1}<br /><em className="text-accent">{t2}</em>
+              {t1}<br /><em className="text-cta">{t2}</em>
             </motion.h1>
           </AnimatePresence>
         </div>
@@ -146,10 +146,10 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
           {view === 'focus' && (
             <div className="grid gap-4">
               <div className="flex items-end gap-6">
-                <div><p className="num text-[56px] font-medium leading-none text-accent">{live.length}</p><p className="text-base text-muted">live requests</p></div>
-                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[#b98a34]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
+                <div><p className="num text-[56px] font-medium leading-none text-accent-text">{live.length}</p><p className="text-base text-muted">live requests</p></div>
+                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[#8a5a0a]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
                 <p className="ml-auto flex items-center gap-2 text-[15px] text-muted">
-                  <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-accent' : 'bg-faint'}`} />
+                  <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-[#c98a12]' : 'bg-faint'}`} />
                   {mode === 'live' ? 'Live' : mode === 'polling' ? 'Live (polling)' : 'Connecting'}
                 </p>
               </div>
@@ -157,8 +157,8 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                 <AnimatePresence initial={false}>
                   {recent.length === 0 && <li className="text-base text-muted">Waiting for the first text. Scan the code or open /chat.</li>}
                   {recent.map((r) => (
-                    <motion.li key={r.id} layout initial={{ opacity: 0, x: -12, backgroundColor: 'rgba(244,183,64,.25)' }}
-                      animate={{ opacity: 1, x: 0, backgroundColor: 'rgba(244,183,64,0)' }} transition={{ duration: 1.2 }}
+                    <motion.li key={r.id} layout initial={{ opacity: 0, x: -12, backgroundColor: 'rgba(254,89,33,.22)' }}
+                      animate={{ opacity: 1, x: 0, backgroundColor: 'rgba(254,89,33,0)' }} transition={{ duration: 1.2 }}
                       className="flex items-baseline justify-between gap-3 rounded-md px-2 py-1 text-base">
                       <span className="num text-muted">{new Date(r.ts).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>
                       <span className="flex-1 truncate">{r.zip ?? (labelFor.current(r.lat, r.lng).replace('Historic ', '') || 'Ward 7/8')}</span>
@@ -187,7 +187,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                           <span className="text-ink">{g.requests} request{g.requests === 1 ? '' : 's'}</span> in 24 h · nearest grocery {mi(g.nearestGroceryKm)} mi ·{' '}
                           {g.freeWithin1km === 0 ? 'no free food site' : `${g.freeWithin1km} free site${g.freeWithin1km > 1 ? 's' : ''}`} within 0.6 mi
                         </p>
-                        {g.stop && <p className="mt-0.5 text-base">Suggested stop: <span className="text-accent">{pretty(g.stop.a)} &amp; {pretty(g.stop.b)}</span></p>}
+                        {g.stop && <p className="mt-0.5 text-base">Suggested stop: <span className="font-semibold text-accent-text">{pretty(g.stop.a)} &amp; {pretty(g.stop.b)}</span></p>}
                       </div>
                     </li>
                   ))}
@@ -207,7 +207,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
               className={`min-h-10 rounded-full px-4 text-base font-semibold transition ${view === v.id ? 'bg-ink text-bg' : 'text-muted hover:text-ink'}`}>{v.label}</button>
           ))}
         </div>
-        <button onClick={() => setStreets((v) => !v)} aria-pressed={streets} className="min-h-11 rounded-full border border-[#4a5a51] bg-panel/90 px-4 text-base font-semibold text-ink">Streets {streets ? 'on' : 'off'}</button>
+        <button onClick={() => setStreets((v) => !v)} aria-pressed={streets} className="min-h-11 rounded-full border border-line-strong bg-panel/90 px-4 text-base font-semibold text-ink">Streets {streets ? 'on' : 'off'}</button>
         <div className="hidden gap-2 text-base md:flex">
           {sampleCount > 0
             ? <button disabled={busy} onClick={() => run('unseed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Remove sample data</button>
@@ -217,7 +217,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </div>
 
       {sampleCount > 0 && view !== 'city' && (
-        <p className="absolute right-5 top-[116px] hidden rounded-md md:block border border-dashed border-[#b98a34] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[#d9a94d]">
+        <p className="absolute right-5 top-[176px] hidden rounded-md md:block border border-dashed border-[#8a5a0a] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[#8a5a0a]">
           Includes {sampleCount} sample requests · not real residents
         </p>
       )}

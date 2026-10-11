@@ -20,7 +20,7 @@ export default function Home() {
       <section>
         <p className="kicker">STEAM4U · Food deserts · Washington, DC</p>
         <h1 className="mt-5 font-serif text-[52px] leading-[0.98] tracking-[-0.015em] sm:text-[84px]">
-          Five grocery stores.<br /><em className="text-accent">150,000 neighbors.</em>
+          Five grocery stores.<br /><em className="text-cta">150,000 neighbors.</em>
         </h1>
         <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-muted sm:text-xl">
           East of the Anacostia River, in Wards 7 and 8, families live miles from a full-service grocery store.
@@ -30,9 +30,9 @@ export default function Home() {
           Every text also drops an anonymous dot on a live map. Food-desert maps are built from census data that is years old. This one updates every time a neighbor asks for help.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link href="/map" className="inline-flex min-h-12 items-center rounded-full bg-accent px-6 font-semibold text-accent-ink transition active:scale-[.98]">Open the live map</Link>
-          <Link href="/demo" className="inline-flex min-h-12 items-center rounded-full border border-line px-6 font-semibold transition hover:border-accent">Side-by-side demo</Link>
-          <Link href="/chat" className="inline-flex min-h-12 items-center rounded-full border border-line px-6 font-semibold transition hover:border-accent">Try the text line</Link>
+          <Link href="/map" className="inline-flex min-h-12 items-center rounded-full bg-cta px-6 font-semibold text-cta-ink transition active:scale-[.98]">Open the live map</Link>
+          <Link href="/demo" className="inline-flex min-h-12 items-center rounded-full border-2 border-ink px-6 font-semibold transition hover:border-cta">Side-by-side demo</Link>
+          <Link href="/chat" className="inline-flex min-h-12 items-center rounded-full border-2 border-ink px-6 font-semibold transition hover:border-cta">Try the text line</Link>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           <StatBlock s={STATS.eastStores} />

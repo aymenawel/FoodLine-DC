@@ -12,8 +12,8 @@ const DC_BOUNDS: [[number, number], [number, number]] = [[-77.12, 38.79], [-76.9
 const EAST_BOUNDS: [[number, number], [number, number]] = [[-77.03, 38.814], [-76.905, 38.912]];
 
 const C = {
-  bg: '#0d1411', land: '#151e1a', east: '#1d2b24', water: '#173843', ward: '#3a4d43', lfa: '#e26848',
-  food: '#e9e3d0', foodEast: '#7fd1a8', free: '#8fc3ff', market: '#7fd1a8', corner: '#9fb5a9', accent: '#f4b740', ink: '#eeeadf',
+  bg: '#f6ead4', land: '#fbf5e4', east: '#f1e4c4', water: '#a9d9d3', ward: '#a89a78', lfa: '#d9531e',
+  food: '#233634', foodEast: '#2f7a2b', free: '#1f7a8c', market: '#479442', corner: '#8c7a5b', accent: '#fe5921', ink: '#233634',
 };
 
 const CITY_LABELS = ['Georgetown', 'Columbia Heights', 'Capitol Hill', 'Navy Yard', 'Brookland', 'Historic Anacostia', 'Congress Heights', 'Deanwood'];
@@ -53,7 +53,7 @@ function style(): StyleSpecification {
       { id: 'streets', type: 'line', source: 'streets', 'source-layer': 'transportation', minzoom: 11,
         filter: ['in', ['get', 'class'], ['literal', ['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'minor', 'service']]],
         layout: { 'line-cap': 'round', 'line-join': 'round' },
-        paint: { 'line-color': ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], '#6d8478', ['secondary', 'tertiary'], '#506459', '#3c4d44'],
+        paint: { 'line-color': ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], '#b9a67c', ['secondary', 'tertiary'], '#d0bf98', '#dccdaa'],
           'line-width': ['interpolate', ['linear'], ['zoom'], 11, ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], 1.6, 0.5], 15, ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], 5, ['secondary', 'tertiary'], 3.5, 1.8]] } },
       { id: 'lfa', type: 'fill', source: 'lfa', paint: { 'fill-color': C.lfa, 'fill-opacity': 0, 'fill-opacity-transition': { duration: 900 } } },
       { id: 'lfa-edge', type: 'line', source: 'lfa', paint: { 'line-color': C.lfa, 'line-width': 0.8, 'line-opacity': 0, 'line-opacity-transition': { duration: 900 } } },
@@ -63,12 +63,12 @@ function style(): StyleSpecification {
       { id: 'street-names', type: 'symbol', source: 'streets', 'source-layer': 'transportation_name', minzoom: 13.2,
         filter: ['in', ['get', 'class'], ['literal', ['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'minor']]],
         layout: { 'symbol-placement': 'line', 'text-field': ['coalesce', ['get', 'name:en'], ['get', 'name']], 'text-font': ['Noto Sans Regular'], 'text-size': 14, 'text-letter-spacing': 0.02 },
-        paint: { 'text-color': '#c9d3cc', 'text-halo-color': '#0d1411', 'text-halo-width': 2 } },
+        paint: { 'text-color': '#4a5a53', 'text-halo-color': '#fbf5e4', 'text-halo-width': 2 } },
       { id: 'dc-edge', type: 'line', source: 'dc', paint: { 'line-color': C.ink, 'line-width': 1, 'line-opacity': 0.35 } },
       { id: 'heat', type: 'heatmap', source: 'requests', paint: {
         'heatmap-weight': 1, 'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 11, 0.8, 15, 2],
         'heatmap-radius': ['interpolate', ['linear'], ['zoom'], 11, 18, 15, 50],
-        'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(244,183,64,0)', 0.25, 'rgba(244,183,64,0.25)', 0.6, 'rgba(244,183,64,0.55)', 1, 'rgba(255,214,120,0.85)'],
+        'heatmap-color': ['interpolate', ['linear'], ['heatmap-density'], 0, 'rgba(254,89,33,0)', 0.25, 'rgba(254,89,33,0.28)', 0.6, 'rgba(254,89,33,0.55)', 1, 'rgba(207,61,10,0.78)'],
         'heatmap-opacity': 0, 'heatmap-opacity-transition': { duration: 900 } } },
       { id: 'grocery', type: 'circle', source: 'grocery', paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 4.5, 14, 9],
@@ -80,13 +80,13 @@ function style(): StyleSpecification {
         'circle-color': ['case', ['get', 'free'], C.bg, ['match', ['get', 'type'], 'corner_store', C.corner, C.market]],
         'circle-stroke-color': ['case', ['get', 'free'], C.free, C.bg], 'circle-stroke-width': ['case', ['get', 'free'], 3, 1.5] } },
       // the three places a text was sent to: amber lines from the request, and rings around the places
-      { id: 'route-line', type: 'line', source: 'route', layout: { 'line-cap': 'round' }, paint: { 'line-color': C.accent, 'line-width': 3, 'line-opacity': 0.9, 'line-dasharray': [1, 1.6] } },
-      { id: 'route-ring', type: 'circle', source: 'routepts', paint: { 'circle-radius': 16, 'circle-color': 'rgba(244,183,64,0.16)', 'circle-stroke-color': C.accent, 'circle-stroke-width': 3 } },
+      { id: 'route-line', type: 'line', source: 'route', layout: { 'line-cap': 'round' }, paint: { 'line-color': '#cf3d0a', 'line-width': 3.5, 'line-opacity': 0.95, 'line-dasharray': [1, 1.6] } },
+      { id: 'route-ring', type: 'circle', source: 'routepts', paint: { 'circle-radius': 16, 'circle-color': 'rgba(254,89,33,0.18)', 'circle-stroke-color': '#cf3d0a', 'circle-stroke-width': 3 } },
       { id: 'requests', type: 'circle', source: 'requests', paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, ['case', ['==', ['get', 'sample'], 1], 2.2, 3.5], 15, ['case', ['==', ['get', 'sample'], 1], 4, 6.5]],
-        'circle-color': ['case', ['==', ['get', 'sample'], 1], '#b98a34', C.accent],
+        'circle-color': ['case', ['==', ['get', 'sample'], 1], '#c98a12', C.accent],
         'circle-opacity': ['case', ['==', ['get', 'sample'], 1], 0.7, 1],
-        'circle-stroke-color': C.bg, 'circle-stroke-width': 1 } },
+        'circle-stroke-color': C.ink, 'circle-stroke-width': 1.2 } },
     ],
   };
 }
@@ -197,12 +197,12 @@ export default function LiveMap({ view, requests, latest, route, gaps, padding, 
     if (!m || !ready.current) return;
     const v = state.current.view;
     const focus = v !== 'city';
-    m.setPaintProperty('land', 'fill-color', focus ? '#111915' : C.land);
+    m.setPaintProperty('land', 'fill-color', focus ? '#f8f0da' : C.land);
     m.setPaintProperty('east', 'fill-opacity', focus ? 1 : 0);
     // citywide: east-of-river stores stand out in green; zoomed in, all grocery stores share one color (green means markets there)
     m.setPaintProperty('grocery', 'circle-color', focus ? C.food : ['case', ['get', 'east_of_river'], C.foodEast, C.food]);
     m.setPaintProperty('east-edge', 'line-opacity', focus ? 0.7 : 0);
-    m.setPaintProperty('lfa', 'fill-opacity', v === 'focus' ? 0.13 : 0);
+    m.setPaintProperty('lfa', 'fill-opacity', v === 'focus' ? 0.08 : 0);
     m.setPaintProperty('lfa-edge', 'line-opacity', 0);
     m.setPaintProperty('heat', 'heatmap-opacity', v === 'gap' ? 0.9 : 0);
     m.setLayoutProperty('resources', 'visibility', focus ? 'visible' : 'none');
@@ -226,7 +226,7 @@ export default function LiveMap({ view, requests, latest, route, gaps, padding, 
       const d = document.createElement('div');
       d.setAttribute('role', 'img');
       d.setAttribute('aria-label', `Gap ${i + 1}${g.hood ? `: ${g.hood}` : ''}`);
-      d.style.cssText = 'display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#eeeadf;color:#0d1411;font:700 18px var(--font-geist-mono),monospace;box-shadow:0 0 0 4px rgba(13,20,17,.85),0 0 0 6px #f4b740';
+      d.style.cssText = 'display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#233634;color:#fff;font:700 18px var(--font-cabin),sans-serif;box-shadow:0 0 0 4px #f6ead4,0 0 0 6px #fe5921';
       d.textContent = String(i + 1);
       gapMarkers.current.push(new lib.Marker({ element: d }).setLngLat([g.lng, g.lat]).addTo(m));
     });

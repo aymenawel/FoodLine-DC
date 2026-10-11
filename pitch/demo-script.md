@@ -23,7 +23,7 @@ Point at the source line under each number. "Every number we show has its source
 Type **`Congress Heights`** and press Enter.
 > "Three closest places: distance, today's hours, free or not, SNAP or not."
 
-**Pause on the map.** The amber ping appears: "New request · Congress Heights".
+**Pause on the map.** The orange ping appears: "New request · Congress Heights".
 > "And that text just became a dot on this map. No name, no phone number, no message — just when, roughly where, and what kind of help."
 
 Type **`gratis`** (or `free`).
@@ -31,7 +31,7 @@ Type **`gratis`** (or `free`).
 
 **1:35–2:15 · Gap view** (click the map once so the keyboard leaves the text box, then press **→** or **3**)
 > "When enough people text, the pattern shows where need is going unmet. This ranks the three places where a mobile market would help most: many requests, far from a grocery store, no free food nearby — and suggests an actual street corner for the stop."
-> "These dots are labelled sample data so you can see the ranking; every amber dot from tonight is real."
+> "These dots are labelled sample data so you can see the ranking; every orange dot from tonight is real."
 
 **2:15–2:45 · Why it matters / ask**
 > "Food-desert maps are built from census data that is years old — DC's official low-access map is from 2017. This one updates every time a neighbor asks for help. Real SMS is one step away: the same engine already answers a Twilio webhook, for about three to five cents a request. We'd like to pilot it with a food bank partner in Ward 8."

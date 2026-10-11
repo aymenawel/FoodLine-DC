@@ -22,12 +22,12 @@ export default function QrCard() {
       }
       const target = `${base.replace(/\/$/, '')}/chat`;
       setUrl(target); setNote(hint);
-      setSvg(await QRCode.toString(target, { type: 'svg', margin: 0, color: { dark: '#0d1411', light: '#eeeadf' }, errorCorrectionLevel: 'M' }).catch(() => ''));
+      setSvg(await QRCode.toString(target, { type: 'svg', margin: 0, color: { dark: '#233634', light: '#ffffff' }, errorCorrectionLevel: 'M' }).catch(() => ''));
     })();
   }, []);
   return (
     <figure className="grid gap-4 rounded-3xl border border-line bg-panel p-6">
-      <div className="aspect-square w-full rounded-2xl bg-ink p-5" aria-label="QR code that opens the FoodLine text line" role="img"
+      <div className="aspect-square w-full rounded-2xl border-2 border-ink bg-white p-5" aria-label="QR code that opens the FoodLine text line" role="img"
         dangerouslySetInnerHTML={{ __html: svg }} />
       <figcaption>
         <h2 className="font-serif text-3xl leading-tight">Text the line</h2>
