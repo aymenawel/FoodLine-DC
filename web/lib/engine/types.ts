@@ -52,6 +52,7 @@ export interface OpenStatus {
   closesAt?: string;
   opensAt?: string;
   opensDay?: Day;
+  inDays?: number; // days until it opens (0 = later today)
 }
 
 export interface Ranked {

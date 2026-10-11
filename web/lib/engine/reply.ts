@@ -34,7 +34,7 @@ export function statusLine(r: Resource, s: OpenStatus, lang: Lang, now: Date): s
     case 'open': return es ? `Abierto ahora, hasta las ${clock(s.closesAt!, lang)}` : `Open now, until ${clock(s.closesAt!, lang)}`;
     case 'closed': {
       if (!s.opensAt) return es ? 'Cerrado' : 'Closed';
-      const today = s.opensDay === localParts(now).dow;
+      const today = s.inDays === 0;
       if (today) return es ? `Abre hoy a las ${clock(s.opensAt, lang)}` : `Opens today at ${clock(s.opensAt, lang)}`;
       return es ? `Cerrado ahora · abre ${DAY.es[s.opensDay!]} ${clock(s.opensAt, lang)}` : `Closed now · opens ${DAY.en[s.opensDay!]} ${clock(s.opensAt, lang)}`;
     }

@@ -90,7 +90,16 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
   }, [step]);
 
   const panelW = compact ? 360 : 440;
-  const padding: Padding = useMemo(() => ({ top: 90, right: 40, bottom: compact ? 40 : 150, left: panelW + 40 }), [compact, panelW]);
+  const [narrow, setNarrow] = useState(false);
+  useEffect(() => {
+    const check = () => setNarrow(window.innerWidth < 768);
+    check(); window.addEventListener('resize', check);
+    return () => window.removeEventListener('resize', check);
+  }, []);
+  // On phones the panel sits at the bottom, so the map gets the top half of the screen.
+  const padding: Padding = useMemo(() => narrow
+    ? { top: 150, right: 16, bottom: Math.round(window.innerHeight * 0.45), left: 16 }
+    : { top: 90, right: 40, bottom: compact ? 40 : 150, left: panelW + 40 }, [compact, panelW, narrow]);
   const run = async (a: 'seed' | 'unseed' | 'reset') => { setBusy(true); await adminAction(a); setBusy(false); };
   const [t1, t2] = TITLES[view];
 
@@ -99,18 +108,18 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       <LiveMap view={view} requests={requests} latest={latest} gaps={gaps} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
 
       {/* Left editorial panel */}
-      <section className="pointer-events-none absolute inset-y-0 left-0 flex flex-col gap-5 p-6" style={{ width: panelW }}>
+      <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>
         <div className="pointer-events-auto w-[min(640px,calc(100vw-48px))]">
-          <p className="kicker">FoodLine DC · {view === 'city' ? 'All of DC' : 'Wards 7 & 8, east of the Anacostia'}</p>
+          <p className="kicker hidden md:block">FoodLine DC · {view === 'city' ? 'All of DC' : 'Wards 7 & 8, east of the Anacostia'}</p>
           <AnimatePresence mode="wait">
             <motion.h1 key={view} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.35 }}
-              className={`mt-3 font-serif leading-[1.02] tracking-[-0.01em] ${compact ? 'text-[38px]' : 'text-[50px]'}`}>
+              className={`mt-3 font-serif leading-[1.02] tracking-[-0.01em] ${compact ? 'text-[38px]' : 'text-[34px] sm:text-[50px]'}`}>
               {t1}<br /><em className="text-accent">{t2}</em>
             </motion.h1>
           </AnimatePresence>
         </div>
 
-        <div className="pointer-events-auto rounded-2xl border border-line bg-panel/92 p-5 backdrop-blur-sm">
+        <div className="pointer-events-auto max-h-[42dvh] overflow-y-auto rounded-2xl border border-line bg-panel/92 p-5 backdrop-blur-sm md:max-h-none">
           {view === 'city' && (
             <div className="grid gap-4">
               <div>
@@ -181,14 +190,14 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </section>
 
       {/* View switcher + demo controls */}
-      <div className={`absolute right-5 top-5 flex flex-col items-end gap-2 transition-opacity ${present ? 'opacity-0 hover:opacity-100' : ''}`}>
+      <div className={`absolute right-3 top-3 flex flex-col items-end gap-2 transition-opacity sm:right-5 sm:top-5 ${present ? 'opacity-0 hover:opacity-100' : ''}`}>
         <nav aria-label="Map view" className="flex rounded-full border border-line bg-panel/90 p-1 backdrop-blur-sm">
           {VIEWS.map((v) => (
             <button key={v.id} onClick={() => setView(v.id)} aria-pressed={view === v.id}
               className={`min-h-10 rounded-full px-4 text-sm font-semibold transition ${view === v.id ? 'bg-ink text-bg' : 'text-muted hover:text-ink'}`}>{v.label}</button>
           ))}
         </nav>
-        <div className="flex gap-2 text-sm">
+        <div className="hidden gap-2 text-sm md:flex">
           {sampleCount > 0
             ? <button disabled={busy} onClick={() => run('unseed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Remove sample data</button>
             : <button disabled={busy} onClick={() => run('seed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Load sample data</button>}
@@ -197,14 +206,14 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </div>
 
       {sampleCount > 0 && view !== 'city' && (
-        <p className="absolute right-5 top-[116px] rounded-md border border-dashed border-[#b98a34] bg-panel/90 px-3 py-1.5 font-mono text-xs uppercase tracking-[.12em] text-[#d9a94d]">
+        <p className="absolute right-5 top-[116px] hidden rounded-md md:block border border-dashed border-[#b98a34] bg-panel/90 px-3 py-1.5 font-mono text-xs uppercase tracking-[.12em] text-[#d9a94d]">
           Includes {sampleCount} sample requests · not real residents
         </p>
       )}
 
       {/* Stats strip */}
       {!compact && (
-        <footer className="absolute inset-x-0 bottom-0 grid grid-cols-4 gap-px border-t border-line bg-line/60" style={{ paddingLeft: 0 }}>
+        <footer className="absolute inset-x-0 bottom-0 hidden grid-cols-4 gap-px border-t border-line bg-line/60 lg:grid">
           {[STATS.wardGap, STATS.snap, STATS.noCar, STATS.dcInsecure].map((s) => (
             <div key={s.id} className="bg-bg/92 px-6 py-4 backdrop-blur-sm">
               <p className="num text-3xl font-medium leading-none">{s.value}</p>

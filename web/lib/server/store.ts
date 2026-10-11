@@ -1,7 +1,8 @@
 import { EventEmitter } from 'node:events';
-import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
+import { appendFileSync, existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import type { LogEntry } from '@/lib/engine/types';
+import { generateSample } from './sample';
 
 // Anonymous request log: NDJSON on disk + in-memory copy + event bus for live updates.
 // Stored fields only: ts, zip, lat/lng (3 dp), need, lang, source. Never message text or numbers.
@@ -13,8 +14,10 @@ export type BusEvent =
   | { type: 'seed'; count: number };
 
 const FILE = process.env.FOODLINE_LOG ?? path.join(/*turbopackIgnore: true*/ process.cwd(), '.data', 'requests.ndjson');
+// Sample data is a persisted on/off switch, regenerated relative to "now" so it never ages out of the 24 h window.
+const SAMPLE_FLAG = path.join(path.dirname(FILE), 'sample-on');
 
-interface Store { requests: StoredRequest[]; bus: EventEmitter; seq: number }
+interface Store { requests: StoredRequest[]; bus: EventEmitter; seq: number; sampleOn: boolean }
 const g = globalThis as unknown as { __foodline?: Store };
 
 function load(): StoredRequest[] {
@@ -28,8 +31,8 @@ export function store(): Store {
   if (!g.__foodline) {
     const bus = new EventEmitter();
     bus.setMaxListeners(200);
-    const requests = load();
-    g.__foodline = { requests, bus, seq: requests.length };
+    const requests = load().filter((r) => r.source !== 'sample');
+    g.__foodline = { requests, bus, seq: requests.length, sampleOn: existsSync(SAMPLE_FLAG) };
   }
   return g.__foodline;
 }
@@ -51,24 +54,29 @@ export function addRequest(entry: LogEntry): StoredRequest {
   return req;
 }
 
-export function addSample(entries: LogEntry[]) {
+export function setSample(on: boolean) {
   const s = store();
-  const reqs = entries.map((e, i) => ({ id: `s${i}`, ...pick({ ...e, source: 'sample' }) }));
-  s.requests = [...s.requests.filter((r) => r.source !== 'sample'), ...reqs];
-  persist(s.requests, false);
-  s.bus.emit('event', { type: 'seed', count: reqs.length } satisfies BusEvent);
+  s.sampleOn = on;
+  mkdirSync(path.dirname(SAMPLE_FLAG), { recursive: true });
+  if (on) writeFileSync(SAMPLE_FLAG, new Date().toISOString());
+  else if (existsSync(SAMPLE_FLAG)) unlinkSync(SAMPLE_FLAG);
+  s.bus.emit('event', { type: 'seed', count: on ? sample(new Date()).length : 0 } satisfies BusEvent);
 }
 
-// scope 'live' clears texts from the demo; 'all' also clears sample data
+const sample = (now: Date): StoredRequest[] => generateSample(now).map((e, i) => ({ id: `s${i}`, ...pick(e), source: 'sample' }));
+
+// 'live' clears texts from the demo; 'all' also turns sample data off
 export function reset(scope: 'live' | 'all' = 'live') {
   const s = store();
-  s.requests = scope === 'all' ? [] : s.requests.filter((r) => r.source === 'sample');
-  persist(s.requests, false);
+  s.requests = [];
+  persist([], false);
+  if (scope === 'all') setSample(false);
   s.bus.emit('event', { type: 'reset' } satisfies BusEvent);
 }
 
-export function listRequests(): StoredRequest[] {
-  return store().requests;
+export function listRequests(now = new Date()): StoredRequest[] {
+  const s = store();
+  return s.sampleOn ? [...sample(now), ...s.requests] : s.requests;
 }
 
 export function subscribe(fn: (e: BusEvent) => void): () => void {

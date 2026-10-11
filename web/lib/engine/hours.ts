@@ -29,10 +29,10 @@ export function openStatus(r: Resource, now: Date): OpenStatus {
     if (minutes >= mins(from) && minutes < mins(to)) return { state: 'open', closesAt: to };
   }
   const today = DAYS.indexOf(dow);
-  for (let k = 0; k < 7; k++) {
+  for (let k = 0; k <= 7; k++) { // k = 7 is the same weekday next week
     const day = DAYS[(today + k) % 7];
     const spans = (r.hours[day] ?? []).filter(([from]) => k > 0 || mins(from) > minutes);
-    if (spans.length) return { state: 'closed', opensAt: spans[0][0], opensDay: day };
+    if (spans.length) return { state: 'closed', opensAt: spans[0][0], opensDay: day, inDays: k };
   }
   return { state: 'closed' };
 }

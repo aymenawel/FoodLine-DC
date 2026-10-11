@@ -29,6 +29,11 @@ describe('openStatus', () => {
     expect(s).toMatchObject({ state: 'closed', opensAt: '10:00', opensDay: 'sat' });
   });
 
+  it('finds the same weekday next week when today\'s only session has ended', () => {
+    const s = openStatus(weekly({ wed: [['10:00', '12:00']] }), at('2026-10-14T18:00:00Z')); // Wed 2pm
+    expect(s).toMatchObject({ state: 'closed', opensAt: '10:00', opensDay: 'wed' });
+  });
+
   it('treats a 24:00 close as end of day', () => {
     const s = openStatus(weekly({ wed: [['05:00', '24:00']] }), at('2026-10-15T03:30:00Z')); // 23:30 Wed
     expect(s.state).toBe('open');
