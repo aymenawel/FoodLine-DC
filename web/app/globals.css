@@ -74,6 +74,8 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-geist-s
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite; }
 
 .maplibregl-canvas:focus-visible { outline-offset: -3px; }
+/* on phones the bottom of the screen is the info panel, so the data credit sits under the view switcher */
+@media (max-width: 767px) { .maplibregl-ctrl-bottom-right { top: 64px; bottom: auto; } }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

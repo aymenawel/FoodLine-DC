@@ -7,7 +7,8 @@ export const runtime = 'nodejs';
 // Demo controls: seed labelled sample data, clear it, or clear live requests between judges.
 export async function POST(req: Request) {
   // Only the presenter's laptop may change the demo: anything arriving through the public tunnel is refused.
-  if (req.headers.get('cf-connecting-ip') || req.headers.get('x-forwarded-for')) {
+  // (Cloudflare adds these headers; Next.js itself sets x-forwarded-for on every request, so that one can't be used.)
+  if (req.headers.get('cf-connecting-ip') || req.headers.get('cf-ray')) {
     return NextResponse.json({ error: 'Demo controls are only available on the presenting laptop.' }, { status: 403 });
   }
   const { action } = (await req.json().catch(() => ({}))) as { action?: string };

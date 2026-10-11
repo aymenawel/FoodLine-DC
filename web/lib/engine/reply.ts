@@ -108,8 +108,8 @@ export function directionsReply(x: Ranked, lang: Lang, now: Date): string {
 }
 
 export const askLocation = (lang: Lang) => lang === 'es'
-  ? '¡Hola! Envíe su código postal, su barrio o una esquina (por ejemplo "Minnesota Ave y Benning Rd") y le mando los 3 lugares más cercanos para conseguir comida.'
-  : 'Hi! Text your ZIP code, neighborhood, or a cross street (like "Minnesota Ave and Benning Rd") and I\'ll send the 3 closest places to get food.';
+  ? '¡Hola! Envíe su código postal, barrio, dirección o una esquina (por ejemplo "Minnesota Ave y Benning Rd") y le mando los 3 lugares más cercanos para conseguir comida.'
+  : 'Hi! Text your ZIP code, neighborhood, street address, or a cross street (like "Minnesota Ave and Benning Rd") and I\'ll send the 3 closest places to get food.';
 
 export const notFound = (lang: Lang) => lang === 'es'
   ? 'No reconocí ese lugar. Pruebe con un código postal (20019, 20020, 20032), un barrio (Anacostia, Deanwood) o dos calles que se cruzan.'
