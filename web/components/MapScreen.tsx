@@ -53,7 +53,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
   const [gaps, setGaps] = useState<Gap[]>([]);
   const [basis, setBasis] = useState({ requests24h: 0, sample: 0 });
   const [busy, setBusy] = useState(false);
-  const { requests, latest, mode } = useLive();
+  const { requests, latest, route, mode } = useLive();
   const labelFor = useRef<(lat: number, lng: number) => string>(() => '');
   const [announce, setAnnounce] = useState('');
   const lastAnnounce = useRef(0);
@@ -115,7 +115,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
 
   return (
     <div className={`relative h-full min-h-[600px] w-full overflow-hidden bg-bg ${compact ? '' : '[&_.maplibregl-ctrl-bottom-right]:!bottom-[112px]'}`}>
-      <LiveMap view={view} requests={requests} latest={latest} gaps={gaps} streets={streets} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
+      <LiveMap view={view} requests={requests} latest={latest} route={route} gaps={gaps} streets={streets} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
 
       {/* Left editorial panel */}
       <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>

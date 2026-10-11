@@ -34,7 +34,10 @@ export async function handleMessage(sessionId: string, text: string, opts: { lan
   // Log before the optional AI rewrite, so the map dot never waits on the model. Timestamp it now so polling clients
   // (which ask for "requests since T") can't miss it.
   saveSession(sessionId, out.state);
-  const logged = out.logEntry ? addRequest({ ...out.logEntry, ts: new Date().toISOString(), source: opts.source }) : null;
+  const logged = out.logEntry ? addRequest(
+    { ...out.logEntry, ts: new Date().toISOString(), source: opts.source },
+    out.results.map((r) => ({ name: r.resource.name, lat: r.resource.lat, lng: r.resource.lng })),
+  ) : null;
 
   let reply = out.reply;
   if (out.results.length && aiEnabled()) {

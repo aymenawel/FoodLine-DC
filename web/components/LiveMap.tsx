@@ -41,6 +41,8 @@ function style(): StyleSpecification {
       grocery: { type: 'geojson', data: empty },
       resources: { type: 'geojson', data: g('resources') },
       requests: { type: 'geojson', data: empty },
+      route: { type: 'geojson', data: empty },
+      routepts: { type: 'geojson', data: empty },
       // OpenFreeMap (OpenStreetMap data), no API key. Only roads are drawn, restyled to match the site. Fails quietly offline.
       streets: { type: 'vector', url: 'https://tiles.openfreemap.org/planet', attribution: '© OpenFreeMap © OpenMapTiles Data from OpenStreetMap' },
     },
@@ -77,6 +79,9 @@ function style(): StyleSpecification {
         // free food is a ring, so it differs from markets by shape as well as color
         'circle-color': ['case', ['get', 'free'], C.bg, ['match', ['get', 'type'], 'corner_store', C.corner, C.market]],
         'circle-stroke-color': ['case', ['get', 'free'], C.free, C.bg], 'circle-stroke-width': ['case', ['get', 'free'], 3, 1.5] } },
+      // the three places a text was sent to: amber lines from the request, and rings around the places
+      { id: 'route-line', type: 'line', source: 'route', layout: { 'line-cap': 'round' }, paint: { 'line-color': C.accent, 'line-width': 3, 'line-opacity': 0.9, 'line-dasharray': [1, 1.6] } },
+      { id: 'route-ring', type: 'circle', source: 'routepts', paint: { 'circle-radius': 16, 'circle-color': 'rgba(244,183,64,0.16)', 'circle-stroke-color': C.accent, 'circle-stroke-width': 3 } },
       { id: 'requests', type: 'circle', source: 'requests', paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, ['case', ['==', ['get', 'sample'], 1], 2.2, 3.5], 15, ['case', ['==', ['get', 'sample'], 1], 4, 6.5]],
         'circle-color': ['case', ['==', ['get', 'sample'], 1], '#b98a34', C.accent],
@@ -88,8 +93,9 @@ function style(): StyleSpecification {
 
 type Hood = { name: string; lng: number; lat: number };
 
-export default function LiveMap({ view, requests, latest, gaps, padding, onLabelFor, streets = true }: {
+export default function LiveMap({ view, requests, latest, route, gaps, padding, onLabelFor, streets = true }: {
   streets?: boolean;
+  route?: { id: string; to: { name: string; lat: number; lng: number }[] } | null;
   view: MapView;
   requests: StoredRequest[];
   latest: StoredRequest | null;
@@ -249,6 +255,42 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
     setTimeout(() => mk.remove(), 7000); // each ping lives its full 7 s, even when another request arrives right after
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [latest]);
+
+  // ---- draw lines from the new request to the places the text line recommended, then fade them after ~9 s
+  useEffect(() => {
+    const m = map.current;
+    if (!m || !ready.current || !route || !latest || latest.id !== route.id) return;
+    const from: [number, number] = [latest.lng, latest.lat];
+    const to = route.to.map((p) => [p.lng, p.lat] as [number, number]);
+    const lines = m.getSource('route') as GeoJSONSource, pts = m.getSource('routepts') as GeoJSONSource;
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    pts.setData({ type: 'FeatureCollection', features: [] });
+    // frame the request and its places so the lines are easy to see, then glide back to the overview
+    const framed = state.current.view === 'focus';
+    if (framed) {
+      const lngs = [from[0], ...to.map((c) => c[0])], lats = [from[1], ...to.map((c) => c[1])];
+      m.fitBounds([[Math.min(...lngs), Math.min(...lats)], [Math.max(...lngs), Math.max(...lats)]],
+        { padding: { top: 160, bottom: 160, left: state.current.padding.left + 60, right: 120 }, maxZoom: 14.8, duration: reduce ? 0 : 1200, essential: false });
+    }
+    let raf = 0;
+    const start = performance.now();
+    const frame = (now: number) => {
+      const t = reduce ? 1 : Math.min(1, (now - start) / 1100);
+      const e = 1 - Math.pow(1 - t, 3); // ease-out: lines "travel" from the dot to each place
+      lines.setData({ type: 'FeatureCollection', features: to.map((dest) => ({
+        type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: [from, [from[0] + (dest[0] - from[0]) * e, from[1] + (dest[1] - from[1]) * e]] } })) });
+      if (t < 1) raf = requestAnimationFrame(frame);
+      else pts.setData({ type: 'FeatureCollection', features: to.map((c) => ({ type: 'Feature', properties: {}, geometry: { type: 'Point', coordinates: c } })) });
+    };
+    raf = requestAnimationFrame(frame);
+    const clear = setTimeout(() => {
+      lines.setData({ type: 'FeatureCollection', features: [] });
+      pts.setData({ type: 'FeatureCollection', features: [] });
+      if (framed && state.current.view === 'focus') applyView();
+    }, 9000);
+    return () => { cancelAnimationFrame(raf); clearTimeout(clear); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [route]);
 
   // maplibre-gl.css sets position:relative on the map element, so size it inside an absolute wrapper.
   return (

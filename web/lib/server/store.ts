@@ -9,7 +9,7 @@ import { generateSample } from './sample';
 
 export type StoredRequest = LogEntry & { id: string };
 export type BusEvent =
-  | { type: 'request'; request: StoredRequest }
+  | { type: 'request'; request: StoredRequest; route?: RoutePoint[] }
   | { type: 'reset' }
   | { type: 'seed'; count: number };
 
@@ -45,12 +45,15 @@ function persist(lines: StoredRequest[], append: boolean) {
 
 const pick = (e: LogEntry): LogEntry => ({ ts: e.ts, zip: e.zip, lat: e.lat, lng: e.lng, need: e.need, lang: e.lang, source: e.source });
 
-export function addRequest(entry: LogEntry): StoredRequest {
+// The places a request was sent to. Shown on the live map for a few seconds only; never written to the log.
+export interface RoutePoint { name: string; lat: number; lng: number }
+
+export function addRequest(entry: LogEntry, route?: RoutePoint[]): StoredRequest {
   const s = store();
   const req: StoredRequest = { id: `r${Date.now().toString(36)}${(s.seq++).toString(36)}`, ...pick(entry) };
   s.requests.push(req);
   persist([req], true);
-  s.bus.emit('event', { type: 'request', request: req } satisfies BusEvent);
+  s.bus.emit('event', { type: 'request', request: req, route } satisfies BusEvent);
   return req;
 }
 

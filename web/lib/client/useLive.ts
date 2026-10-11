@@ -1,6 +1,6 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { StoredRequest } from '@/lib/server/store';
+import type { RoutePoint, StoredRequest } from '@/lib/server/store';
 
 export type LiveMode = 'connecting' | 'live' | 'polling';
 
@@ -10,6 +10,7 @@ export function useLive() {
   const [requests, setRequests] = useState<StoredRequest[]>([]);
   const [latest, setLatest] = useState<StoredRequest | null>(null);
   const [mode, setMode] = useState<LiveMode>('connecting');
+  const [route, setRoute] = useState<{ id: string; to: RoutePoint[] } | null>(null); // where the latest text was sent
   const ids = useRef(new Set<string>());
   const lastTs = useRef<string>('');
 
@@ -54,7 +55,11 @@ export function useLive() {
       es = new EventSource('/api/stream');
       // on every (re)connect, reload once so anything sent during a dropped connection appears
       es.addEventListener('hello', () => { clearTimeout(fallback); setMode('live'); reload(); });
-      es.addEventListener('request', (e) => add((JSON.parse((e as MessageEvent).data) as { request: StoredRequest }).request));
+      es.addEventListener('request', (e) => {
+        const d = JSON.parse((e as MessageEvent).data) as { request: StoredRequest; route?: RoutePoint[] };
+        add(d.request);
+        if (d.request.source !== 'sample' && d.route?.length) setRoute({ id: d.request.id, to: d.route });
+      });
       es.addEventListener('reset', () => { setLatest(null); reload(); });
       es.addEventListener('seed', () => reload());
       es.onerror = () => { if (es?.readyState === EventSource.CLOSED) startPolling(); };
@@ -62,7 +67,7 @@ export function useLive() {
     return () => { clearTimeout(fallback); es?.close(); if (poll) clearInterval(poll); };
   }, [add, reload]);
 
-  return { requests, latest, mode, reload };
+  return { requests, latest, route, mode, reload };
 }
 
 export async function adminAction(action: 'seed' | 'unseed' | 'reset' | 'reset-all') {
