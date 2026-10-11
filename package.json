@@ -5,6 +5,7 @@
   "scripts": {
     "demo": "node scripts/start.mjs",
     "demo:tunnel": "node scripts/start.mjs --tunnel",
+    "stop": "node scripts/stop.mjs",
     "rebuild": "node scripts/start.mjs --rebuild",
     "dev": "npm --prefix web run dev",
     "test": "npm --prefix web test",
