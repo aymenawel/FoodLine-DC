@@ -71,5 +71,5 @@ export function useLive() {
 }
 
 export async function adminAction(action: 'seed' | 'unseed' | 'reset' | 'reset-all') {
-  await fetch('/api/admin', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ action }) });
+  await fetch('/api/admin', { method: 'POST', headers: { 'content-type': 'application/json', 'x-admin-token': new URLSearchParams(window.location.search).get('admin') ?? '' }, body: JSON.stringify({ action }) });
 }

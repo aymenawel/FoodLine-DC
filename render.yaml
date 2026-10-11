@@ -1,0 +1,16 @@
+# One-click host on Render: New > Blueprint > pick this repo.
+services:
+  - type: web
+    name: foodline-dc
+    runtime: node
+    plan: free
+    buildCommand: cd web && npm ci && npm run build
+    startCommand: cd web && npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: FOODLINE_ADMIN_TOKEN
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false

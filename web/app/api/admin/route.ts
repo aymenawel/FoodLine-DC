@@ -11,6 +11,11 @@ export async function POST(req: Request) {
   if (req.headers.get('cf-connecting-ip') || req.headers.get('cf-ray')) {
     return NextResponse.json({ error: 'Demo controls are only available on the presenting laptop.' }, { status: 403 });
   }
+  // Hosted for judges: set FOODLINE_ADMIN_TOKEN and only the presenter (page opened with ?admin=TOKEN) can seed or clear.
+  const token = process.env.FOODLINE_ADMIN_TOKEN;
+  if (token && req.headers.get("x-admin-token") !== token) {
+    return NextResponse.json({ error: "Demo controls are locked on the hosted site." }, { status: 403 });
+  }
   const { action } = (await req.json().catch(() => ({}))) as { action?: string };
   switch (action) {
     case 'seed': setSample(true); return NextResponse.json({ ok: true });
