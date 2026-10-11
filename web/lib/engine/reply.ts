@@ -36,7 +36,9 @@ export function statusLine(r: Resource, s: OpenStatus, lang: Lang, now: Date): s
       if (!s.opensAt) return es ? 'Cerrado' : 'Closed';
       const today = s.inDays === 0;
       if (today) return es ? `Abre hoy a las ${clock(s.opensAt, lang)}` : `Opens today at ${clock(s.opensAt, lang)}`;
-      return es ? `Cerrado ahora · abre ${DAY.es[s.opensDay!]} ${clock(s.opensAt, lang)}` : `Closed now · opens ${DAY.en[s.opensDay!]} ${clock(s.opensAt, lang)}`;
+      const next = s.inDays === 7; // today's only session already ended: it means the same weekday next week
+      return es ? `Cerrado ahora · abre ${next ? 'el próximo ' : ''}${DAY.es[s.opensDay!]} ${clock(s.opensAt, lang)}`
+        : `Closed now · opens ${next ? 'next ' : ''}${DAY.en[s.opensDay!]} ${clock(s.opensAt, lang)}`;
     }
     case 'out_of_season': return es ? 'Cerrado por temporada' : 'Closed for the season';
     default:

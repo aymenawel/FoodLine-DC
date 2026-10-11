@@ -3,7 +3,7 @@
 **Setup before you share your screen**
 1. `npm run demo` (or `npm run demo:tunnel` if you want judges to text from their phones).
 2. Open three tabs: `http://localhost:3000/` (landing), `http://localhost:3000/demo`, `http://localhost:3000/map`.
-3. On `/map`: press **Shift+R** to clear old live requests, then make sure sample data is loaded (button says "Remove sample data"; if not, press **Shift+S**).
+3. On `/map`: click **Clear live requests** (top right) to remove old texts, then make sure sample data is loaded (the button says "Remove sample data"; if not, click **Load sample data** or press **Shift+S**).
 4. On `/demo`: click the map and press **2** so the map shows "Wards 7 & 8 live". Click into the phone's text box once so typing goes there.
 5. Browser zoom 100%, full screen (F11). Close notifications.
 

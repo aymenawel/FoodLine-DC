@@ -27,10 +27,10 @@ export default function QrCard() {
   }, []);
   return (
     <figure className="grid gap-4 rounded-3xl border border-line bg-panel p-6">
-      <div className="aspect-square w-full rounded-2xl bg-ink p-5" aria-label={`QR code that opens ${url}`} role="img"
+      <div className="aspect-square w-full rounded-2xl bg-ink p-5" aria-label="QR code that opens the FoodLine text line" role="img"
         dangerouslySetInnerHTML={{ __html: svg }} />
       <figcaption>
-        <p className="font-serif text-3xl leading-tight">Text the line</p>
+        <h2 className="font-serif text-3xl leading-tight">Text the line</h2>
         <p className="mt-1 text-sm text-muted">Scan with your phone camera. It works like a text conversation.</p>
         <p className="mt-2 break-all font-mono text-xs text-faint">{url}</p>
         {note && <p className="mt-1 text-xs text-faint">{note}</p>}

@@ -31,14 +31,16 @@ export async function handleMessage(sessionId: string, text: string, opts: { lan
     }
   }
 
+  // Log before the optional AI rewrite, so the map dot never waits on the model. Timestamp it now so polling clients
+  // (which ask for "requests since T") can't miss it.
+  saveSession(sessionId, out.state);
+  const logged = out.logEntry ? addRequest({ ...out.logEntry, ts: new Date().toISOString(), source: opts.source }) : null;
+
   let reply = out.reply;
   if (out.results.length && aiEnabled()) {
     const better = await aiRephrase(reply, out.results, out.lang, resources);
     if (better) { reply = better; usedAi = true; }
   }
-
-  saveSession(sessionId, out.state);
-  const logged = out.logEntry ? addRequest({ ...out.logEntry, source: opts.source }) : null;
   return {
     reply,
     lang: out.lang,

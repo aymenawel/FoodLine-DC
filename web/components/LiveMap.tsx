@@ -62,8 +62,9 @@ function style(): StyleSpecification {
         'circle-stroke-color': C.bg, 'circle-stroke-width': 1.5 } },
       { id: 'resources', type: 'circle', source: 'resources', filter: ['!=', ['get', 'type'], 'grocery'], layout: { visibility: 'none' }, paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, ['match', ['get', 'type'], 'corner_store', 3, 4.5], 15, ['match', ['get', 'type'], 'corner_store', 6, 9]],
-        'circle-color': ['case', ['get', 'free'], C.free, ['match', ['get', 'type'], 'corner_store', C.corner, C.market]],
-        'circle-stroke-color': C.bg, 'circle-stroke-width': 1.5 } },
+        // free food is a ring, so it differs from markets by shape as well as color
+        'circle-color': ['case', ['get', 'free'], C.bg, ['match', ['get', 'type'], 'corner_store', C.corner, C.market]],
+        'circle-stroke-color': ['case', ['get', 'free'], C.free, C.bg], 'circle-stroke-width': ['case', ['get', 'free'], 3, 1.5] } },
       { id: 'requests', type: 'circle', source: 'requests', paint: {
         'circle-radius': ['interpolate', ['linear'], ['zoom'], 11, ['case', ['==', ['get', 'sample'], 1], 2.2, 3.5], 15, ['case', ['==', ['get', 'sample'], 1], 4, 6.5]],
         'circle-color': ['case', ['==', ['get', 'sample'], 1], '#b98a34', C.accent],
@@ -110,6 +111,7 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
       const m = new lib.Map({
         container: el.current, style: style(), bounds: DC_BOUNDS, fitBoundsOptions: { padding: state.current.padding },
         attributionControl: false, maxBounds: [[-77.35, 38.7], [-76.7, 39.1]], minZoom: 9.5, maxZoom: 16, dragRotate: false, pitchWithRotate: false,
+        keyboard: false, // arrow keys step the presentation views instead of panning
       });
       m.addControl(new lib.AttributionControl({ compact: true, customAttribution: 'Open Data DC (CC BY 4.0) · FoodLine directory' }), 'bottom-right');
       map.current = m;
@@ -164,6 +166,8 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
     const focus = v !== 'city';
     m.setPaintProperty('land', 'fill-color', focus ? '#111915' : C.land);
     m.setPaintProperty('east', 'fill-opacity', focus ? 1 : 0);
+    // citywide: east-of-river stores stand out in green; zoomed in, all grocery stores share one color (green means markets there)
+    m.setPaintProperty('grocery', 'circle-color', focus ? C.food : ['case', ['get', 'east_of_river'], C.foodEast, C.food]);
     m.setPaintProperty('east-edge', 'line-opacity', focus ? 0.7 : 0);
     m.setPaintProperty('lfa', 'fill-opacity', v === 'focus' ? 0.13 : 0);
     m.setPaintProperty('lfa-edge', 'line-opacity', 0);
@@ -176,7 +180,7 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
       const show = v === 'city' ? CITY_LABELS.includes(name) : EAST_LABELS.includes(name);
       mk.getElement().style.display = show ? '' : 'none';
     }
-    m.fitBounds(focus ? EAST_BOUNDS : DC_BOUNDS, { padding: state.current.padding, duration: instant ? 0 : 2200, essential: true });
+    m.fitBounds(focus ? EAST_BOUNDS : DC_BOUNDS, { padding: state.current.padding, duration: instant ? 0 : 2200, essential: false });
     drawGaps();
   }
 
@@ -187,7 +191,8 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
     if (!m || !lib || state.current.view !== 'gap') return;
     state.current.gaps.forEach((g, i) => {
       const d = document.createElement('div');
-      d.setAttribute('aria-label', `Gap ${i + 1}`);
+      d.setAttribute('role', 'img');
+      d.setAttribute('aria-label', `Gap ${i + 1}${g.hood ? `: ${g.hood}` : ''}`);
       d.style.cssText = 'display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#eeeadf;color:#0d1411;font:700 18px var(--font-geist-mono),monospace;box-shadow:0 0 0 4px rgba(13,20,17,.85),0 0 0 6px #f4b740';
       d.textContent = String(i + 1);
       gapMarkers.current.push(new lib.Marker({ element: d }).setLngLat([g.lng, g.lat]).addTo(m));
@@ -210,15 +215,14 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
     label.textContent = `New request${hood ? ` · ${hood === 'Historic Anacostia' ? 'Anacostia' : hood}` : ''}`;
     d.appendChild(label);
     const mk = new lib.Marker({ element: d }).setLngLat([latest.lng, latest.lat]).addTo(m);
-    const t = setTimeout(() => mk.remove(), 7000);
-    return () => { clearTimeout(t); mk.remove(); };
+    setTimeout(() => mk.remove(), 7000); // each ping lives its full 7 s, even when another request arrives right after
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [latest]);
 
   // maplibre-gl.css sets position:relative on the map element, so size it inside an absolute wrapper.
   return (
     <div className="absolute inset-0">
-      <div ref={el} className="h-full w-full" role="img" aria-label="Map of Washington DC grocery stores, food resources in Wards 7 and 8, and anonymous live requests" />
+      <div ref={el} className="h-full w-full" role="region" aria-label="Map of Washington DC grocery stores, food resources in Wards 7 and 8, and anonymous live requests" />
     </div>
   );
 }

@@ -5,14 +5,14 @@ import MapScreen from '@/components/MapScreen';
 export const metadata: Metadata = { title: 'Demo · FoodLine DC' };
 
 // Presentation layout for a screen share: the text line and the live map side by side.
-// Keys: ← → step views, 1/2/3 jump, P hides controls, Shift+S seeds sample data, Shift+R clears live requests.
+// Keys: ← → step views, 1/2/3 jump, P hides controls, Shift+S loads sample data. Clearing live requests is button-only.
 export default function DemoPage() {
   return (
-    <main className="grid h-dvh w-full grid-cols-[440px_1fr] bg-bg">
-      <section className="flex items-center justify-center border-r border-line bg-panel p-6" aria-label="Text line">
+    <main className="grid w-full grid-cols-1 bg-bg lg:h-dvh lg:grid-cols-[440px_1fr]">
+      <section className="flex items-center justify-center border-line bg-panel p-0 sm:p-6 lg:border-r" aria-label="Text line">
         <Phone />
       </section>
-      <section className="relative" aria-label="Live demand map">
+      <section className="relative min-h-[80dvh] lg:min-h-0" aria-label="Live demand map">
         <MapScreen compact initialView="focus" />
       </section>
     </main>

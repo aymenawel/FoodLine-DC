@@ -86,6 +86,35 @@ describe('converse', () => {
     expect(open.results.every((r) => r.status.state === 'open')).toBe(true);
   });
 
+  it('lets FREE replace OPEN instead of stacking into a dead end', () => {
+    const night = new Date('2026-10-15T02:30:00Z'); // 10:30 pm Wednesday in DC, pantries closed
+    const st = converse(undefined, 'Congress Heights', { now: night, places, resources }).state;
+    const open = converse(st, 'OPEN', { now: night, places, resources });
+    const free = converse(open.state, 'FREE', { now: night, places, resources });
+    expect(free.state.openNow).toBe(false);
+    expect(free.results.length).toBe(3);
+    expect(free.results.every((r) => r.resource.free)).toBe(true);
+  });
+
+  it('asks for a location (not "did not recognize") when the message has none', () => {
+    for (const t of ['I need food', 'Hi, Im hungry', 'where can I get food near me']) {
+      expect(say(t).reply).toMatch(/Text your ZIP code/);
+    }
+  });
+
+  it('finds cross streets after leading words', () => {
+    const out = say('any food open near Alabama Ave and Stanton Rd?');
+    expect(out.place?.kind).toBe('intersection');
+  });
+
+  it('logs a street address only to about 500 m', () => {
+    const out = say('1535 Alabama Ave SE');
+    expect(out.place?.kind).toBe('address');
+    const { lat, lng } = out.logEntry!;
+    expect(Math.abs(lat * 200 - Math.round(lat * 200))).toBeLessThan(1e-9);
+    expect(Math.abs(lng * 200 - Math.round(lng * 200))).toBeLessThan(1e-9);
+  });
+
   it('understands a filter inside the first message', () => {
     const out = say('free food in Anacostia');
     expect(out.results.every((r) => r.resource.free)).toBe(true);

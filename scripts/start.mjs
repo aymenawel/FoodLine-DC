@@ -3,7 +3,7 @@
 //   npm run demo -- --tunnel   also opens a free Cloudflare quick tunnel so judges on a video call can text from their phones
 //   npm run rebuild            force a fresh build first
 import { spawn, spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, rmSync, statSync, writeFileSync } from 'node:fs';
 import { networkInterfaces } from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -30,7 +30,18 @@ if (!existsSync(path.join(web, 'node_modules'))) {
   console.log('Installing dependencies (first run only)...');
   if (!sh(npmCmd('install'))) process.exit(1);
 }
-if (args.includes('--rebuild') || !existsSync(path.join(web, '.next', 'BUILD_ID'))) {
+// Rebuild when asked, when there is no build, or when any app code or data changed after the last build.
+function newest(p) {
+  if (!existsSync(p)) return 0;
+  const st = statSync(p);
+  if (!st.isDirectory()) return st.mtimeMs;
+  return Math.max(0, ...readdirSync(p).map((f) => newest(path.join(p, f))));
+}
+const buildId = path.join(web, '.next', 'BUILD_ID');
+const sources = ['app', 'lib', 'components', 'data', 'public', 'next.config.ts', 'package.json'].map((f) => path.join(web, f));
+const stale = existsSync(buildId) && Math.max(...sources.map(newest)) > statSync(buildId).mtimeMs;
+if (stale) console.log('Code or data changed since the last build.');
+if (args.includes('--rebuild') || !existsSync(buildId) || stale) {
   console.log('Building FoodLine...');
   if (!sh(npmCmd('run build'))) process.exit(1);
 }

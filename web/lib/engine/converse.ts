@@ -26,7 +26,8 @@ export const initialState = (): ConvState => ({
   lang: 'en', langLocked: false, place: null, freeOnly: false, openNow: false, offset: 0, lastIds: [],
 });
 
-const round3 = (n: number) => Math.round(n * 1000) / 1000;
+const round3 = (n: number) => Math.round(n * 1000) / 1000;   // ~100 m, for ZIPs, neighborhoods and corners
+const round200 = (n: number) => Math.round(n * 200) / 200;    // ~500 m, so a typed home address is never pinned on the map
 
 export function converse(prev: ConvState | undefined, text: string, o: ConverseOptions): ConverseResult {
   const state: ConvState = { ...(prev ?? initialState()) };
@@ -49,7 +50,7 @@ export function converse(prev: ConvState | undefined, text: string, o: ConverseO
     state.lastIds = results.length ? results.map((r) => r.resource.id) : state.lastIds;
     const reply = R.listReply({ lang, place, results, now: o.now, freeOnly: state.freeOnly, openNow: state.openNow, offset: state.offset });
     const logEntry: LogEntry | null = log ? {
-      ts: o.now.toISOString(), zip: place.zip ?? null, lat: round3(place.lat), lng: round3(place.lng),
+      ts: o.now.toISOString(), zip: place.zip ?? null, lat: place.kind === 'address' ? round200(place.lat) : round3(place.lat), lng: place.kind === 'address' ? round200(place.lng) : round3(place.lng),
       need: state.freeOnly ? 'free' : state.openNow ? 'open_now' : 'any', lang, source: 'live',
     } : null;
     return done(reply, { results, logEntry, place });
@@ -89,12 +90,15 @@ export function converse(prev: ConvState | undefined, text: string, o: ConverseO
   }
 
   if (free || open) {
-    if (free) state.freeOnly = true;
-    if (open) state.openNow = true;
+    // a filter replaces the other one (OPEN then FREE must not stack into an empty answer); both only when asked together
+    state.freeOnly = free;
+    state.openNow = open;
     state.offset = 0;
     return state.place ? search(true) : done(R.filterPending(lang));
   }
 
-  if (/\b\d{5}\b/.test(text)) return done(R.notFound(lang));
-  return done(state.place || text.trim().split(/\s+/).length > 2 ? R.notFound(lang) : R.askLocation(lang));
+  // "I didn't recognize that place" only when the message looks like a place (a number, a street word or two joined streets);
+  // "I need food" or "where can I get food near me" get the friendly prompt instead.
+  const looksLikePlace = /\d/.test(text) || /\b(ave|avenue|st|street|rd|road|pl|place|dr|drive|ter|terrace|ct|court|pkwy|parkway|blvd|ln|lane|way|and|y|&|ne|se|sw|nw)\b/i.test(text);
+  return done(looksLikePlace ? R.notFound(lang) : R.askLocation(lang));
 }

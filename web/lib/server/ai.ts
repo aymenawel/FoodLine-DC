@@ -66,5 +66,11 @@ export async function aiRephrase(reply: string, results: Ranked[], lang: Lang, a
   if (all.some((r) => !listed.has(r.id) && out.includes(r.name))) return null;
   const links = reply.match(/https?:\/\/\S+/g) ?? [];
   if (!links.every((l) => out.includes(l))) return null;
+  // Every number (distances, hours, addresses, phone numbers) must survive unchanged.
+  const nums = (s: string) => (s.replace(/https?:\/\/\S+/g, '').match(/\d+(?:[.:]\d+)?/g) ?? []).sort().join(' ');
+  if (nums(out) !== nums(reply)) return null;
+  // Open/closed wording must not flip.
+  const states = (s: string) => (s.toLowerCase().match(/\b(open now|closed|abierto|cerrado)\b/g) ?? []).length;
+  if (states(out) < states(reply)) return null;
   return out;
 }

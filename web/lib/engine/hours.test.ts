@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { openStatus, localParts } from './hours';
+import { statusLine } from './reply';
 import type { Resource } from './types';
 
 // 2026-10-14 is a Wednesday. 18:00Z = 14:00 in Washington (EDT, UTC-4).
@@ -32,6 +33,13 @@ describe('openStatus', () => {
   it('finds the same weekday next week when today\'s only session has ended', () => {
     const s = openStatus(weekly({ wed: [['10:00', '12:00']] }), at('2026-10-14T18:00:00Z')); // Wed 2pm
     expect(s).toMatchObject({ state: 'closed', opensAt: '10:00', opensDay: 'wed' });
+  });
+
+  it('says "next" when the next opening is the same weekday next week', () => {
+    const r = weekly({ wed: [['10:00', '12:00']] });
+    const s = openStatus(r, at('2026-10-14T18:00:00Z'));
+    expect(statusLine(r, s, 'en', at('2026-10-14T18:00:00Z'))).toMatch(/next Wed/);
+    expect(statusLine(r, s, 'es', at('2026-10-14T18:00:00Z'))).toMatch(/próximo mié/);
   });
 
   it('treats a 24:00 close as end of day', () => {

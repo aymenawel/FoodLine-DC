@@ -45,11 +45,11 @@ Put `ANTHROPIC_API_KEY=...` in `web/.env.local` and rebuild. Claude Haiku 5.5 th
 | ← → (or 1, 2, 3) | Citywide → Wards 7 & 8 live → Gap view |
 | P | Presentation mode (hides controls; hover top-right to reveal) |
 | Shift+S / "Load sample data" | Load 140 clearly labelled SAMPLE requests so the gap view has something to rank |
-| Shift+R / "Clear live requests" | Clear texts between judges (sample data stays) |
+| "Clear live requests" button | Clear texts between judges (sample data stays). Deliberately has no keyboard shortcut. |
 
 ## Text line commands
 
-`20032` · `Congress Heights` · `Minnesota Ave and Benning Rd` · `free food in Anacostia` · then `MORE`, `FREE`, `OPEN`, `DIRECTIONS 2`, `ALL`, `HELP`, `ESPAÑOL` / `ENGLISH` (Spanish: `MÁS`, `GRATIS`, `ABIERTO`, `DIRECCIONES 1`, `TODO`, `AYUDA`).
+`20032` · `Congress Heights` · `1535 Alabama Ave SE` · `Minnesota Ave and Benning Rd` · `free food in Anacostia` · then `MORE`, `FREE`, `OPEN`, `DIRECTIONS 2`, `ALL`, `HELP`, `ESPAÑOL` / `ENGLISH` (Spanish: `MÁS`, `GRATIS`, `ABIERTO`, `DIRECCIONES 1`, `TODO`, `AYUDA`).
 
 ## How it works
 

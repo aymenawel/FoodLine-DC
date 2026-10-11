@@ -78,8 +78,14 @@ function parsedIntersections(places: Places) {
 }
 
 function byIntersection(t: string, places: Places): Place | null {
+  // "any food open near alabama ave and stanton rd please": also try the words after the last near/by/in
+  const after = t.match(/^.*\b(?:near|by|around|in|on|off|en|cerca de|por)\s+(.+)$/);
+  return intersectionOf(t, places) ?? (after ? intersectionOf(after[1], places) : null);
+}
+
+function intersectionOf(t: string, places: Places): Place | null {
   const cleaned = t.replace(FILLER, '');
-  const parts = cleaned.split(SPLIT).map((p) => p.replace(FILLER, '').trim()).filter(Boolean);
+  const parts = cleaned.split(SPLIT).map((p) => streetPart(p.replace(FILLER, '').trim())).filter(Boolean);
   if (parts.length !== 2) return null;
   const [s1, s2] = parts.map(parseStreet);
   if (!s1.name || !s2.name) return null;

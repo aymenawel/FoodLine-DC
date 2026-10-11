@@ -11,6 +11,10 @@ export function getSession(id: string): ConvState | undefined {
   return s.state;
 }
 
+export function clearSessions() {
+  sessions.clear();
+}
+
 export function saveSession(id: string, state: ConvState) {
   sessions.set(id, { state, at: Date.now() });
   if (sessions.size > 5000) for (const [k, v] of sessions) if (Date.now() - v.at > TTL) sessions.delete(k);

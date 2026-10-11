@@ -52,7 +52,8 @@ export function useLive() {
     const fallback = setTimeout(startPolling, 3000);
     try {
       es = new EventSource('/api/stream');
-      es.addEventListener('hello', () => { clearTimeout(fallback); setMode('live'); });
+      // on every (re)connect, reload once so anything sent during a dropped connection appears
+      es.addEventListener('hello', () => { clearTimeout(fallback); setMode('live'); reload(); });
       es.addEventListener('request', (e) => add((JSON.parse((e as MessageEvent).data) as { request: StoredRequest }).request));
       es.addEventListener('reset', () => { setLatest(null); reload(); });
       es.addEventListener('seed', () => reload());
