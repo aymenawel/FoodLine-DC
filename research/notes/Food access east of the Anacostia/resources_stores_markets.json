@@ -1,0 +1,2095 @@
+[
+  {
+    "id": "giant-alabama-ave-se",
+    "name": "Giant Food (Alabama Ave SE)",
+    "type": "grocery",
+    "address": "1535 Alabama Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.846399,
+    "lng": -76.981824,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "tue": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "wed": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "thu": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "fri": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "sat": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ],
+      "sun": [
+        [
+          "07:00",
+          "21:00"
+        ]
+      ]
+    },
+    "schedule_note": "Store open 7am-9pm daily per Giant store page. Pharmacy has separate shorter hours: Mon-Fri 8am-9pm, Sat 9am-6pm, Sun 10am-5pm.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 610-6464",
+    "website": "https://stores.giantfood.com/dc/washington/1535-alabama-avenue-se",
+    "source_url": "https://stores.giantfood.com/dc/washington/1535-alabama-avenue-se",
+    "extra_source_urls": [
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+      "https://dchealth.dc.gov/node/122702"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Address, store hours and phone from Giant's live store page (checked 2026-10-10). SNAP: listed as an authorized SNAP retailer (\"Super Giant 384\") in USDA FNS SNAP retailer data updated 2026-10-07. WIC: listed on DC Health's WIC authorized-store page, which is undated (looks c. 2019-2020), so re-check. Ward 8 and \"present 2026 = Yes\" per the Open Data DC Grocery Store Locations layer (it notes \"Camp Simms\"). Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "lidl-skyland-town-center",
+    "name": "Lidl (Skyland Town Center)",
+    "type": "grocery",
+    "address": "2224 Town Center Dr SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Skyland",
+    "lat": 38.862193,
+    "lng": -76.968366,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "tue": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "wed": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "thu": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "fri": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "sat": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ],
+      "sun": [
+        [
+          "08:00",
+          "21:00"
+        ]
+      ]
+    },
+    "schedule_note": null,
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.lidl.com/s/en-US/stores/washington/town-center-drive-se-2224/",
+    "source_url": "https://www.lidl.com/s/en-US/stores/washington/town-center-drive-se-2224/",
+    "extra_source_urls": [
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Address and hours (8am-9pm every day) from Lidl's live store page (structured data, checked 2026-10-10). The store page lists no phone. SNAP: authorized SNAP retailer (\"Lidl 1436\") in USDA FNS data updated 2026-10-07. The Lidl page itself only mentions cash, credit and debit. WIC not confirmed: Lidl is not on DC Health's (old) WIC store list. Ward 7 and \"present 2026 = Yes\" per the Open Data DC Grocery Store Locations layer. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "safeway-alabama-ave-se",
+    "name": "Safeway (Alabama Ave SE)",
+    "type": "grocery",
+    "address": "2845 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.859839,
+    "lng": -76.966939,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "tue": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "wed": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "thu": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "fri": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "sat": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "sun": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ]
+    },
+    "schedule_note": "Store 6am-10pm daily. Pharmacy has separate hours with a 1:30-2pm lunch closure: Mon-Fri 8am-8pm, Sat 9am-6pm, Sun 10am-5pm.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 575-7525",
+    "website": "https://local.safeway.com/safeway/dc/washington/2845-alabama-ave-se.html",
+    "source_url": "https://local.safeway.com/safeway/dc/washington/2845-alabama-ave-se.html",
+    "extra_source_urls": [
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+      "https://dchealth.dc.gov/node/122702"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Address, hours and phone from Safeway's live store page (checked 2026-10-10). The page's payment list includes SNAP, EBT, WIC and eWIC. The store is also in USDA FNS SNAP data (2026-10-07) and on DC Health's WIC store page. Ward 7 per the Open Data DC grocery layer. Safeway's page labels the neighborhood \"Congress Heights\", which looks wrong, so neighborhood is left null. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "safeway-40th-st-ne",
+    "name": "Safeway (40th St NE / Minnesota Ave)",
+    "type": "grocery",
+    "address": "322 40th St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.893052,
+    "lng": -76.947244,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "tue": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "wed": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "thu": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "fri": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "sat": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ],
+      "sun": [
+        [
+          "06:00",
+          "22:00"
+        ]
+      ]
+    },
+    "schedule_note": "Store 6am-10pm daily. It is in the East River Park shopping center by Minnesota Ave & Benning Rd, where the FRESHFARM Minnesota Ave market runs on Thursdays (Jun-Nov).",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 397-2802",
+    "website": "https://local.safeway.com/safeway/dc/washington/322-40th-st-ne.html",
+    "source_url": "https://local.safeway.com/safeway/dc/washington/322-40th-st-ne.html",
+    "extra_source_urls": [
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+      "https://dchealth.dc.gov/node/122702",
+      "https://www.freshfarm.org/markets/minnesota-ave"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Address, hours and phone from Safeway's live store page (checked 2026-10-10). The page's payment list includes SNAP, EBT, WIC and eWIC. The store is also in USDA FNS SNAP data (2026-10-07) and on DC Health's WIC store page. Ward 7 per the Open Data DC grocery layer. Safeway's page labels the neighborhood \"Eckington\", which is wrong, so neighborhood is left null. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "dol-marion-barry-avenue-market",
+    "name": "Marion Barry Avenue Market & Cafe (Dreaming Out Loud)",
+    "type": "grocery",
+    "address": "1303 Marion Barry Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Anacostia",
+    "lat": 38.867048,
+    "lng": -76.986965,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [
+        [
+          "08:00",
+          "19:00"
+        ]
+      ],
+      "thu": [
+        [
+          "08:00",
+          "19:00"
+        ]
+      ],
+      "fri": [
+        [
+          "08:00",
+          "19:00"
+        ]
+      ],
+      "sat": [
+        [
+          "08:00",
+          "19:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Wed-Sat 8am-7pm per Dreaming Out Loud. Sunday is uncertain: one DOL page lists Sun 8am-7pm and another lists only Wed-Sat, so Sunday is encoded as closed. Mon/Tue are not listed on either page. Call or check before a Sunday visit.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": "unknown",
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://dreamingoutloud.org/marion-barry-avenue-market-and-cafe/",
+    "source_url": "https://dreamingoutloud.org/marion-barry-avenue-market-and-cafe/",
+    "extra_source_urls": [
+      "https://dreamingoutloud.org/marion-barry-avenue-market/",
+      "https://washingtonian.com/2025/10/10/new-anacostia-market-is-a-dream-come-true-for-community/",
+      "https://www.popville.com/2025/09/marion-barry-avenue-market-opens-in-anacostia/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Small nonprofit market and cafe (about 4,770 sq ft per the 2025 opening coverage), not a full-service supermarket. It sells produce, pantry staples, some fresh meat and prepared food. Opened Sept 27, 2025 (PoPville, Washingtonian, which places it in Ward 8). Hours come from DOL's pages (2026 copyright), with the Sunday conflict noted in schedule_note. SNAP: \"Marion Barry Avenue And Cafe\" at 1303 Marion Barry Ave SE is in USDA FNS SNAP retailer data updated 2026-10-07. WIC and Produce Plus not confirmed. No phone published (contact form at dreamingoutloud.org/contact). Geocoded with the Census geocoder using the street's former name (1303 Good Hope Rd SE), because \"Marion Barry Ave\" returned no match; the point agrees with USDA coordinates within about 25 m. Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "safeway-14th-st-se-hill-east",
+    "name": "Safeway (14th St SE, Hill East) - across the river",
+    "type": "grocery",
+    "address": "415 14th St SE, Washington, DC 20003",
+    "zip": "20003",
+    "neighborhood": "Capitol Hill",
+    "lat": 38.88388,
+    "lng": -76.985595,
+    "geocode_source": "census-geocoder",
+    "ward": 6,
+    "hours": {
+      "mon": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "tue": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "wed": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "thu": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "fri": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "sat": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ],
+      "sun": [
+        [
+          "05:00",
+          "24:00"
+        ]
+      ]
+    },
+    "schedule_note": "Store 5am-midnight daily (close encoded as 24:00). Pharmacy has separate hours. NOT east of the river: Ward 6, just west of the Pennsylvania Ave (Sousa) Bridge.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 920-5870",
+    "website": "https://local.safeway.com/safeway/dc/washington/415-14th-st-se.html",
+    "source_url": "https://local.safeway.com/safeway/dc/washington/415-14th-st-se.html",
+    "extra_source_urls": [
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Included as one of the allowed just-across-the-line stores: it is the nearest full-service supermarket across the Pennsylvania Ave bridge from Wards 7/8 and has long hours. No source was found saying east-of-river residents commonly use it, so this is a judgment call the user may want to drop. Ward 6 per the Open Data DC grocery layer, which matches the DC Ward 2022 boundary. Hours, phone and payment list (SNAP, EBT, WIC, eWIC) from Safeway's live store page. Also in USDA FNS SNAP data (2026-10-07). Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "freshfarm-thearc",
+    "name": "FRESHFARM THEARC Farmers Market",
+    "type": "farmers_market",
+    "address": "1901 Mississippi Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.843772,
+    "lng": -76.976177,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 10am-2pm, June 6 - Nov 21, 2026.",
+    "season": {
+      "start": "2026-06-06",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/thearc",
+    "source_url": "https://www.freshfarm.org/markets/thearc",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "FRESHFARM's market page shows Saturdays 10am-2pm, \"Open for Season\", Jun 6 - Nov 21. Both dates fall on Saturdays in 2026, matching the DC Health 2026 guide (Sat 10am-2pm, June-November). Ward 8 per the Open Data DC Farmers Market layer (2026 edition). FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "freshfarm-anacostia-community-museum",
+    "name": "FRESHFARM Anacostia Community Museum Farm Stand",
+    "type": "farmers_market",
+    "address": "1901 Fort Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.857147,
+    "lng": -76.976878,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 10am-2pm, April 18 - Nov 21, 2026. A farm stand run with the Smithsonian Anacostia Community Museum.",
+    "season": {
+      "start": "2026-04-18",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/anacostia-community-museum",
+    "source_url": "https://www.freshfarm.org/markets/anacostia-community-museum",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "The FRESHFARM page shows Saturdays 10am-2pm, Apr 18 - Nov 21, \"Open for Season\", and says the stand is \"in Ward 8\". The DC Health 2026 guide agrees (April-November). FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "freshfarm-minnesota-ave",
+    "name": "FRESHFARM Minnesota Ave Farmers Market",
+    "type": "farmers_market",
+    "address": "322 40th St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.893052,
+    "lng": -76.947244,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "13:00",
+          "16:00"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Thursdays 1-4pm, June 4 - Nov 19, 2026, in the East River Park shopping center parking lot (by Safeway, the library and CVS).",
+    "season": {
+      "start": "2026-06-04",
+      "end": "2026-11-19"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/minnesota-ave",
+    "source_url": "https://www.freshfarm.org/markets/minnesota-ave",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "The FRESHFARM page shows Thursdays 1-4pm, Jun 4 - Nov 19, \"Open for Season\", in the parking lot near Minnesota Ave & Benning Rd. Both dates are Thursdays in 2026. Matches the DC Health 2026 guide. The point uses the Safeway/shopping-center address 322 40th St NE, so the exact stall spot in the lot may differ. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "freshfarm-kenilworth-rec-center",
+    "name": "FRESHFARM Kenilworth Rec Center Farmers Market",
+    "type": "farmers_market",
+    "address": "4321 Ord St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Kenilworth",
+    "lat": 38.908489,
+    "lng": -76.941768,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "09:00",
+          "13:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 9am-1pm, June 6 - Nov 21, 2026.",
+    "season": {
+      "start": "2026-06-06",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/kenilworth-rec-center",
+    "source_url": "https://www.freshfarm.org/markets/kenilworth-rec-center",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "The FRESHFARM page shows Saturdays 9am-1pm, Jun 6 - Nov 21, \"Open for Season\". Matches the DC Health 2026 guide. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "freshfarm-cesar-chavez",
+    "name": "FRESHFARM Cesar Chavez Farm Stand",
+    "type": "farmers_market",
+    "address": "700 Parkside Pl NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Parkside",
+    "lat": 38.900328,
+    "lng": -76.949372,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "09:00",
+          "13:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 9am-1pm, June 6 - Nov 21, 2026, outside Cesar Chavez High School.",
+    "season": {
+      "start": "2026-06-06",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/cesar-chavez",
+    "source_url": "https://www.freshfarm.org/markets/cesar-chavez",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "The FRESHFARM page shows Saturdays 9am-1pm, Jun 6 - Nov 21, \"Open for Season\", outside Cesar Chavez High School in Parkside. Matches the DC Health 2026 guide. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "freshfarm-simon-elementary-farm-stand",
+    "name": "FRESHFARM Simon Elementary Farm Stand",
+    "type": "farmers_market",
+    "address": "401 Mississippi Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.836275,
+    "lng": -77.000657,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "14:30",
+          "17:30"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Thursdays 2:30-5:30pm, May 7 - Nov 19, 2026, at Simon Elementary School.",
+    "season": {
+      "start": "2026-05-07",
+      "end": "2026-11-19"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Listed as a public market in the DC Health 2026 guide; FRESHFARM's page does not say whether it is only for school families",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://www.freshfarm.org/markets/simon-farm-stand",
+    "source_url": "https://www.freshfarm.org/markets/simon-farm-stand",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://www.freshfarm.org/freshmatch",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "The FRESHFARM page shows Thursdays 2:30-5:30pm, May 7 - Nov 19, \"Open for Season\". Matches the DC Health 2026 guide. It is a school-site farm stand, so a hand-check of public access is advisable. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"]."
+  },
+  {
+    "id": "dol-kelly-miller-farmers-market",
+    "name": "Dreaming Out Loud's Kelly Miller Farmers Market",
+    "type": "farmers_market",
+    "address": "301 49th St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.892683,
+    "lng": -76.932835,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "13:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 10am-1pm, June 6 - Nov 21, 2026, in front of Kelly Miller Middle School.",
+    "season": {
+      "start": "2026-06-06",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://dreamingoutloud.org/farmers-markets/",
+    "source_url": "https://dreamingoutloud.org/farmers-markets/",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "DOL's farmers-markets page (2026 copyright) says markets run \"every Saturday from June 6th to November 21st\" and lists Kelly Miller at 301 49th St NE, Saturdays 10AM-1PM. Both dates are Saturdays in 2026, and the DC Health 2026 guide agrees. Benefits: the DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons. The Open Data DC Farmers Market layer (2026) lists SNAP, WIC FMNP, Senior FMNP, Produce Plus and Breadcoin, and says \"We double SNAP\". DOL's own page does not list benefits. WIC means WIC FMNP; eWIC was not confirmed. SNAP-authorized per USDA FNS data (2026-10-07). Contact: farmersmarkets@dreamingoutloud.org. Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "dol-anacostia-farmers-market",
+    "name": "Dreaming Out Loud's Anacostia Farmers Market",
+    "type": "farmers_market",
+    "address": "1303 Marion Barry Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Anacostia",
+    "lat": 38.867048,
+    "lng": -76.986965,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "11:00",
+          "14:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 11am-2pm, June 6 - Nov 21, 2026, outside DOL's Marion Barry Avenue Market.",
+    "season": {
+      "start": "2026-06-06",
+      "end": "2026-11-21"
+    },
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": "https://dreamingoutloud.org/farmers-markets/",
+    "source_url": "https://dreamingoutloud.org/farmers-markets/",
+    "extra_source_urls": [
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "DOL's farmers-markets page (2026) lists the Anacostia Farmers Market at 1303 Marion Barry Ave SE, Saturdays 11AM-2PM, June 6 - Nov 21. The DC Health 2026 guide and Open Data DC list the address as 1301 Marion Barry Ave SE (same block, same hours). Benefits per the DC Health 2026 guide icons (SNAP, Produce Plus/Senior/WIC FMNP, Matching). The Open Data DC 2026 layer adds \"We double SNAP\". WIC means WIC FMNP. Geocoded with the Census geocoder using the street's former name (1303 Good Hope Rd SE). Contact: farmersmarkets@dreamingoutloud.org. Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "ward-8-farmers-market",
+    "name": "Ward 8 Farmers Market",
+    "type": "farmers_market",
+    "address": "2724 Martin Luther King Jr Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.851987,
+    "lng": -76.995804,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 10am-2pm in the Red Lot at the Barns at St. Elizabeths (MLK Ave SE at Elm St). The DC Health 2026 guide says June-October, but the market's own (undated) site says June-September, so it may already be closed for the season. Exact 2026 dates not published.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-549-4786",
+    "website": "https://ward8farmersmarket.org/",
+    "source_url": "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+    "extra_source_urls": [
+      "https://ward8farmersmarket.org/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Confirmed for 2026 by the DC Health 2026 market guide (Sat 10am-2pm, June-October; SNAP, Produce Plus/Senior/WIC FMNP and Matching icons) and by the Open Data DC Farmers Market layer (created June 2026: Saturdays 10-2, \"Junes - October\"). The market's own website is undated (\"Celebrating 25 years\", 2020 copyright). It says Saturdays 10am-2pm June-September and lists Produce Plus, SNAP, WIC (FMNP), Senior FMNP and FreshMatch. Exact season dates unknown. USDA SNAP data lists \"Ward 8 Farmers Market\" at an older location (3200 6th St SE), so do not use that address. Contact: ward8fm@gmail.com. Hand-check whether it is still running in October 2026. Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "udc-east-capitol-farmers-market",
+    "name": "UDC East Capitol Farmers Market",
+    "type": "farmers_market",
+    "address": "5929 East Capitol St SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.889621,
+    "lng": -76.915432,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "15:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Saturdays 10am-3pm. The DC Health 2026 guide says May-October and the Open Data DC 2026 layer says May-November. Exact dates not published, and no operator page was found.",
+    "season": null,
+    "free": false,
+    "snap": "unknown",
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+    "extra_source_urls": [
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed in the DC Health 2026 market guide (Sat 10am-3pm, May-October, with only the Produce Plus/Senior/WIC FMNP icon, i.e. no SNAP or matching icon) and in the Open Data DC Farmers Market layer (2026), which lists Produce Plus, SNAP (market and individual farmer), Senior FMNP and WIC FMNP. Because of the conflict, snap is \"unknown\". The UDC/Farmers Alliance page linked from Open Data DC returns 404 and no 2026 operator source was found. Older UDC sources give the farm address as 5900/5901 East Capitol St SE, across from Capitol Heights Metro. Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "arcadia-mobile-market-parkside-mayfair",
+    "name": "Arcadia Mobile Market - Parkside/Mayfair",
+    "type": "mobile_market",
+    "address": "600 Kenilworth Ter NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Parkside/Mayfair",
+    "lat": 38.89831,
+    "lng": -76.95066,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [
+        [
+          "15:00",
+          "17:00"
+        ]
+      ],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Wednesdays, weekly since May 20, 2026. Arcadia's calendar and the DC Health guide say 3-5pm, while Arcadia's web page says 2:30-5pm (encoded as 3-5pm). The DC Health guide says the season runs May-December; no end date published.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(571) 384-8845",
+    "website": "https://www.arcadiafood.org/mobile-market-1",
+    "source_url": "https://www.arcadiafood.org/mobile-market-1",
+    "extra_source_urls": [
+      "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Arcadia's \"2026 Mobile Market Schedule\" lists Parkside/Mayfair, Wednesdays, 600 Kenilworth Terrace NE. Its public Google Calendar has a weekly Wednesday 3:00-5:00pm event starting 2026-05-20 (location given as \"600 Kenilworth Avenue Northeast\"). The DC Health 2026 guide and Open Data DC list 650 Kenilworth Ter NE, and Open Data DC says \"Across from The Grove Apts\". These points are about 160 m apart, so the exact curb spot should be hand-checked. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "arcadia-mobile-market-oxon-run",
+    "name": "Arcadia Mobile Market - Oxon Run",
+    "type": "mobile_market",
+    "address": "3700 9th St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.834921,
+    "lng": -76.994132,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "10:30",
+          "12:30"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Thursdays 10:30am-12:30pm, weekly since May 21, 2026. The DC Health guide says the season runs May-December; no end date published. The DC Health guide gives the location as Wheeler Rd SE & Valley Ave SE.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(571) 384-8845",
+    "website": "https://www.arcadiafood.org/mobile-market-1",
+    "source_url": "https://www.arcadiafood.org/mobile-market-1",
+    "extra_source_urls": [
+      "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Arcadia's 2026 schedule page and Google Calendar (weekly Thursday 10:30am-12:30pm from 2026-05-21) give the address as 3700 9th St SE. The DC Health 2026 guide lists \"Wheeler Rd SE & Valley Ave SE\" for the same day and time. Open Data DC uses that intersection, says \"Across from The Overlook\", and shows an older Thu 3-6pm time. The two points are about 220 m apart. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "arcadia-mobile-market-bellevue-library",
+    "name": "Arcadia Mobile Market - Bellevue Library",
+    "type": "mobile_market",
+    "address": "115 Atlantic St SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Bellevue",
+    "lat": 38.831251,
+    "lng": -77.009419,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "15:00",
+          "17:00"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Thursdays, weekly since May 21, 2026, at the (William O. Lockridge) Bellevue Neighborhood Library. Arcadia's calendar and the DC Health guide say 3-5pm, while Arcadia's web page says 2:30-5pm (encoded as 3-5pm). The DC Health guide says the season runs May-December; no end date published.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": true,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": "(571) 384-8845",
+    "website": "https://www.arcadiafood.org/mobile-market-1",
+    "source_url": "https://www.arcadiafood.org/mobile-market-1",
+    "extra_source_urls": [
+      "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+      "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Arcadia's 2026 schedule, its Google Calendar (weekly Thursday 3:00-5:00pm from 2026-05-21) and the DC Health 2026 guide all give 115 Atlantic St SW. Coordinates come from the Open Data DC Farmers Market layer (MAR-matched), because the Census geocoder matched 115 Atlantic St SE, a different block about 350 m east. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-a-1-grocery",
+    "name": "A-1 Grocery",
+    "type": "corner_store",
+    "address": "615 Division Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.897826,
+    "lng": -76.925787,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA FNS SNAP data (2026-10-07) lists \"A1 Grocery Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-circle-seven-express",
+    "name": "Circle Seven Express",
+    "type": "corner_store",
+    "address": "740 Kenilworth Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.900531,
+    "lng": -76.94645,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"CIRCLE 7 EXPRESS FOOD STORE\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-dollar-plus-division-ave",
+    "name": "Dollar Plus Food Store (Division Ave)",
+    "type": "corner_store",
+    "address": "609 Division Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.897794,
+    "lng": -76.925798,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Not in the 2024 Open Data DC layer, so ward is null (the DC Ward 2022 boundary puts the point in Ward 7). USDA SNAP data lists \"Dollar Plus C Store 1\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-dollar-plus-pennsylvania-ave",
+    "name": "Dollar Plus Food Store (Pennsylvania Ave)",
+    "type": "corner_store",
+    "address": "2529 Pennsylvania Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.873261,
+    "lng": -76.970497,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match not checked, WIC not checked. Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The 2024 Open Data DC layer showed SNAP Match here, but the 2026 DCCK list does not. USDA SNAP data lists \"Dollar Plus\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-e-market",
+    "name": "E Market",
+    "type": "corner_store",
+    "address": "4202 Benning Rd NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.892938,
+    "lng": -76.94244,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": "unknown",
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT NOT checked, SNAP Match not checked, WIC not checked. Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The 2026 DCCK list has no SNAP check for this store. USDA SNAP data (2026-10-07) does list a SNAP-authorized grocery \"Menkem LLC\" at this address, possibly the same business under its legal name; unconfirmed, so snap stays \"unknown\". Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-ken-mart",
+    "name": "Ken Mart Inc.",
+    "type": "corner_store",
+    "address": "1507 Kenilworth Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.909754,
+    "lng": -76.93574,
+    "geocode_source": "open-data-dc",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The Census geocoder found no match, so coordinates come from the Open Data DC Healthy Corner Store layer (they agree with USDA SNAP coordinates within about 10 m). USDA SNAP data lists \"Ken Mart\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-menicks-market",
+    "name": "Menick's Market",
+    "type": "corner_store",
+    "address": "4401 Nannie Helen Burroughs Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.900482,
+    "lng": -76.939159,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Not in the 2024 Open Data DC layer, so ward is null (the DC Ward 2022 boundary puts the point in Ward 7). USDA SNAP data lists \"Menick's Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-minnesota-big-market",
+    "name": "Minnesota Big Market",
+    "type": "corner_store",
+    "address": "2924 Minnesota Ave SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.87612,
+    "lng": -76.965554,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match not checked, WIC not checked. Same address was \"G&G Market\" (Ward 7) in the 2024 Open Data DC layer, so it appears to be renamed. USDA SNAP data lists \"Minnesota Big Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-texas-avenue-convenience",
+    "name": "Texas Avenue Convenience Store",
+    "type": "corner_store",
+    "address": "4350 Texas Ave SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.882799,
+    "lng": -76.942253,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Texas Convenience Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-thomas-and-sons-food-market",
+    "name": "Thomas & Sons Food Market",
+    "type": "corner_store",
+    "address": "3425 Benning Rd NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": null,
+    "lat": 38.896281,
+    "lng": -76.956819,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Thomas And Sons Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-alabama-convenience",
+    "name": "Alabama Convenience",
+    "type": "corner_store",
+    "address": "2209 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.850947,
+    "lng": -76.974088,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match not checked, WIC not checked. Not in the 2024 Open Data DC layer, so ward is null (the DC Ward 2022 boundary puts the point in Ward 8). USDA SNAP data lists \"Alabama Convienence\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-best-convenience-store",
+    "name": "Best Convenience Store",
+    "type": "corner_store",
+    "address": "1535 U St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.865419,
+    "lng": -76.982996,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Not in the 2024 Open Data DC layer, so ward is null (the DC Ward 2022 boundary puts the point in Ward 8, Anacostia). USDA SNAP data lists \"Best Convenience Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-chesapeake-big-market",
+    "name": "Chesapeake Big Market",
+    "type": "corner_store",
+    "address": "601 Chesapeake St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.829147,
+    "lng": -76.998424,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Chesapeake Big Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-dc-food-market",
+    "name": "DC Food Market",
+    "type": "corner_store",
+    "address": "2200 16th St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.863551,
+    "lng": -76.982621,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Dc Food Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-elmira-market",
+    "name": "Elmira Market",
+    "type": "corner_store",
+    "address": "4401 South Capitol St SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.825988,
+    "lng": -77.007375,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The address is in the SW quadrant (Bellevue), still in Ward 8 east of the rivers. USDA SNAP data lists \"Elmira Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-fort-drum-market",
+    "name": "Fort Drum Market",
+    "type": "corner_store",
+    "address": "4686 Martin Luther King Jr Ave SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.822358,
+    "lng": -77.011278,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). The DCCK 2026 list writes \"4686 Martin Luther King Jr Avenue SE\", but Open Data DC (MAR), USDA SNAP data and the Census geocoder all use the SW quadrant, so SW is used here. Ward per the Open Data DC Healthy Corner Store layer (2024 edition). Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-grubbs-southeast-pharmacy",
+    "name": "Grubb's Southeast Pharmacy",
+    "type": "corner_store",
+    "address": "1800 Martin Luther King Jr Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.868188,
+    "lng": -76.988201,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). This is a pharmacy/mini-mart in the Healthy Corners program. Ward per the Open Data DC Healthy Corner Store layer (2024 edition). Also on DC Health's WIC authorized-store page (\"Grubbs Southeast Pharmacy & Mini Mart\"). USDA SNAP data lists it. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-holiday-market",
+    "name": "Holiday Market",
+    "type": "corner_store",
+    "address": "3509 Wheeler Rd SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.839779,
+    "lng": -76.993672,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The 2024 Open Data DC layer flagged this store as a WIC vendor, but the 2026 DCCK list does not, so WIC is \"unknown\". USDA SNAP data (2026-10-07) lists this address as \"Ram Grocery\" (DCCK as grantee), which may be the legal name. Hand-check the storefront name. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-liffs-market",
+    "name": "Liff's Market",
+    "type": "corner_store",
+    "address": "600 Alabama Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.843209,
+    "lng": -76.997611,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Liffs Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-mellon-market",
+    "name": "Mellon Market",
+    "type": "corner_store",
+    "address": "2921 Martin Luther King Jr Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.845477,
+    "lng": -76.997183,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Mellon Convenience Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-nams-market",
+    "name": "Nam's Market",
+    "type": "corner_store",
+    "address": "1327 W St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.864301,
+    "lng": -76.986797,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Nam's Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-quality-convenience-store",
+    "name": "Quality Convenience Store",
+    "type": "corner_store",
+    "address": "2922 Martin Luther King Jr Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.84542,
+    "lng": -76.997056,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Not in the 2024 Open Data DC layer, so ward is null (the DC Ward 2022 boundary puts the point in Ward 8). USDA SNAP data lists \"Quality 01 Convenience Store\" at \"2922 1/2 Martin Luther King Jr Ave SE\". Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-shipley-super-market",
+    "name": "Shipley Super Market",
+    "type": "corner_store",
+    "address": "2283 Savannah St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.8479,
+    "lng": -76.971257,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Shipley Super Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-stanton-supermarket",
+    "name": "Stanton Supermarket",
+    "type": "corner_store",
+    "address": "1453 Howard Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.858291,
+    "lng": -76.987259,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": true,
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). DCCK's Healthy Corners page highlights its \"produce expansion at Stanton Supermarket in Ward 8\". Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists it. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-surprise-grocery",
+    "name": "Surprise Grocery",
+    "type": "corner_store",
+    "address": "2233 Minnesota Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.871605,
+    "lng": -76.974327,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Surprise Market 1\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-the-fresh-food-factory",
+    "name": "The Fresh Food Factory",
+    "type": "corner_store",
+    "address": "1110 Oak Dr SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.846153,
+    "lng": -76.990746,
+    "geocode_source": "census-geocoder",
+    "ward": null,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). The 2024 Open Data DC layer had this store at 1231 Good Hope Rd SE. Both the 2026 DCCK list and USDA SNAP data (2026-10-07) now give 1110 Oak Dr SE (St. Elizabeths East campus), so it appears to have moved; ward left null. The Census geocoder matched \"1110 OAK ST\" in 20032, which agrees with USDA coordinates within about 50 m. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-top-mart",
+    "name": "Top Mart",
+    "type": "corner_store",
+    "address": "3109 Martin Luther King Jr Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.843438,
+    "lng": -76.999521,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Top Mart Inc 1\" at 3109 MLK Jr Ave SE, Ste B. The 2024 Open Data DC layer did not show SNAP Match here, but the 2026 DCCK list does. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-wheeler-market",
+    "name": "Wheeler Market",
+    "type": "corner_store",
+    "address": "4133 Wheeler Rd SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": null,
+    "lat": 38.833668,
+    "lng": -76.989913,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Wheeler Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  },
+  {
+    "id": "hc-zemen-market",
+    "name": "Zemen Market",
+    "type": "corner_store",
+    "address": "2401 Martin Luther King Jr Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": null,
+    "lat": 38.862779,
+    "lng": -76.992347,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+    "season": null,
+    "free": false,
+    "snap": true,
+    "wic": "unknown",
+    "produce_plus": false,
+    "eligibility": "Open to all",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+    "extra_source_urls": [
+      "https://dccentralkitchen.org/healthy-corners/",
+      "https://dccentralkitchen.org/benefit-programs/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Same address was \"Service Quick\" (Ward 8) in the 2024 Open Data DC layer, so it appears to be renamed. USDA SNAP data lists \"Zemen Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"]."
+  }
+]

@@ -1,0 +1,7 @@
+node_modules/
+data/raw/
+web/.next/
+web/.data/
+.env*
+!.env.example
+*.log

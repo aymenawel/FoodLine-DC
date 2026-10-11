@@ -1,0 +1,18 @@
+{
+  "name": "dc-food-access-geo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Download and process Open Data DC layers for the food access map (Wards 7 & 8).",
+  "type": "module",
+  "scripts": {
+    "download": "node download.mjs",
+    "process": "node process.mjs",
+    "stats": "node stats.mjs",
+    "all": "node download.mjs && node process.mjs && node stats.mjs && node readme.mjs",
+    "readme": "node readme.mjs"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.4.0",
+    "mapshaper": "^0.7.83"
+  }
+}

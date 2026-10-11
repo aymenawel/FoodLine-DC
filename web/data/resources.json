@@ -1,0 +1,2453 @@
+{
+  "generated_at": "2026-10-11T01:54:17.314Z",
+  "generated_by": "scripts/geo/build-resources.mjs",
+  "note": "Curated core directory for Wards 7 and 8 (east of the Anacostia). Every entry needs a human check before the event.",
+  "count": 50,
+  "resources": [
+    {
+      "id": "giant-alabama-ave-se",
+      "name": "Giant Food (Alabama Ave SE)",
+      "type": "grocery",
+      "address": "1535 Alabama Ave SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Congress Heights",
+      "lat": 38.846399,
+      "lng": -76.981824,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "tue": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "wed": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "thu": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "fri": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "sat": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ],
+        "sun": [
+          [
+            "07:00",
+            "21:00"
+          ]
+        ]
+      },
+      "schedule_note": "Store open 7am-9pm daily per Giant store page. Pharmacy has separate shorter hours: Mon-Fri 8am-9pm, Sat 9am-6pm, Sun 10am-5pm.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 610-6464",
+      "website": "https://stores.giantfood.com/dc/washington/1535-alabama-avenue-se",
+      "source_url": "https://stores.giantfood.com/dc/washington/1535-alabama-avenue-se",
+      "extra_source_urls": [
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+        "https://dchealth.dc.gov/node/122702"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Address, store hours and phone from Giant's live store page (checked 2026-10-10). SNAP: listed as an authorized SNAP retailer (\"Super Giant 384\") in USDA FNS SNAP retailer data updated 2026-10-07. WIC: listed on DC Health's WIC authorized-store page, which is undated (looks c. 2019-2020), so re-check. Ward 8 and \"present 2026 = Yes\" per the Open Data DC Grocery Store Locations layer (it notes \"Camp Simms\"). Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "lidl-skyland-town-center",
+      "name": "Lidl (Skyland Town Center)",
+      "type": "grocery",
+      "address": "2224 Town Center Dr SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Skyland",
+      "lat": 38.862193,
+      "lng": -76.968366,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "tue": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "wed": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "thu": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "fri": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "sat": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ],
+        "sun": [
+          [
+            "08:00",
+            "21:00"
+          ]
+        ]
+      },
+      "schedule_note": null,
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.lidl.com/s/en-US/stores/washington/town-center-drive-se-2224/",
+      "source_url": "https://www.lidl.com/s/en-US/stores/washington/town-center-drive-se-2224/",
+      "extra_source_urls": [
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Address and hours (8am-9pm every day) from Lidl's live store page (structured data, checked 2026-10-10). The store page lists no phone. SNAP: authorized SNAP retailer (\"Lidl 1436\") in USDA FNS data updated 2026-10-07. The Lidl page itself only mentions cash, credit and debit. WIC not confirmed: Lidl is not on DC Health's (old) WIC store list. Ward 7 and \"present 2026 = Yes\" per the Open Data DC Grocery Store Locations layer. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "safeway-alabama-ave-se",
+      "name": "Safeway (Alabama Ave SE)",
+      "type": "grocery",
+      "address": "2845 Alabama Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": null,
+      "lat": 38.859839,
+      "lng": -76.966939,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "tue": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "wed": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "thu": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "fri": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "sat": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "sun": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ]
+      },
+      "schedule_note": "Store 6am-10pm daily. Pharmacy has separate hours with a 1:30-2pm lunch closure: Mon-Fri 8am-8pm, Sat 9am-6pm, Sun 10am-5pm.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 575-7525",
+      "website": "https://local.safeway.com/safeway/dc/washington/2845-alabama-ave-se.html",
+      "source_url": "https://local.safeway.com/safeway/dc/washington/2845-alabama-ave-se.html",
+      "extra_source_urls": [
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+        "https://dchealth.dc.gov/node/122702"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Address, hours and phone from Safeway's live store page (checked 2026-10-10). The page's payment list includes SNAP, EBT, WIC and eWIC. The store is also in USDA FNS SNAP data (2026-10-07) and on DC Health's WIC store page. Ward 7 per the Open Data DC grocery layer. Safeway's page labels the neighborhood \"Congress Heights\", which looks wrong, so neighborhood is left null. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "safeway-40th-st-ne",
+      "name": "Safeway (40th St NE / Minnesota Ave)",
+      "type": "grocery",
+      "address": "322 40th St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.893052,
+      "lng": -76.947244,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "tue": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "wed": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "thu": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "fri": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "sat": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ],
+        "sun": [
+          [
+            "06:00",
+            "22:00"
+          ]
+        ]
+      },
+      "schedule_note": "Store 6am-10pm daily. It is in the East River Park shopping center by Minnesota Ave & Benning Rd, where the FRESHFARM Minnesota Ave market runs on Thursdays (Jun-Nov).",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 397-2802",
+      "website": "https://local.safeway.com/safeway/dc/washington/322-40th-st-ne.html",
+      "source_url": "https://local.safeway.com/safeway/dc/washington/322-40th-st-ne.html",
+      "extra_source_urls": [
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+        "https://dchealth.dc.gov/node/122702",
+        "https://www.freshfarm.org/markets/minnesota-ave"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Address, hours and phone from Safeway's live store page (checked 2026-10-10). The page's payment list includes SNAP, EBT, WIC and eWIC. The store is also in USDA FNS SNAP data (2026-10-07) and on DC Health's WIC store page. Ward 7 per the Open Data DC grocery layer. Safeway's page labels the neighborhood \"Eckington\", which is wrong, so neighborhood is left null. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "dol-marion-barry-avenue-market",
+      "name": "Marion Barry Avenue Market & Cafe (Dreaming Out Loud)",
+      "type": "grocery",
+      "address": "1303 Marion Barry Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Anacostia",
+      "lat": 38.867048,
+      "lng": -76.986965,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [
+          [
+            "08:00",
+            "19:00"
+          ]
+        ],
+        "thu": [
+          [
+            "08:00",
+            "19:00"
+          ]
+        ],
+        "fri": [
+          [
+            "08:00",
+            "19:00"
+          ]
+        ],
+        "sat": [
+          [
+            "08:00",
+            "19:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Wed-Sat 8am-7pm per Dreaming Out Loud. Sunday is uncertain: one DOL page lists Sun 8am-7pm and another lists only Wed-Sat, so Sunday is encoded as closed. Mon/Tue are not listed on either page. Call or check before a Sunday visit.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": "unknown",
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://dreamingoutloud.org/marion-barry-avenue-market-and-cafe/",
+      "source_url": "https://dreamingoutloud.org/marion-barry-avenue-market-and-cafe/",
+      "extra_source_urls": [
+        "https://dreamingoutloud.org/marion-barry-avenue-market/",
+        "https://washingtonian.com/2025/10/10/new-anacostia-market-is-a-dream-come-true-for-community/",
+        "https://www.popville.com/2025/09/marion-barry-avenue-market-opens-in-anacostia/",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Small nonprofit market and cafe (about 4,770 sq ft per the 2025 opening coverage), not a full-service supermarket. It sells produce, pantry staples, some fresh meat and prepared food. Opened Sept 27, 2025 (PoPville, Washingtonian, which places it in Ward 8). Hours come from DOL's pages (2026 copyright), with the Sunday conflict noted in schedule_note. SNAP: \"Marion Barry Avenue And Cafe\" at 1303 Marion Barry Ave SE is in USDA FNS SNAP retailer data updated 2026-10-07. WIC and Produce Plus not confirmed. No phone published (contact form at dreamingoutloud.org/contact). Geocoded with the Census geocoder using the street's former name (1303 Good Hope Rd SE), because \"Marion Barry Ave\" returned no match; the point agrees with USDA coordinates within about 25 m. Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-thearc",
+      "name": "FRESHFARM THEARC Farmers Market",
+      "type": "farmers_market",
+      "address": "1901 Mississippi Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": null,
+      "lat": 38.843772,
+      "lng": -76.976177,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 10am-2pm, June 6 - Nov 21, 2026.",
+      "season": {
+        "start": "2026-06-06",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/thearc",
+      "source_url": "https://www.freshfarm.org/markets/thearc",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "FRESHFARM's market page shows Saturdays 10am-2pm, \"Open for Season\", Jun 6 - Nov 21. Both dates fall on Saturdays in 2026, matching the DC Health 2026 guide (Sat 10am-2pm, June-November). Ward 8 per the Open Data DC Farmers Market layer (2026 edition). FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-anacostia-community-museum",
+      "name": "FRESHFARM Anacostia Community Museum Farm Stand",
+      "type": "farmers_market",
+      "address": "1901 Fort Pl SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": null,
+      "lat": 38.857147,
+      "lng": -76.976878,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 10am-2pm, April 18 - Nov 21, 2026. A farm stand run with the Smithsonian Anacostia Community Museum.",
+      "season": {
+        "start": "2026-04-18",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/anacostia-community-museum",
+      "source_url": "https://www.freshfarm.org/markets/anacostia-community-museum",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "The FRESHFARM page shows Saturdays 10am-2pm, Apr 18 - Nov 21, \"Open for Season\", and says the stand is \"in Ward 8\". The DC Health 2026 guide agrees (April-November). FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-minnesota-ave",
+      "name": "FRESHFARM Minnesota Ave Farmers Market",
+      "type": "farmers_market",
+      "address": "322 40th St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.893052,
+      "lng": -76.947244,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "13:00",
+            "16:00"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Thursdays 1-4pm, June 4 - Nov 19, 2026, in the East River Park shopping center parking lot (by Safeway, the library and CVS).",
+      "season": {
+        "start": "2026-06-04",
+        "end": "2026-11-19"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/minnesota-ave",
+      "source_url": "https://www.freshfarm.org/markets/minnesota-ave",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "The FRESHFARM page shows Thursdays 1-4pm, Jun 4 - Nov 19, \"Open for Season\", in the parking lot near Minnesota Ave & Benning Rd. Both dates are Thursdays in 2026. Matches the DC Health 2026 guide. The point uses the Safeway/shopping-center address 322 40th St NE, so the exact stall spot in the lot may differ. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-kenilworth-rec-center",
+      "name": "FRESHFARM Kenilworth Rec Center Farmers Market",
+      "type": "farmers_market",
+      "address": "4321 Ord St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Kenilworth",
+      "lat": 38.908489,
+      "lng": -76.941768,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 9am-1pm, June 6 - Nov 21, 2026.",
+      "season": {
+        "start": "2026-06-06",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/kenilworth-rec-center",
+      "source_url": "https://www.freshfarm.org/markets/kenilworth-rec-center",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "The FRESHFARM page shows Saturdays 9am-1pm, Jun 6 - Nov 21, \"Open for Season\". Matches the DC Health 2026 guide. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-cesar-chavez",
+      "name": "FRESHFARM Cesar Chavez Farm Stand",
+      "type": "farmers_market",
+      "address": "700 Parkside Pl NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Parkside",
+      "lat": 38.900328,
+      "lng": -76.949372,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "09:00",
+            "13:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 9am-1pm, June 6 - Nov 21, 2026, outside Cesar Chavez High School.",
+      "season": {
+        "start": "2026-06-06",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/cesar-chavez",
+      "source_url": "https://www.freshfarm.org/markets/cesar-chavez",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "The FRESHFARM page shows Saturdays 9am-1pm, Jun 6 - Nov 21, \"Open for Season\", outside Cesar Chavez High School in Parkside. Matches the DC Health 2026 guide. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "freshfarm-simon-elementary-farm-stand",
+      "name": "FRESHFARM Simon Elementary Farm Stand",
+      "type": "farmers_market",
+      "address": "401 Mississippi Ave SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": null,
+      "lat": 38.836275,
+      "lng": -77.000657,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "14:30",
+            "17:30"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Thursdays 2:30-5:30pm, May 7 - Nov 19, 2026, at Simon Elementary School.",
+      "season": {
+        "start": "2026-05-07",
+        "end": "2026-11-19"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Listed as a public market in the DC Health 2026 guide; FRESHFARM's page does not say whether it is only for school families",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://www.freshfarm.org/markets/simon-farm-stand",
+      "source_url": "https://www.freshfarm.org/markets/simon-farm-stand",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/freshmatch",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "The FRESHFARM page shows Thursdays 2:30-5:30pm, May 7 - Nov 19, \"Open for Season\". Matches the DC Health 2026 guide. It is a school-site farm stand, so a hand-check of public access is advisable. FRESHFARM says all its markets accept SNAP/EBT, WIC and Senior FMNP checks. FreshMatch gives a dollar-for-dollar match on federal benefits spent at market while annual funding lasts (no cap published). The DC Health 2026 market guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons for this market. WIC here means WIC Farmers Market Nutrition Program benefits; it was not confirmed that the regular eWIC card works. Contact: hello@freshfarm.org (no market phone). Languages: FRESHFARM publishes FreshMatch rack cards in English, Spanish, Simplified/Traditional Chinese, Vietnamese, Amharic and Russian, but on-site language help is not stated, so languages is [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "dol-kelly-miller-farmers-market",
+      "name": "Dreaming Out Loud's Kelly Miller Farmers Market",
+      "type": "farmers_market",
+      "address": "301 49th St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.892683,
+      "lng": -76.932835,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "13:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 10am-1pm, June 6 - Nov 21, 2026, in front of Kelly Miller Middle School.",
+      "season": {
+        "start": "2026-06-06",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://dreamingoutloud.org/farmers-markets/",
+      "source_url": "https://dreamingoutloud.org/farmers-markets/",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "DOL's farmers-markets page (2026 copyright) says markets run \"every Saturday from June 6th to November 21st\" and lists Kelly Miller at 301 49th St NE, Saturdays 10AM-1PM. Both dates are Saturdays in 2026, and the DC Health 2026 guide agrees. Benefits: the DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC farmers-market programs and Matching icons. The Open Data DC Farmers Market layer (2026) lists SNAP, WIC FMNP, Senior FMNP, Produce Plus and Breadcoin, and says \"We double SNAP\". DOL's own page does not list benefits. WIC means WIC FMNP; eWIC was not confirmed. SNAP-authorized per USDA FNS data (2026-10-07). Contact: farmersmarkets@dreamingoutloud.org. Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "dol-anacostia-farmers-market",
+      "name": "Dreaming Out Loud's Anacostia Farmers Market",
+      "type": "farmers_market",
+      "address": "1303 Marion Barry Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Anacostia",
+      "lat": 38.867048,
+      "lng": -76.986965,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "11:00",
+            "14:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 11am-2pm, June 6 - Nov 21, 2026, outside DOL's Marion Barry Avenue Market.",
+      "season": {
+        "start": "2026-06-06",
+        "end": "2026-11-21"
+      },
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": "https://dreamingoutloud.org/farmers-markets/",
+      "source_url": "https://dreamingoutloud.org/farmers-markets/",
+      "extra_source_urls": [
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "DOL's farmers-markets page (2026) lists the Anacostia Farmers Market at 1303 Marion Barry Ave SE, Saturdays 11AM-2PM, June 6 - Nov 21. The DC Health 2026 guide and Open Data DC list the address as 1301 Marion Barry Ave SE (same block, same hours). Benefits per the DC Health 2026 guide icons (SNAP, Produce Plus/Senior/WIC FMNP, Matching). The Open Data DC 2026 layer adds \"We double SNAP\". WIC means WIC FMNP. Geocoded with the Census geocoder using the street's former name (1303 Good Hope Rd SE). Contact: farmersmarkets@dreamingoutloud.org. Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "ward-8-farmers-market",
+      "name": "Ward 8 Farmers Market",
+      "type": "farmers_market",
+      "address": "2724 Martin Luther King Jr Ave SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Congress Heights",
+      "lat": 38.851987,
+      "lng": -76.995804,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 10am-2pm in the Red Lot at the Barns at St. Elizabeths (MLK Ave SE at Elm St). The DC Health 2026 guide says June-October, but the market's own (undated) site says June-September, so it may already be closed for the season. Exact 2026 dates not published.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "202-549-4786",
+      "website": "https://ward8farmersmarket.org/",
+      "source_url": "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "extra_source_urls": [
+        "https://ward8farmersmarket.org/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Confirmed for 2026 by the DC Health 2026 market guide (Sat 10am-2pm, June-October; SNAP, Produce Plus/Senior/WIC FMNP and Matching icons) and by the Open Data DC Farmers Market layer (created June 2026: Saturdays 10-2, \"Junes - October\"). The market's own website is undated (\"Celebrating 25 years\", 2020 copyright). It says Saturdays 10am-2pm June-September and lists Produce Plus, SNAP, WIC (FMNP), Senior FMNP and FreshMatch. Exact season dates unknown. USDA SNAP data lists \"Ward 8 Farmers Market\" at an older location (3200 6th St SE), so do not use that address. Contact: ward8fm@gmail.com. Hand-check whether it is still running in October 2026. Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "udc-east-capitol-farmers-market",
+      "name": "UDC East Capitol Farmers Market",
+      "type": "farmers_market",
+      "address": "5929 East Capitol St SE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.889621,
+      "lng": -76.915432,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "15:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Saturdays 10am-3pm. The DC Health 2026 guide says May-October and the Open Data DC 2026 layer says May-November. Exact dates not published, and no operator page was found.",
+      "season": null,
+      "free": false,
+      "snap": "unknown",
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+      "extra_source_urls": [
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed in the DC Health 2026 market guide (Sat 10am-3pm, May-October, with only the Produce Plus/Senior/WIC FMNP icon, i.e. no SNAP or matching icon) and in the Open Data DC Farmers Market layer (2026), which lists Produce Plus, SNAP (market and individual farmer), Senior FMNP and WIC FMNP. Because of the conflict, snap is \"unknown\". The UDC/Farmers Alliance page linked from Open Data DC returns 404 and no 2026 operator source was found. Older UDC sources give the farm address as 5900/5901 East Capitol St SE, across from Capitol Heights Metro. Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "arcadia-mobile-market-parkside-mayfair",
+      "name": "Arcadia Mobile Market - Parkside/Mayfair",
+      "type": "mobile_market",
+      "address": "600 Kenilworth Ter NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Parkside/Mayfair",
+      "lat": 38.89831,
+      "lng": -76.95066,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [
+          [
+            "15:00",
+            "17:00"
+          ]
+        ],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Wednesdays, weekly since May 20, 2026. Arcadia's calendar and the DC Health guide say 3-5pm, while Arcadia's web page says 2:30-5pm (encoded as 3-5pm). The DC Health guide says the season runs May-December; no end date published.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(571) 384-8845",
+      "website": "https://www.arcadiafood.org/mobile-market-1",
+      "source_url": "https://www.arcadiafood.org/mobile-market-1",
+      "extra_source_urls": [
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Arcadia's \"2026 Mobile Market Schedule\" lists Parkside/Mayfair, Wednesdays, 600 Kenilworth Terrace NE. Its public Google Calendar has a weekly Wednesday 3:00-5:00pm event starting 2026-05-20 (location given as \"600 Kenilworth Avenue Northeast\"). The DC Health 2026 guide and Open Data DC list 650 Kenilworth Ter NE, and Open Data DC says \"Across from The Grove Apts\". These points are about 160 m apart, so the exact curb spot should be hand-checked. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "arcadia-mobile-market-oxon-run",
+      "name": "Arcadia Mobile Market - Oxon Run",
+      "type": "mobile_market",
+      "address": "3700 9th St SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": null,
+      "lat": 38.834921,
+      "lng": -76.994132,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "10:30",
+            "12:30"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Thursdays 10:30am-12:30pm, weekly since May 21, 2026. The DC Health guide says the season runs May-December; no end date published. The DC Health guide gives the location as Wheeler Rd SE & Valley Ave SE.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(571) 384-8845",
+      "website": "https://www.arcadiafood.org/mobile-market-1",
+      "source_url": "https://www.arcadiafood.org/mobile-market-1",
+      "extra_source_urls": [
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Arcadia's 2026 schedule page and Google Calendar (weekly Thursday 10:30am-12:30pm from 2026-05-21) give the address as 3700 9th St SE. The DC Health 2026 guide lists \"Wheeler Rd SE & Valley Ave SE\" for the same day and time. Open Data DC uses that intersection, says \"Across from The Overlook\", and shows an older Thu 3-6pm time. The two points are about 220 m apart. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "arcadia-mobile-market-bellevue-library",
+      "name": "Arcadia Mobile Market - Bellevue Library",
+      "type": "mobile_market",
+      "address": "115 Atlantic St SW, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Bellevue",
+      "lat": 38.831251,
+      "lng": -77.009419,
+      "geocode_source": "open-data-dc",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "15:00",
+            "17:00"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Thursdays, weekly since May 21, 2026, at the (William O. Lockridge) Bellevue Neighborhood Library. Arcadia's calendar and the DC Health guide say 3-5pm, while Arcadia's web page says 2:30-5pm (encoded as 3-5pm). The DC Health guide says the season runs May-December; no end date published.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": true,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": "(571) 384-8845",
+      "website": "https://www.arcadiafood.org/mobile-market-1",
+      "source_url": "https://www.arcadiafood.org/mobile-market-1",
+      "extra_source_urls": [
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Arcadia's 2026 schedule, its Google Calendar (weekly Thursday 3:00-5:00pm from 2026-05-21) and the DC Health 2026 guide all give 115 Atlantic St SW. Coordinates come from the Open Data DC Farmers Market layer (MAR-matched), because the Census geocoder matched 115 Atlantic St SE, a different block about 350 m east. Arcadia says the Mobile Market \"accepts and doubles the face value of food stamps (SNAP, WIC, and Senior FMNP)\" and lists Produce Plus among accepted programs. The DC Health 2026 guide shows SNAP, Produce Plus/Senior/WIC FMNP and Matching icons. WIC here means WIC farmers-market benefits; eWIC was not confirmed. Contact: info@arcadiafood.org, (571) 384-8845 (Arcadia main line). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "marthas-table-market-the-commons",
+      "name": "Martha's Table Market at The Commons",
+      "type": "free_market",
+      "address": "2375 Elvans Rd SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Barry Farm",
+      "lat": 38.855188,
+      "lng": -76.984015,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "tue": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "wed": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "thu": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "fri": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Weekdays 11am-4pm; closed on holidays (e.g., closed Mon Oct 12, 2026 for Indigenous Peoples' Day). Check marthastable.org/operations for closures. Guests may shop twice monthly.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "\"Guests are welcome to shop twice monthly at our no-cost markets.\" \"All guests wishing to shop at our markets must register for a free membership card.\" To register bring \"Your photo ID OR A clear copy of your photo ID\". \"Must be 16 or older to shop.\" Guests may shop for themselves and one other person. Without proper ID you \"will receive a fruit bag and be encouraged to return with the necessary documents\".",
+      "languages": [
+        "en"
+      ],
+      "phone": "202-328-6608",
+      "website": "https://marthastable.org/markets/",
+      "source_url": "https://marthastable.org/markets/",
+      "extra_source_urls": [
+        "https://marthastable.org/events/marthas-table-market-2026-09-28/",
+        "https://marthastable.org/events/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Operator markets page gives address and Mon-Fri 11am-4pm; operator 2026 events calendar lists market dates Sep 28-Oct 30, 2026 at 2375 Elvans Road SE (no market Oct 12). Choice-based no-cost produce and pantry items, first-come first-served. No DC-residency or income rule is stated on the operator page (third-party directories mention proof of DC residence; not confirmed). Phone is Martha's Table main line. Martha's Table also lists a Joyful Food Market for its own early-childhood (ECE) families at this address (Oct 21, Nov 17, Dec 16, 2026). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator).",
+      "east_of_river": true
+    },
+    {
+      "id": "bread-for-the-city-southeast-food-pantry",
+      "name": "Bread for the City Southeast Center Food Pantry (Michelle Obama Southeast Center)",
+      "type": "pantry",
+      "address": "1700 Marion Barry Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Fairlawn",
+      "lat": 38.866185,
+      "lng": -76.980458,
+      "geocode_source": "open-data-dc",
+      "ward": 8,
+      "hours": {
+        "mon": [
+          [
+            "09:00",
+            "15:00"
+          ]
+        ],
+        "tue": [
+          [
+            "09:00",
+            "15:00"
+          ]
+        ],
+        "wed": [
+          [
+            "09:00",
+            "15:00"
+          ]
+        ],
+        "thu": [
+          [
+            "09:00",
+            "15:00"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Pantry Mon-Thu 9am-3pm (center open Mon-Thu 9am-5pm, Fri 9am-12pm). Groceries once per month. Closed Mon Oct 12, 2026 (Indigenous Peoples' Day). Free farmers market on Fridays is listed separately.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "\"Food is provided for DC households based on household size.\" \"You can pick up groceries once per month.\" (CAFB listing adds: \"DC Residents Only\".) ID/income documents are not stated on the operator page.",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 265-2400",
+      "website": "https://breadforthecity.org/food/",
+      "source_url": "https://breadforthecity.org/food/",
+      "extra_source_urls": [
+        "https://breadforthecity.org/",
+        "https://www.capitalareafoodbank.org/find-food-assistance/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Address is 1700 Marion Barry Ave SE (Good Hope Rd SE was renamed Marion Barry Ave; older sources say 1640/1700 Good Hope Rd SE). Operator page (with Oct 12, 2026 closure notice) gives pantry hours Mon-Thu 9am-3pm; also on CAFB Get Help Map 2026 (Ward 8, \"DC Residents Only\"). Choice pantry using a points system. Third-party directories (Street Sense, older) describe DC residency, income at or below 200% FPL, and ID/proof-of-address documents with a no-turn-away-for-lack-of-photo-ID policy -- NOT confirmed on the current operator page; call to confirm what to bring. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match.",
+      "east_of_river": true
+    },
+    {
+      "id": "bread-for-the-city-southeast-free-farmers-market",
+      "name": "Bread for the City Southeast Free Farmers Market",
+      "type": "free_market",
+      "address": "1700 Marion Barry Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Fairlawn",
+      "lat": 38.866185,
+      "lng": -76.980458,
+      "geocode_source": "open-data-dc",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "2nd and 4th Friday of the month (and 5th Friday when applicable), starts 9am; \"ends at 11:45 or until we run out of food, whichever comes first.\" BFTC events calendar lists Fri Oct 23 and Fri Dec 11, 2026, 9am-12pm at the Southeast Center.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published as a requirement; operator describes the markets as offering \"fresh produce to the wider community\"; CAFB listing: \"Free Farmers Market - open to anyone\".",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 265-2400",
+      "website": "https://breadforthecity.org/food/",
+      "source_url": "https://breadforthecity.org/food/",
+      "extra_source_urls": [
+        "https://breadforthecity.org/events/?_event_category=farmers-markets",
+        "https://www.capitalareafoodbank.org/find-food-assistance/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Operator food page and 2026 events calendar confirm free produce market at the Southeast Center. Operator pages give end time as 11am in one place and 11:45am in another; calendar entries show 9am-12pm. The calendar does not show every 2nd/4th Friday (e.g., no November date listed), so check the calendar before going. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match.",
+      "east_of_river": true
+    },
+    {
+      "id": "thearc-farm-food-and-farm-fridays",
+      "name": "Food and Farm Fridays at THEARC Farm (Building Bridges Across the River)",
+      "type": "free_market",
+      "address": "1901 Mississippi Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Shipley",
+      "lat": 38.843772,
+      "lng": -76.976177,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [
+          [
+            "12:00",
+            "14:00"
+          ]
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Fridays 12-2pm during the growing season; operator calendar lists Oct 16, 23, 30, Nov 6 and Nov 13, 2026 (last listed date).",
+      "season": {
+        "start": "2026-05-22",
+        "end": "2026-11-13"
+      },
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published (operator: \"Free food for you!\"; no requirements stated).",
+      "languages": [
+        "en"
+      ],
+      "phone": "202-889-5901",
+      "website": "https://buildingbridgesdc.org/series/food-and-farm-fridays/",
+      "source_url": "https://buildingbridgesdc.org/event/food-farm-fridays/2026-10-16/",
+      "extra_source_urls": [
+        "https://buildingbridgesdc.org/series/food-and-farm-fridays/",
+        "https://www.capitalareafoodbank.org/find-food-assistance/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "Operator (Building Bridges Across the River / THEARC Farm) 2026 calendar confirms venue 1901 Mississippi Ave SE and Fri 12-2pm; produce from THEARC farms plus CAFB-donated produce; DC Central Kitchen gives out prepared meals. Season start date (May 22, 2026) comes from a search-engine capture of the operator calendar; end date is the last listed event (Nov 13, 2026). CAFB Get Help Map 2026 lists the same program as \"THEARC Farm\" at 1801 Mississippi Ave SE, Fridays 12-3pm (Ward 8) -- operator address/time used here. Ward 8 per CAFB and operator text (\"Ward 8 residents\"). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "dpr-lederer-gardens-veggie-giveaway",
+      "name": "DPR Weekly Veggie Giveaway at Lederer Gardens",
+      "type": "free_market",
+      "address": "4801 Nannie Helen Burroughs Ave NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Lincoln Heights",
+      "lat": 38.898738,
+      "lng": -76.932747,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [
+          [
+            "11:00",
+            "12:00"
+          ]
+        ],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "11:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Every Wednesday 11am-12pm and every Saturday 10-11am, May 12-Nov 25, 2026 (weather permitting). CAFB also lists a monthly CAFB mobile market here on the 2nd Wednesday, 11am-12pm.",
+      "season": {
+        "start": "2026-05-12",
+        "end": "2026-11-25"
+      },
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "DPR: \"Providing FREE produce to DC residents\"; \"Register for the veggie giveaways\" via dprveggies.splashthat.com.",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 673-7647",
+      "website": "https://dprveggies.splashthat.com/",
+      "source_url": "https://dprveggies.splashthat.com/",
+      "extra_source_urls": [
+        "https://dpr.dc.gov/featured-content/free-produce-dpr",
+        "https://www.capitalareafoodbank.org/find-food-assistance/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "high",
+      "notes": "DC Department of Parks and Recreation 2026 page and registration page confirm Lederer Garden (Ward 7), 4801 Nannie Helen Burroughs Ave NE, Wed 11-12 and Sat 10-11, May 12-Nov 25, 2026. Registration is requested; whether walk-ups without registration are served is not stated. Contact listed: joshua.singer@dc.gov; phone is DPR main line. Third-party directory (Lemontree) describes ID/proof-of-income requirements for a monthly pantry here -- not confirmed by DPR/CAFB. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "allen-chapel-ame-church-pantry",
+      "name": "Allen Chapel AME Church Food Pantry",
+      "type": "pantry",
+      "address": "2439 Ainger Pl SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Woodland",
+      "lat": 38.856409,
+      "lng": -76.97111,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [
+          [
+            "09:30",
+            "12:00"
+          ]
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Friday 9:30am-12pm.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 494-9824",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "good-success-christian-church-pantry",
+      "name": "Good Success Christian Church Food Pantry",
+      "type": "pantry",
+      "address": "4401 Sheriff Rd NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Deanwood",
+      "lat": 38.902722,
+      "lng": -76.939108,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ],
+        "wed": [],
+        "thu": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Tuesday and Thursday 9am-12pm.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "No phone number listed. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "friends-of-douglass-community-center-pantry",
+      "name": "Friends of Douglass Community Center Food Pantry",
+      "type": "pantry",
+      "address": "1812 Erie St SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Historic Anacostia",
+      "lat": 38.857362,
+      "lng": -76.978201,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [
+          [
+            "12:00",
+            "16:00"
+          ]
+        ],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Walk-up listed Tuesdays 12-4pm. CAFB listing also shows Mon/Wed/Thu 10am-4pm, Sat 9am-12pm (appointment only) and Sun 10am-1pm (home delivery, appointment only) with the note \"Please call to be added to delivery schedule\" -- call to confirm which days serve walk-ups.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 285-5354",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB entry mixes walk-up and home-delivery slots; only the Tuesday walk-up slot is put in the hours table. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "new-macedonia-baptist-church-pantry",
+      "name": "New Macedonia Baptist Church Food Pantry",
+      "type": "pantry",
+      "address": "4115 Alabama Ave SE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Benning Ridge",
+      "lat": 38.87105,
+      "lng": -76.941847,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [
+          [
+            "09:00",
+            "11:00"
+          ]
+        ],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Wednesday 9-11am; drive-thru distribution (pre-selected loose groceries).",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 583-5555",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "brighter-day-ministries-food-pantry",
+      "name": "Brighter Day Ministries Food Pantry",
+      "type": "pantry",
+      "address": "2525 12th Pl SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Douglass",
+      "lat": 38.85191,
+      "lng": -76.984647,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "11:00",
+            "16:00"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Thursday 11am-4pm; walk-up, full choice. CAFB note: \"BRING BAG\".",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(301) 455-6384",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "covenant-baptist-food-pantry",
+      "name": "Covenant Baptist Food Pantry",
+      "type": "pantry",
+      "address": "3845 South Capitol St SW, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Bellevue",
+      "lat": 38.834011,
+      "lng": -77.008661,
+      "geocode_source": "open-data-dc",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "09:30",
+            "12:30"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Thursday 9:30am-12:30pm. CAFB note: \"parking on Zenia St only\".",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 562-5576",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Third-party directories (FoodHelpline/Lemontree, WhyHunger) also list Thursday 9:30am-12:30pm and say DC residency, ID and proof of address are required -- not confirmed by CAFB or operator. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder matched a different street/quadrant (3845 S CAPITOL ST SE, WASHINGTON, DC, 20032).",
+      "east_of_river": true
+    },
+    {
+      "id": "assumption-outreach-food-pantry",
+      "name": "Assumption Outreach Food Pantry (Assumption Catholic Church)",
+      "type": "pantry",
+      "address": "220 Highview Pl SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Congress Heights",
+      "lat": 38.841741,
+      "lng": -77.004521,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ],
+        "tue": [],
+        "wed": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ],
+        "thu": [],
+        "fri": [
+          [
+            "09:00",
+            "12:00"
+          ]
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Monday, Wednesday and Friday 9am-12pm; walk-up, pre-bagged groceries.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "CAFB listing: \"Ward 8 residents only\".",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 561-5941",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Third-party directory (FoodHelpline) gives the same M/W/F 9am-12pm hours and adds: arrive before 11:30am, bring DC photo ID or proof of residency, once per household per month -- not confirmed by CAFB or operator. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "dupont-park-sda-church-pantry",
+      "name": "Dupont Park Seventh-day Adventist Church Food Pantry",
+      "type": "pantry",
+      "address": "3942 Alabama Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Fort Davis Park",
+      "lat": 38.868964,
+      "lng": -76.948134,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [
+          [
+            "10:00",
+            "12:00"
+          ]
+        ],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Tuesday 10am-12pm; walk-up or drive-thru.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(301) 980-6274",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en). ZIP set to 20020 per DC MAR address point (source listed 20019).",
+      "east_of_river": true
+    },
+    {
+      "id": "salvation-army-solomon-g-brown-pantry",
+      "name": "The Salvation Army Solomon G. Brown Corps Community Center Food Pantry",
+      "type": "pantry",
+      "address": "2300 Martin Luther King Jr Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Historic Anacostia",
+      "lat": 38.863238,
+      "lng": -76.991239,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [
+          [
+            "09:00",
+            "12:00"
+          ],
+          [
+            "12:30",
+            "14:00"
+          ]
+        ],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "APPOINTMENT ONLY. Friday 9am-2pm walk-up by appointment (\"Closed for lunch from 12-12:30pm\"); Wednesday 9am-2pm is home delivery by appointment.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published (appointment required per CAFB listing).",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 678-9770",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "our-lady-of-perpetual-help-pantry",
+      "name": "Our Lady of Perpetual Help Church Food Pantry",
+      "type": "pantry",
+      "address": "1600 Morris Rd SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Historic Anacostia",
+      "lat": 38.85711,
+      "lng": -76.98197,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [
+          [
+            "10:30",
+            "12:30"
+          ]
+        ],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Thursday 10:30am-12:30pm; walk-up (home delivery also listed).",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 575-1663",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Archdiocese of Washington page (undated, third-party capture) describes the pantry as serving Ward 8 residents; other directories list the same Thursday 10:30am-12:30pm hours. One directory gives a different parish phone (202-678-4999). Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "paramount-baptist-church-pantry",
+      "name": "Paramount Baptist Church Food Pantry",
+      "type": "pantry",
+      "address": "3924 4th St SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Washington Highlands",
+      "lat": 38.832545,
+      "lng": -77.000495,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [
+          [
+            "11:00",
+            "12:00"
+          ]
+        ],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Wednesday 11am-12pm; walk-up, full choice.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 562-6339",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "urban-outreach-inc-pantry",
+      "name": "Urban Outreach Inc. Food Pantry",
+      "type": "pantry",
+      "address": "5343 C St SE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Marshall Heights",
+      "lat": 38.88452,
+      "lng": -76.925183,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [
+          [
+            "10:00",
+            "14:00"
+          ]
+        ],
+        "sun": []
+      },
+      "schedule_note": "Every Saturday 10am-2pm; walk-up. CAFB lists the address as 5343 C St SE Suite 204.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 575-4867",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "greater-fellowship-missionary-baptist-church-pantry",
+      "name": "Greater Fellowship Missionary Baptist Church Food Pantry",
+      "type": "pantry",
+      "address": "814 Alabama Ave SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Congress Heights",
+      "lat": 38.843765,
+      "lng": -76.99412,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [
+          [
+            "09:00",
+            "10:00"
+          ]
+        ],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Tuesday 9-10am; walk-up, pre-bagged groceries.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 528-0641",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "children-of-mine-pantry",
+      "name": "Children of Mine Youth Center Food Pantry",
+      "type": "pantry",
+      "address": "2263 Mount View Pl SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Historic Anacostia",
+      "lat": 38.863003,
+      "lng": -76.989759,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [
+          [
+            "09:00",
+            "10:00"
+          ]
+        ],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": []
+      },
+      "schedule_note": "Every Tuesday 9-10am.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 374-6029",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB lists the agency as \"Children of Mine\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "temple-of-praise-free-groceries",
+      "name": "Temple of Praise Free Groceries",
+      "type": "pantry",
+      "address": "700 Southern Ave SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Washington Highlands",
+      "lat": 38.82547,
+      "lng": -76.995932,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": {
+        "mon": [],
+        "tue": [],
+        "wed": [],
+        "thu": [],
+        "fri": [],
+        "sat": [],
+        "sun": [
+          [
+            "13:00",
+            "14:00"
+          ]
+        ]
+      },
+      "schedule_note": "Sundays about 1-2pm, after the 11am worship service (\"Worship attendance OPTIONAL, not required\"). Also \"Third Saturday Community Days | 10:00 AM - 2:00 PM Free Groceries, Resources, and More\" (3rd Saturday of each month). Bring your own cart or bags.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "CAFB listing: \"Open to all while supplies last.\"",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 561-0100",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "A third-party directory (FoodHelpline) also lists the 3rd-Saturday 10am-2pm distribution; operator site thetempleofpraise.org not checked. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "cafb-mobile-market-ward-memorial-ame",
+      "name": "CAFB Mobile Market at Ward Memorial AME Church",
+      "type": "mobile_market",
+      "address": "241 42nd St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Mayfair",
+      "lat": 38.893928,
+      "lng": -76.942533,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "3rd Saturday of each month, 8am-12pm; walk-up or drive-thru.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 398-3899",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "cafb-mobile-market-congress-heights-family-success-center",
+      "name": "CAFB Mobile Market at Congress Heights Family Success Center",
+      "type": "mobile_market",
+      "address": "1345 Savannah St SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Douglass",
+      "lat": 38.843726,
+      "lng": -76.986479,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "3rd Monday of each month, 11am-2pm; walk-up.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 889-1425",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "cafb-mobile-market-southern-hills-community-center",
+      "name": "CAFB Mobile Market at Southern Hills Community Center",
+      "type": "mobile_market",
+      "address": "4335 4th St SE, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": "Washington Highlands",
+      "lat": 38.828351,
+      "lng": -77.000639,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "4th Tuesday of each month, 11am-2pm; walk-up.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". No phone listed. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "cafb-mobile-market-frederick-douglass-community-center",
+      "name": "CAFB Mobile Market at Frederick Douglass Community Center",
+      "type": "mobile_market",
+      "address": "2000 Alabama Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Douglass",
+      "lat": 38.850585,
+      "lng": -76.975736,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "2nd Thursday of each month, 10am-1pm.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 317-1490",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "cafb-mobile-market-ambassador-baptist-church",
+      "name": "CAFB Mobile Market at Ambassador Baptist Church",
+      "type": "mobile_market",
+      "address": "1408 Minnesota Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": "Fairlawn",
+      "lat": 38.866851,
+      "lng": -76.984152,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "2nd Saturday of each month, 8-10am; walk-up.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "Not published",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 678-1993",
+      "website": null,
+      "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+      "extra_source_urls": [
+        "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en).",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-minnesota-big-market",
+      "name": "Minnesota Big Market",
+      "type": "corner_store",
+      "address": "2924 Minnesota Ave SE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.87612,
+      "lng": -76.965554,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match not checked, WIC not checked. Same address was \"G&G Market\" (Ward 7) in the 2024 Open Data DC layer, so it appears to be renamed. USDA SNAP data lists \"Minnesota Big Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-texas-avenue-convenience",
+      "name": "Texas Avenue Convenience Store",
+      "type": "corner_store",
+      "address": "4350 Texas Ave SE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.882799,
+      "lng": -76.942253,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Texas Convenience Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-fort-drum-market",
+      "name": "Fort Drum Market",
+      "type": "corner_store",
+      "address": "4686 Martin Luther King Jr Ave SW, Washington, DC 20032",
+      "zip": "20032",
+      "neighborhood": null,
+      "lat": 38.822358,
+      "lng": -77.011278,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). The DCCK 2026 list writes \"4686 Martin Luther King Jr Avenue SE\", but Open Data DC (MAR), USDA SNAP data and the Census geocoder all use the SW quadrant, so SW is used here. Ward per the Open Data DC Healthy Corner Store layer (2024 edition). Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-surprise-grocery",
+      "name": "Surprise Grocery",
+      "type": "corner_store",
+      "address": "2233 Minnesota Ave SE, Washington, DC 20020",
+      "zip": "20020",
+      "neighborhood": null,
+      "lat": 38.871605,
+      "lng": -76.974327,
+      "geocode_source": "census-geocoder",
+      "ward": 8,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Surprise Market 1\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-a-1-grocery",
+      "name": "A-1 Grocery",
+      "type": "corner_store",
+      "address": "615 Division Ave NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.897826,
+      "lng": -76.925787,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": true,
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA FNS SNAP data (2026-10-07) lists \"A1 Grocery Store\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-thomas-and-sons-food-market",
+      "name": "Thomas & Sons Food Market",
+      "type": "corner_store",
+      "address": "3425 Benning Rd NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.896281,
+      "lng": -76.956819,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). USDA SNAP data lists \"Thomas And Sons Market\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    },
+    {
+      "id": "hc-ken-mart",
+      "name": "Ken Mart Inc.",
+      "type": "corner_store",
+      "address": "1507 Kenilworth Ave NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": null,
+      "lat": 38.909754,
+      "lng": -76.93574,
+      "geocode_source": "open-data-dc",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "Hours not published by DC Central Kitchen; call or check before visiting.",
+      "season": null,
+      "free": false,
+      "snap": true,
+      "wic": "unknown",
+      "produce_plus": false,
+      "eligibility": "Open to all",
+      "languages": [
+        "en"
+      ],
+      "phone": null,
+      "website": null,
+      "source_url": "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+      "extra_source_urls": [
+        "https://dccentralkitchen.org/healthy-corners/",
+        "https://dccentralkitchen.org/benefit-programs/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "last_verified": "2026-10-10",
+      "confidence": "medium",
+      "notes": "DC Central Kitchen Healthy Corners store (stocks discounted fresh and frozen produce). Listed with this address on DCCK's participating-store PDF updated 2026-04-28, which marks: SNAP/EBT checked, SNAP Match checked, WIC not checked. SNAP Match: add one piece of produce (50 cents or more) to any EBT purchase and get a $5 coupon for fresh or frozen produce, up to 2 coupons per day (DCCK benefit-programs page). Ward per the Open Data DC Healthy Corner Store layer (2024 edition). The Census geocoder found no match, so coordinates come from the Open Data DC Healthy Corner Store layer (they agree with USDA SNAP coordinates within about 10 m). USDA SNAP data lists \"Ken Mart\" here. Hours and phone not published. Unchecked WIC/SNAP boxes are left \"unknown\" rather than false. Produce Plus: false because the 2026 Produce Plus flyer says benefits are spent at participating farmers markets (not stores). Languages: no language information published; defaulted to [\"en\"].",
+      "east_of_river": true
+    }
+  ]
+}

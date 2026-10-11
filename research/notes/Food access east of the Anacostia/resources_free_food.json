@@ -1,0 +1,2565 @@
+[
+  {
+    "id": "marthas-table-market-the-commons",
+    "name": "Martha's Table Market at The Commons",
+    "type": "free_market",
+    "address": "2375 Elvans Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.855188,
+    "lng": -76.984015,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "tue": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "wed": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "thu": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "fri": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Weekdays 11am-4pm; closed on holidays (e.g., closed Mon Oct 12, 2026 for Indigenous Peoples' Day). Check marthastable.org/operations for closures. Guests may shop twice monthly.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "\"Guests are welcome to shop twice monthly at our no-cost markets.\" \"All guests wishing to shop at our markets must register for a free membership card.\" To register bring \"Your photo ID OR A clear copy of your photo ID\". \"Must be 16 or older to shop.\" Guests may shop for themselves and one other person. Without proper ID you \"will receive a fruit bag and be encouraged to return with the necessary documents\".",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/markets/",
+    "source_url": "https://marthastable.org/markets/",
+    "extra_source_urls": [
+      "https://marthastable.org/events/marthas-table-market-2026-09-28/",
+      "https://marthastable.org/events/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Operator markets page gives address and Mon-Fri 11am-4pm; operator 2026 events calendar lists market dates Sep 28-Oct 30, 2026 at 2375 Elvans Road SE (no market Oct 12). Choice-based no-cost produce and pantry items, first-come first-served. No DC-residency or income rule is stated on the operator page (third-party directories mention proof of DC residence; not confirmed). Phone is Martha's Table main line. Martha's Table also lists a Joyful Food Market for its own early-childhood (ECE) families at this address (Oct 21, Nov 17, Dec 16, 2026). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "bread-for-the-city-southeast-food-pantry",
+    "name": "Bread for the City Southeast Center Food Pantry (Michelle Obama Southeast Center)",
+    "type": "pantry",
+    "address": "1700 Marion Barry Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.866185,
+    "lng": -76.980458,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": {
+      "mon": [
+        [
+          "09:00",
+          "15:00"
+        ]
+      ],
+      "tue": [
+        [
+          "09:00",
+          "15:00"
+        ]
+      ],
+      "wed": [
+        [
+          "09:00",
+          "15:00"
+        ]
+      ],
+      "thu": [
+        [
+          "09:00",
+          "15:00"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Pantry Mon-Thu 9am-3pm (center open Mon-Thu 9am-5pm, Fri 9am-12pm). Groceries once per month. Closed Mon Oct 12, 2026 (Indigenous Peoples' Day). Free farmers market on Fridays is listed separately.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "\"Food is provided for DC households based on household size.\" \"You can pick up groceries once per month.\" (CAFB listing adds: \"DC Residents Only\".) ID/income documents are not stated on the operator page.",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 265-2400",
+    "website": "https://breadforthecity.org/food/",
+    "source_url": "https://breadforthecity.org/food/",
+    "extra_source_urls": [
+      "https://breadforthecity.org/",
+      "https://www.capitalareafoodbank.org/find-food-assistance/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Address is 1700 Marion Barry Ave SE (Good Hope Rd SE was renamed Marion Barry Ave; older sources say 1640/1700 Good Hope Rd SE). Operator page (with Oct 12, 2026 closure notice) gives pantry hours Mon-Thu 9am-3pm; also on CAFB Get Help Map 2026 (Ward 8, \"DC Residents Only\"). Choice pantry using a points system. Third-party directories (Street Sense, older) describe DC residency, income at or below 200% FPL, and ID/proof-of-address documents with a no-turn-away-for-lack-of-photo-ID policy -- NOT confirmed on the current operator page; call to confirm what to bring. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match."
+  },
+  {
+    "id": "bread-for-the-city-southeast-free-farmers-market",
+    "name": "Bread for the City Southeast Free Farmers Market",
+    "type": "free_market",
+    "address": "1700 Marion Barry Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.866185,
+    "lng": -76.980458,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "2nd and 4th Friday of the month (and 5th Friday when applicable), starts 9am; \"ends at 11:45 or until we run out of food, whichever comes first.\" BFTC events calendar lists Fri Oct 23 and Fri Dec 11, 2026, 9am-12pm at the Southeast Center.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published as a requirement; operator describes the markets as offering \"fresh produce to the wider community\"; CAFB listing: \"Free Farmers Market - open to anyone\".",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 265-2400",
+    "website": "https://breadforthecity.org/food/",
+    "source_url": "https://breadforthecity.org/food/",
+    "extra_source_urls": [
+      "https://breadforthecity.org/events/?_event_category=farmers-markets",
+      "https://www.capitalareafoodbank.org/find-food-assistance/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Operator food page and 2026 events calendar confirm free produce market at the Southeast Center. Operator pages give end time as 11am in one place and 11:45am in another; calendar entries show 9am-12pm. The calendar does not show every 2nd/4th Friday (e.g., no November date listed), so check the calendar before going. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match."
+  },
+  {
+    "id": "thearc-farm-food-and-farm-fridays",
+    "name": "Food and Farm Fridays at THEARC Farm (Building Bridges Across the River)",
+    "type": "free_market",
+    "address": "1901 Mississippi Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Shipley",
+    "lat": 38.843772,
+    "lng": -76.976177,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [
+        [
+          "12:00",
+          "14:00"
+        ]
+      ],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Fridays 12-2pm during the growing season; operator calendar lists Oct 16, 23, 30, Nov 6 and Nov 13, 2026 (last listed date).",
+    "season": {
+      "start": "2026-05-22",
+      "end": "2026-11-13"
+    },
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published (operator: \"Free food for you!\"; no requirements stated).",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-889-5901",
+    "website": "https://buildingbridgesdc.org/series/food-and-farm-fridays/",
+    "source_url": "https://buildingbridgesdc.org/event/food-farm-fridays/2026-10-16/",
+    "extra_source_urls": [
+      "https://buildingbridgesdc.org/series/food-and-farm-fridays/",
+      "https://www.capitalareafoodbank.org/find-food-assistance/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "Operator (Building Bridges Across the River / THEARC Farm) 2026 calendar confirms venue 1901 Mississippi Ave SE and Fri 12-2pm; produce from THEARC farms plus CAFB-donated produce; DC Central Kitchen gives out prepared meals. Season start date (May 22, 2026) comes from a search-engine capture of the operator calendar; end date is the last listed event (Nov 13, 2026). CAFB Get Help Map 2026 lists the same program as \"THEARC Farm\" at 1801 Mississippi Ave SE, Fridays 12-3pm (Ward 8) -- operator address/time used here. Ward 8 per CAFB and operator text (\"Ward 8 residents\"). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en)."
+  },
+  {
+    "id": "dpr-lederer-gardens-veggie-giveaway",
+    "name": "DPR Weekly Veggie Giveaway at Lederer Gardens",
+    "type": "free_market",
+    "address": "4801 Nannie Helen Burroughs Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Lincoln Heights",
+    "lat": 38.898738,
+    "lng": -76.932747,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [
+        [
+          "11:00",
+          "12:00"
+        ]
+      ],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "11:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Every Wednesday 11am-12pm and every Saturday 10-11am, May 12-Nov 25, 2026 (weather permitting). CAFB also lists a monthly CAFB mobile market here on the 2nd Wednesday, 11am-12pm.",
+    "season": {
+      "start": "2026-05-12",
+      "end": "2026-11-25"
+    },
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "DPR: \"Providing FREE produce to DC residents\"; \"Register for the veggie giveaways\" via dprveggies.splashthat.com.",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 673-7647",
+    "website": "https://dprveggies.splashthat.com/",
+    "source_url": "https://dprveggies.splashthat.com/",
+    "extra_source_urls": [
+      "https://dpr.dc.gov/featured-content/free-produce-dpr",
+      "https://www.capitalareafoodbank.org/find-food-assistance/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "high",
+    "notes": "DC Department of Parks and Recreation 2026 page and registration page confirm Lederer Garden (Ward 7), 4801 Nannie Helen Burroughs Ave NE, Wed 11-12 and Sat 10-11, May 12-Nov 25, 2026. Registration is requested; whether walk-ups without registration are served is not stated. Contact listed: joshua.singer@dc.gov; phone is DPR main line. Third-party directory (Lemontree) describes ID/proof-of-income requirements for a monthly pantry here -- not confirmed by DPR/CAFB. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en)."
+  },
+  {
+    "id": "allen-chapel-ame-church-pantry",
+    "name": "Allen Chapel AME Church Food Pantry",
+    "type": "pantry",
+    "address": "2439 Ainger Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Woodland",
+    "lat": 38.856409,
+    "lng": -76.97111,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [
+        [
+          "09:30",
+          "12:00"
+        ]
+      ],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Friday 9:30am-12pm.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 494-9824",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "good-success-christian-church-pantry",
+    "name": "Good Success Christian Church Food Pantry",
+    "type": "pantry",
+    "address": "4401 Sheriff Rd NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Deanwood",
+    "lat": 38.902722,
+    "lng": -76.939108,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "09:00",
+          "12:00"
+        ]
+      ],
+      "wed": [],
+      "thu": [
+        [
+          "09:00",
+          "12:00"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Tuesday and Thursday 9am-12pm.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "No phone number listed. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "friends-of-douglass-community-center-pantry",
+    "name": "Friends of Douglass Community Center Food Pantry",
+    "type": "pantry",
+    "address": "1812 Erie St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Historic Anacostia",
+    "lat": 38.857362,
+    "lng": -76.978201,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "12:00",
+          "16:00"
+        ]
+      ],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Walk-up listed Tuesdays 12-4pm. CAFB listing also shows Mon/Wed/Thu 10am-4pm, Sat 9am-12pm (appointment only) and Sun 10am-1pm (home delivery, appointment only) with the note \"Please call to be added to delivery schedule\" -- call to confirm which days serve walk-ups.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 285-5354",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB entry mixes walk-up and home-delivery slots; only the Tuesday walk-up slot is put in the hours table. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "new-macedonia-baptist-church-pantry",
+    "name": "New Macedonia Baptist Church Food Pantry",
+    "type": "pantry",
+    "address": "4115 Alabama Ave SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Benning Ridge",
+    "lat": 38.87105,
+    "lng": -76.941847,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [
+        [
+          "09:00",
+          "11:00"
+        ]
+      ],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Wednesday 9-11am; drive-thru distribution (pre-selected loose groceries).",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 583-5555",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "brighter-day-ministries-food-pantry",
+    "name": "Brighter Day Ministries Food Pantry",
+    "type": "pantry",
+    "address": "2525 12th Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Douglass",
+    "lat": 38.85191,
+    "lng": -76.984647,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "11:00",
+          "16:00"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Thursday 11am-4pm; walk-up, full choice. CAFB note: \"BRING BAG\".",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(301) 455-6384",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "covenant-baptist-food-pantry",
+    "name": "Covenant Baptist Food Pantry",
+    "type": "pantry",
+    "address": "3845 South Capitol St SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Bellevue",
+    "lat": 38.834011,
+    "lng": -77.008661,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "09:30",
+          "12:30"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Thursday 9:30am-12:30pm. CAFB note: \"parking on Zenia St only\".",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 562-5576",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Third-party directories (FoodHelpline/Lemontree, WhyHunger) also list Thursday 9:30am-12:30pm and say DC residency, ID and proof of address are required -- not confirmed by CAFB or operator. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder matched a different street/quadrant (3845 S CAPITOL ST SE, WASHINGTON, DC, 20032)."
+  },
+  {
+    "id": "assumption-outreach-food-pantry",
+    "name": "Assumption Outreach Food Pantry (Assumption Catholic Church)",
+    "type": "pantry",
+    "address": "220 Highview Pl SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.841741,
+    "lng": -77.004521,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [
+        [
+          "09:00",
+          "12:00"
+        ]
+      ],
+      "tue": [],
+      "wed": [
+        [
+          "09:00",
+          "12:00"
+        ]
+      ],
+      "thu": [],
+      "fri": [
+        [
+          "09:00",
+          "12:00"
+        ]
+      ],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Monday, Wednesday and Friday 9am-12pm; walk-up, pre-bagged groceries.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "CAFB listing: \"Ward 8 residents only\".",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 561-5941",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Third-party directory (FoodHelpline) gives the same M/W/F 9am-12pm hours and adds: arrive before 11:30am, bring DC photo ID or proof of residency, once per household per month -- not confirmed by CAFB or operator. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "dupont-park-sda-church-pantry",
+    "name": "Dupont Park Seventh-day Adventist Church Food Pantry",
+    "type": "pantry",
+    "address": "3942 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fort Davis Park",
+    "lat": 38.868964,
+    "lng": -76.948134,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "10:00",
+          "12:00"
+        ]
+      ],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Tuesday 10am-12pm; walk-up or drive-thru.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(301) 980-6274",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en). ZIP set to 20020 per DC MAR address point (source listed 20019)."
+  },
+  {
+    "id": "salvation-army-solomon-g-brown-pantry",
+    "name": "The Salvation Army Solomon G. Brown Corps Community Center Food Pantry",
+    "type": "pantry",
+    "address": "2300 Martin Luther King Jr Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Historic Anacostia",
+    "lat": 38.863238,
+    "lng": -76.991239,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [
+        [
+          "09:00",
+          "12:00"
+        ],
+        [
+          "12:30",
+          "14:00"
+        ]
+      ],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "APPOINTMENT ONLY. Friday 9am-2pm walk-up by appointment (\"Closed for lunch from 12-12:30pm\"); Wednesday 9am-2pm is home delivery by appointment.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published (appointment required per CAFB listing).",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 678-9770",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "our-lady-of-perpetual-help-pantry",
+    "name": "Our Lady of Perpetual Help Church Food Pantry",
+    "type": "pantry",
+    "address": "1600 Morris Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Historic Anacostia",
+    "lat": 38.85711,
+    "lng": -76.98197,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [
+        [
+          "10:30",
+          "12:30"
+        ]
+      ],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Thursday 10:30am-12:30pm; walk-up (home delivery also listed).",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 575-1663",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Archdiocese of Washington page (undated, third-party capture) describes the pantry as serving Ward 8 residents; other directories list the same Thursday 10:30am-12:30pm hours. One directory gives a different parish phone (202-678-4999). Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "paramount-baptist-church-pantry",
+    "name": "Paramount Baptist Church Food Pantry",
+    "type": "pantry",
+    "address": "3924 4th St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Washington Highlands",
+    "lat": 38.832545,
+    "lng": -77.000495,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [
+        [
+          "11:00",
+          "12:00"
+        ]
+      ],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Wednesday 11am-12pm; walk-up, full choice.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 562-6339",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "urban-outreach-inc-pantry",
+    "name": "Urban Outreach Inc. Food Pantry",
+    "type": "pantry",
+    "address": "5343 C St SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Marshall Heights",
+    "lat": 38.88452,
+    "lng": -76.925183,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [
+        [
+          "10:00",
+          "14:00"
+        ]
+      ],
+      "sun": []
+    },
+    "schedule_note": "Every Saturday 10am-2pm; walk-up. CAFB lists the address as 5343 C St SE Suite 204.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 575-4867",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "greater-fellowship-missionary-baptist-church-pantry",
+    "name": "Greater Fellowship Missionary Baptist Church Food Pantry",
+    "type": "pantry",
+    "address": "814 Alabama Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.843765,
+    "lng": -76.99412,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "09:00",
+          "10:00"
+        ]
+      ],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Tuesday 9-10am; walk-up, pre-bagged groceries.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 528-0641",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "children-of-mine-pantry",
+    "name": "Children of Mine Youth Center Food Pantry",
+    "type": "pantry",
+    "address": "2263 Mount View Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Historic Anacostia",
+    "lat": 38.863003,
+    "lng": -76.989759,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [
+        [
+          "09:00",
+          "10:00"
+        ]
+      ],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": []
+    },
+    "schedule_note": "Every Tuesday 9-10am.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 374-6029",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB lists the agency as \"Children of Mine\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "temple-of-praise-free-groceries",
+    "name": "Temple of Praise Free Groceries",
+    "type": "pantry",
+    "address": "700 Southern Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Washington Highlands",
+    "lat": 38.82547,
+    "lng": -76.995932,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": {
+      "mon": [],
+      "tue": [],
+      "wed": [],
+      "thu": [],
+      "fri": [],
+      "sat": [],
+      "sun": [
+        [
+          "13:00",
+          "14:00"
+        ]
+      ]
+    },
+    "schedule_note": "Sundays about 1-2pm, after the 11am worship service (\"Worship attendance OPTIONAL, not required\"). Also \"Third Saturday Community Days | 10:00 AM - 2:00 PM Free Groceries, Resources, and More\" (3rd Saturday of each month). Bring your own cart or bags.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "CAFB listing: \"Open to all while supplies last.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 561-0100",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "A third-party directory (FoodHelpline) also lists the 3rd-Saturday 10am-2pm distribution; operator site thetempleofpraise.org not checked. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "emmanuel-baptist-church-pantry",
+    "name": "Emmanuel Baptist Church Food Pantry",
+    "type": "pantry",
+    "address": "2409 Ainger Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Woodland",
+    "lat": 38.856738,
+    "lng": -76.971609,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "3rd Wednesday of each month, 3-5pm; walk-up, drive-thru or home delivery.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(301) 266-1610",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "hillcrest-children-family-center-pantry",
+    "name": "Hillcrest Children and Family Center Food Distribution",
+    "type": "pantry",
+    "address": "3029 Martin Luther King Jr Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.844175,
+    "lng": -76.998209,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "1st Friday of each month, 12-4pm; walk-up, full choice.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 232-6100",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB spells the street \"Martin Luther Jr Ave SE\"; normalized to Martin Luther King Jr Ave SE. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "rccg-new-wine-assembly-pantry",
+    "name": "RCCG New Wine Assembly Food Pantry",
+    "type": "pantry",
+    "address": "1625 Olive St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Deanwood",
+    "lat": 38.91048,
+    "lng": -76.933533,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "2nd and last Saturday of each month, 10am-12pm (CAFB note: \"We are on the 2nd and last Saturdays of a month\").",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 491-5917",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "faith-tabernacle-of-prayer-pantry",
+    "name": "Faith Tabernacle of Prayer Food Pantry",
+    "type": "pantry",
+    "address": "2465 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Garfield Heights",
+    "lat": 38.855062,
+    "lng": -76.969903,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "1st Saturday of each month, 11:30am-1:30pm; pre-bagged groceries.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "CAFB listing: \"no income, ID, or zip code requirement\".",
+    "languages": [
+      "en"
+    ],
+    "phone": "(301) 613-5259",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "st-francis-xavier-church-food-pantry",
+    "name": "St. Francis Xavier Church Food Pantry",
+    "type": "pantry",
+    "address": "2815 O St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Randle Highlands",
+    "lat": 38.872877,
+    "lng": -76.967526,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "2nd Saturday of each month, 9-11:30am; walk-up, pre-bagged groceries.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 251-7692",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "atonement-food-pantry",
+    "name": "Atonement Food Pantry (Church of the Atonement)",
+    "type": "pantry",
+    "address": "5073 East Capitol St SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Capitol View",
+    "lat": 38.889636,
+    "lng": -76.927583,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly: 3rd Monday 9am-1pm; 3rd Tuesday 10am-1pm (fresh produce first come, first served, non-perishables, meat if available); 1st Wednesday 4-7pm (non-perishables and meat if available); 4th Saturday 9am-1pm. Walk-up or drive-thru.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 582-4200",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Third-party directories disagree (one lists weekly Saturdays 9am-1pm; FoodHelpline lists 4th Sat/1st Wed/3rd Tue and says on-site registration is required) -- call ahead. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "church-of-the-incarnation-svdp-pantry",
+    "name": "Church of the Incarnation St. Vincent de Paul Society Food Pantry",
+    "type": "pantry",
+    "address": "880 Eastern Ave NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Burrville",
+    "lat": 38.901136,
+    "lng": -76.92005,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "3rd Tuesday of each month, 10:30am-1:30pm; walk-up, pre-bagged groceries.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(540) 760-5608",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "cafb-mobile-market-ward-memorial-ame",
+    "name": "CAFB Mobile Market at Ward Memorial AME Church",
+    "type": "mobile_market",
+    "address": "241 42nd St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Mayfair",
+    "lat": 38.893928,
+    "lng": -76.942533,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "3rd Saturday of each month, 8am-12pm; walk-up or drive-thru.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 398-3899",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "cafb-mobile-market-congress-heights-family-success-center",
+    "name": "CAFB Mobile Market at Congress Heights Family Success Center",
+    "type": "mobile_market",
+    "address": "1345 Savannah St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Douglass",
+    "lat": 38.843726,
+    "lng": -76.986479,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "3rd Monday of each month, 11am-2pm; walk-up.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 889-1425",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "cafb-mobile-market-southern-hills-community-center",
+    "name": "CAFB Mobile Market at Southern Hills Community Center",
+    "type": "mobile_market",
+    "address": "4335 4th St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Washington Highlands",
+    "lat": 38.828351,
+    "lng": -77.000639,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "4th Tuesday of each month, 11am-2pm; walk-up.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": null,
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". No phone listed. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "cafb-mobile-market-frederick-douglass-community-center",
+    "name": "CAFB Mobile Market at Frederick Douglass Community Center",
+    "type": "mobile_market",
+    "address": "2000 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Douglass",
+    "lat": 38.850585,
+    "lng": -76.975736,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "2nd Thursday of each month, 10am-1pm.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 317-1490",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "cafb-mobile-market-ambassador-baptist-church",
+    "name": "CAFB Mobile Market at Ambassador Baptist Church",
+    "type": "mobile_market",
+    "address": "1408 Minnesota Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.866851,
+    "lng": -76.984152,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "2nd Saturday of each month, 8-10am; walk-up.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Not published",
+    "languages": [
+      "en"
+    ],
+    "phone": "(202) 678-1993",
+    "website": null,
+    "source_url": "https://www.capitalareafoodbank.org/find-food-assistance/",
+    "extra_source_urls": [
+      "https://experience.arcgis.com/experience/d60aa14515d24ac494b37a42aa3dec9c",
+      "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "CAFB agency code \"MOMK\" (CAFB Mobile Market: monthly no-cost produce and groceries). CAFB mobile-markets page says markets \"offer monthly distribution of free fruits, vegetables, and other groceries to area residents\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28); address, days and hours are from that listing (partner-reported). Not corroborated on an operator-owned website; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+  },
+  {
+    "id": "jfm-moten-elementary",
+    "name": "Joyful Food Market at Moten Elementary School",
+    "type": "free_market",
+    "address": "1565 Morris Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.857216,
+    "lng": -76.983701,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Nov 4 and Wed Dec 9, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=1007354",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-kipp-dc-smilow-campus",
+    "name": "Joyful Food Market at KIPP DC Smilow Campus (Arts & Technology, Quest and Valor academies)",
+    "type": "free_market",
+    "address": "5300 Blaine St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Grant Park",
+    "lat": 38.891777,
+    "lng": -76.92582,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 8 and Mon Dec 7, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=1141117",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); listed by Martha's Table as \"KIPP Smillow\". Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-johnson-middle-school",
+    "name": "Joyful Food Market at Johnson Middle School",
+    "type": "free_market",
+    "address": "1400 Bruce Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Douglass",
+    "lat": 38.849328,
+    "lng": -76.985261,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 15, Thu Nov 19 and Thu Dec 17, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=1141122",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-dc-prep-anacostia-elementary",
+    "name": "Joyful Food Market at DC Prep PCS - Anacostia Elementary",
+    "type": "free_market",
+    "address": "2330 Pomeroy Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.856867,
+    "lng": -76.985719,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Oct 14, Mon Nov 9 and Wed Dec 2, 2026. Volunteer shift window 1:00-3:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=1195400",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-boone-elementary",
+    "name": "Joyful Food Market at Boone Elementary School",
+    "type": "free_market",
+    "address": "2200 Minnesota Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.871443,
+    "lng": -76.974929,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Mon Dec 14, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=1208937",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); CAFB article (Aug 24, 2026) also describes the monthly Boone ES market at dismissal. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-patterson-elementary",
+    "name": "Joyful Food Market at Patterson Elementary School",
+    "type": "free_market",
+    "address": "4399 South Capitol Ter SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Bellevue",
+    "lat": 38.826782,
+    "lng": -77.008238,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Nov 10 and Tue Dec 1, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989018",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder matched a different street/quadrant (4399 S CAPITOL ST SW, WASHINGTON, DC, 20032). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-plummer-elementary",
+    "name": "Joyful Food Market at Plummer Elementary School",
+    "type": "free_market",
+    "address": "4601 Texas Ave SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Benning",
+    "lat": 38.886596,
+    "lng": -76.940476,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Nov 24 and Tue Dec 15, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989034",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-randle-highlands-elementary",
+    "name": "Joyful Food Market at Randle Highlands Elementary School",
+    "type": "free_market",
+    "address": "1650 30th St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Randle Highlands",
+    "lat": 38.870096,
+    "lng": -76.964701,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Oct 20, Tue Nov 17 and Tue Dec 15, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989037",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-appletree-parklands",
+    "name": "Joyful Food Market at AppleTree Early Learning PCS - Parklands @ THEARC",
+    "type": "free_market",
+    "address": "1801 Mississippi Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Douglass",
+    "lat": 38.84356,
+    "lng": -76.9774,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 15, Thu Nov 19 and Thu Dec 17, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989141",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); volunteer listing says 3rd Floor. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). DC MAR address point lists ZIP 20032 for this address; ZIP 20020 kept as given by the operator and the Census geocoder. Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-friendship-southeast-elementary",
+    "name": "Joyful Food Market at Friendship PCS - Southeast Elementary Academy",
+    "type": "free_market",
+    "address": "645 Milwaukee Pl SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.848006,
+    "lng": -76.996754,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 15, Thu Nov 12 and Thu Dec 10, 2026. Volunteer shift window 2:30-5:00pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989166",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-kipp-dc-douglass-campus",
+    "name": "Joyful Food Market at KIPP DC Douglass Road Campus (AIM, Discover and Heights academies)",
+    "type": "free_market",
+    "address": "2600 Douglass Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.857228,
+    "lng": -76.989997,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 16 and Fri Dec 18, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989174",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-lee-montessori-east-end",
+    "name": "Joyful Food Market at Lee Montessori PCS - East End",
+    "type": "free_market",
+    "address": "2345 R St SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.869421,
+    "lng": -76.971971,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Nov 13, 2026. Volunteer shift window 12:00-2:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989199",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-kelly-miller-middle-school",
+    "name": "Joyful Food Market at Kelly Miller Middle School",
+    "type": "free_market",
+    "address": "301 49th St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Lincoln Heights",
+    "lat": 38.892683,
+    "lng": -76.932835,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Oct 20, Tue Nov 17 and Tue Dec 15, 2026. Volunteer shift window 2:15-5:00pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989215",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-excel-academy",
+    "name": "Joyful Food Market at Excel Academy (DCPS)",
+    "type": "free_market",
+    "address": "2501 Martin Luther King Jr Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.86052,
+    "lng": -76.994494,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Oct 21 and Mon Nov 30, 2026. Volunteer shift window 1:00-3:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989228",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-achievement-prep-wahler-place",
+    "name": "Joyful Food Market at Achievement Prep PCS - Wahler Place Elementary",
+    "type": "free_market",
+    "address": "908 Wahler Pl SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Washington Highlands",
+    "lat": 38.833897,
+    "lng": -76.992534,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 29 and Fri Dec 18, 2026. Volunteer shift window 2:00-5:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989231",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-king-elementary",
+    "name": "Joyful Food Market at King Elementary School (temporary McGogney building)",
+    "type": "free_market",
+    "address": "3400 Wheeler Rd SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.840552,
+    "lng": -76.993582,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 22, Mon Nov 16 and Wed Dec 16, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989235",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DCPS SY2026-27 swing-space table (King ES temporarily at the McGogney building, 3400 Wheeler Rd SE); DC GIS school layer still shows the permanent building at 3200 6th St SE. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-leckie-education-campus",
+    "name": "Joyful Food Market at Leckie Education Campus",
+    "type": "free_market",
+    "address": "4201 Martin Luther King Jr Ave SW, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Bellevue",
+    "lat": 38.8286,
+    "lng": -77.01266,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 16 and Thu Dec 17, 2026. Volunteer shift window 12:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989331",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-stokes-east-end",
+    "name": "Joyful Food Market at Elsie Whitlow Stokes Community Freedom PCS - East End",
+    "type": "free_market",
+    "address": "5600 East Capitol St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Capitol View",
+    "lat": 38.889874,
+    "lng": -76.920633,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 9 and Fri Nov 13, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989343",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-whitlock-elementary",
+    "name": "Joyful Food Market at Lorraine H. Whitlock Elementary School",
+    "type": "free_market",
+    "address": "533 48th Pl NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Lincoln Heights",
+    "lat": 38.895347,
+    "lng": -76.933996,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 8 and Thu Dec 10, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989350",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-turner-elementary",
+    "name": "Joyful Food Market at Turner Elementary School",
+    "type": "free_market",
+    "address": "3264 Stanton Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Douglass",
+    "lat": 38.847547,
+    "lng": -76.980458,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Nov 20 and Fri Dec 18, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989352",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-garfield-elementary",
+    "name": "Joyful Food Market at Garfield Elementary School",
+    "type": "free_market",
+    "address": "2435 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Garfield Heights",
+    "lat": 38.85192,
+    "lng": -76.970826,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 16, Mon Nov 23 and Mon Dec 14, 2026. Volunteer shift window 2:30-5:00pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989361",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-savoy-elementary",
+    "name": "Joyful Food Market at Savoy Elementary School",
+    "type": "free_market",
+    "address": "2400 Shannon Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Barry Farm",
+    "lat": 38.863452,
+    "lng": -76.992947,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Nov 10 and Tue Dec 8, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989369",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-kimball-elementary",
+    "name": "Joyful Food Market at Kimball Elementary School",
+    "type": "free_market",
+    "address": "3375 Minnesota Ave SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Greenway",
+    "lat": 38.883381,
+    "lng": -76.95759,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Nov 5 and Thu Dec 3, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989372",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-early-childhood-academy",
+    "name": "Joyful Food Market at Early Childhood Academy PCS (Barnaby St)",
+    "type": "free_market",
+    "address": "885 Barnaby St SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Washington Highlands",
+    "lat": 38.831793,
+    "lng": -76.991519,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Dec 8, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989543",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-beers-elementary",
+    "name": "Joyful Food Market at Beers Elementary School",
+    "type": "free_market",
+    "address": "3600 Alabama Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Penn Branch",
+    "lat": 38.86435,
+    "lng": -76.955605,
+    "geocode_source": "open-data-dc",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 29, Mon Nov 9 and Tue Dec 1, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989563",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match. Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-rocketship-rise-academy",
+    "name": "Joyful Food Market at Rocketship PCS - Rise Academy",
+    "type": "free_market",
+    "address": "2335 Raynolds Pl SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Woodland",
+    "lat": 38.856063,
+    "lng": -76.97462,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Dec 4, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989570",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-dc-scholars",
+    "name": "Joyful Food Market at DC Scholars PCS",
+    "type": "free_market",
+    "address": "5601 East Capitol St SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Capitol View",
+    "lat": 38.889628,
+    "lng": -76.92177,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 2, Fri Nov 6, Fri Dec 4, 2026 and Mon Jan 4, 2027. Volunteer shift window 11:30am-2:00pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989571",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-kipp-dc-wheeler-road-campus",
+    "name": "Joyful Food Market at KIPP DC Wheeler Road Campus",
+    "type": "free_market",
+    "address": "3301 Wheeler Rd SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.842162,
+    "lng": -76.994026,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Nov 4 and Wed Dec 2, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=989582",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); listed by Martha's Table as \"KIPP Learning Center\"; DC GIS lists several KIPP DC schools at this address. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-stanton-elementary",
+    "name": "Joyful Food Market at Stanton Elementary School",
+    "type": "free_market",
+    "address": "2701 Naylor Rd SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Woodland",
+    "lat": 38.860167,
+    "lng": -76.968227,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Oct 21, Wed Nov 18 and Wed Dec 16, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=990912",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-cw-harris-elementary",
+    "name": "Joyful Food Market at C.W. Harris Elementary School",
+    "type": "free_market",
+    "address": "301 53rd St SE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Marshall Heights",
+    "lat": 38.884226,
+    "lng": -76.925988,
+    "geocode_source": "open-data-dc",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 9, Fri Nov 13 and Mon Dec 7, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=990914",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder matched a different street/quadrant (301 53RD ST NE, WASHINGTON, DC, 20019). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-appletree-douglas-knoll",
+    "name": "Joyful Food Market at AppleTree Early Learning PCS - Douglas Knoll",
+    "type": "free_market",
+    "address": "2017 Savannah Ter SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Shipley",
+    "lat": 38.848315,
+    "lng": -76.975854,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Thu Oct 22, Thu Nov 19 and Thu Dec 17, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=992565",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); address from DC GIS (2017 Savannah Terrace SE); the Martha's Table listing gives 2031 Savannah Terrace SE #2127 -- same complex, hand-check. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-academy-of-hope-southeast",
+    "name": "Joyful Food Market at Academy of Hope Adult PCS - Southeast (Ward 8) campus",
+    "type": "free_market",
+    "address": "421 Alabama Ave SE, Washington, DC 20032",
+    "zip": "20032",
+    "neighborhood": "Congress Heights",
+    "lat": 38.843013,
+    "lng": -76.999857,
+    "geocode_source": "census-geocoder",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Oct 28, Wed Nov 18 and Wed Dec 9, 2026. Volunteer shift window 11:00am-1:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=992566",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); adult charter school, so the market serves its adult learners/families. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-smothers-elementary",
+    "name": "Joyful Food Market at Smothers Elementary School",
+    "type": "free_market",
+    "address": "4400 Brooks St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Mayfair",
+    "lat": 38.893481,
+    "lng": -76.939115,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Fri Oct 2, Fri Nov 6 and Fri Dec 4, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=994473",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-blue-montessori",
+    "name": "Joyful Food Market at DC Wildflower PCS - Blue Montessori",
+    "type": "free_market",
+    "address": "1516 Marion Barry Ave SE, Washington, DC 20020",
+    "zip": "20020",
+    "neighborhood": "Fairlawn",
+    "lat": 38.866599,
+    "lng": -76.983274,
+    "geocode_source": "open-data-dc",
+    "ward": 8,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Tue Oct 6, Tue Nov 3 and Tue Dec 1, 2026. Volunteer shift window 2:00-4:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=994519",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026); volunteer listing says 1st Floor. Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder returned no match. Ward 8 from DC MAR address point (not stated by the operator)."
+  },
+  {
+    "id": "jfm-dc-prep-benning",
+    "name": "Joyful Food Market at DC Prep PCS - Benning Campus",
+    "type": "free_market",
+    "address": "100 41st St NE, Washington, DC 20019",
+    "zip": "20019",
+    "neighborhood": "Benning",
+    "lat": 38.890358,
+    "lng": -76.944635,
+    "geocode_source": "census-geocoder",
+    "ward": 7,
+    "hours": null,
+    "schedule_note": "Monthly pop-up market during the school year for families of this school. Dates on Martha's Table's 2026 volunteer calendar: Wed Oct 7, Wed Nov 4 and Wed Dec 2, 2026. Volunteer shift window 1:00-3:30pm (includes setup/cleanup; the market itself is held around school dismissal -- \"Hours vary based upon school schedule\"). Confirm with the school.",
+    "season": null,
+    "free": true,
+    "snap": false,
+    "wic": false,
+    "produce_plus": false,
+    "eligibility": "Martha's Table: \"Families at our partner schools are welcome to shop our choice-based markets at no-cost, on a first-come, first-served basis.\" CAFB: \"School families are invited to shop at no cost.\"",
+    "languages": [
+      "en"
+    ],
+    "phone": "202-328-6608",
+    "website": "https://marthastable.org/jfms/",
+    "source_url": "https://volunteer.marthastable.org/need/detail/?need_id=994523",
+    "extra_source_urls": [
+      "https://marthastable.org/jfms/",
+      "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/joyful-food-markets/",
+      "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Education_WebMercator/MapServer/25"
+    ],
+    "last_verified": "2026-10-10",
+    "confidence": "medium",
+    "notes": "Joyful Food Markets are run by Martha's Table with the Capital Area Food Bank (no-cost ~15-lb bag, about 70% produce). Site and dates confirmed from the Martha's Table volunteer (Galaxy Digital) listing for this school (2026 shifts); address matches DC GIS public/charter school layer (edited Sep 2026). Public market hours are not published, so hours=null and confidence=medium. The volunteer calendar may not show every market date. Phone is Martha's Table main line. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated (defaulted to en). Ward 7 from DC MAR address point (not stated by the operator)."
+  }
+]

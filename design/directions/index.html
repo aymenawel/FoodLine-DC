@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design directions</title>
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Geist:wght@400..700&family=Geist+Mono:wght@400..600&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..600&family=Public+Sans:wght@400..700&display=swap">
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<style>
+  /* ---------- Direction tokens ---------- */
+  [data-dir="A"] { /* Night Ledger */
+    --bg:#0D1411; --panel:#111a16; --line:#25332c; --land:#141d19; --land-east:#18241f; --water:#173843;
+    --ink:#EEEADF; --muted:#9AA79F; --accent:#F4B740; --accent-ink:#1a1206; --food:#E9E3D0; --food-east:#7FD1A8;
+    --lfa:rgba(226,104,72,.18); --lfa-line:rgba(226,104,72,.55); --ward:#2f4038;
+    --display:'Instrument Serif', serif; --ui:'Geist', system-ui, sans-serif; --mono:'Geist Mono', ui-monospace, monospace;
+    --phone:#0a0f0d; --bubble-in:#1d2924; --bubble-out:#F4B740; --bubble-out-ink:#1a1206; --radius:18px;
+  }
+  [data-dir="B"] { /* Broadsheet */
+    --bg:#F2ECE0; --panel:#F7F2E8; --line:#D8CEBB; --land:#FBF8F1; --land-east:#FBF8F1; --water:#BFD0CC;
+    --ink:#1B1712; --muted:#5C5446; --accent:#C2381C; --accent-ink:#fff; --food:#1B1712; --food-east:#1B1712;
+    --lfa:rgba(194,56,28,.0); --lfa-line:rgba(194,56,28,.65); --ward:#8E826D;
+    --display:'Newsreader', serif; --ui:'Public Sans', system-ui, sans-serif; --mono:'IBM Plex Mono', ui-monospace, monospace;
+    --phone:#1B1712; --bubble-in:#ECE5D6; --bubble-out:#1B1712; --bubble-out-ink:#F7F2E8; --radius:4px;
+  }
+  [data-dir="C"] { /* Transit Signal */
+    --bg:#FFFFFF; --panel:#F6F7F6; --line:#DADDDB; --land:#EEF0EE; --land-east:#E6E9E7; --water:#B9D2DC;
+    --ink:#101314; --muted:#4F5754; --accent:#E1141F; --accent-ink:#fff; --food:#101314; --food-east:#0A7A4B;
+    --lfa:rgba(225,20,31,.13); --lfa-line:rgba(225,20,31,.5); --ward:#101314;
+    --display:'Archivo', sans-serif; --ui:'Archivo', sans-serif; --mono:'JetBrains Mono','IBM Plex Mono', monospace;
+    --phone:#101314; --bubble-in:#EEF0EE; --bubble-out:#101314; --bubble-out-ink:#fff; --radius:0px;
+  }
+  * { box-sizing:border-box; margin:0; padding:0 }
+  html,body { height:100% }
+  body { background:var(--bg); color:var(--ink); font-family:var(--ui); transition:background .4s, color .4s; overflow:hidden }
+  .switcher { position:fixed; top:16px; left:50%; transform:translateX(-50%); z-index:20; display:flex; gap:4px; padding:4px;
+    background:rgba(20,20,20,.82); border-radius:999px; backdrop-filter:blur(8px); font-family:'Geist',sans-serif }
+  .switcher button { border:0; background:transparent; color:#cfcfcf; padding:9px 16px; border-radius:999px; font:600 14px 'Geist',sans-serif; cursor:pointer }
+  .switcher button[aria-pressed="true"] { background:#fff; color:#111 }
+  .stage { display:grid; grid-template-columns: 380px 1fr 360px; height:100dvh }
+  /* ---------- Left editorial column ---------- */
+  .story { padding:84px 36px 32px; display:flex; flex-direction:column; gap:28px; border-right:1px solid var(--line); background:var(--panel); overflow:auto }
+  .kicker { font:500 12px/1 var(--mono); letter-spacing:.14em; text-transform:uppercase; color:var(--muted) }
+  h1 { font-family:var(--display); font-weight:400; font-size:46px; line-height:1.02; letter-spacing:-.01em }
+  [data-dir="B"] h1 { font-weight:500; font-style:italic; font-size:48px }
+  [data-dir="C"] h1 { font-weight:850; font-stretch:72%; font-size:52px; letter-spacing:-.02em; text-transform:uppercase; line-height:.92 }
+  h1 em { font-style:italic; color:var(--accent) }
+  [data-dir="C"] h1 em { font-style:normal }
+  .lede { font-size:17px; line-height:1.5; color:var(--muted); max-width:34ch }
+  .stats { display:grid; gap:0; border-top:1px solid var(--line) }
+  .stat { padding:16px 0; border-bottom:1px solid var(--line); display:grid; grid-template-columns:auto 1fr; gap:4px 16px; align-items:baseline }
+  .stat b { font:500 40px/1 var(--mono); letter-spacing:-.03em; grid-row:span 2 }
+  [data-dir="C"] .stat b { font-family:'Archivo'; font-weight:800; font-stretch:80% }
+  .stat span { font-size:15px; line-height:1.35 }
+  .stat small { font:400 11px/1.3 var(--mono); color:var(--muted) }
+  .legend { display:flex; flex-wrap:wrap; gap:10px 18px; font-size:13px; color:var(--muted) }
+  .legend i { display:inline-block; width:12px; height:12px; border-radius:50%; margin-right:7px; vertical-align:-1px }
+  [data-dir="C"] .legend i { border-radius:0 }
+  /* ---------- Map ---------- */
+  .mapwrap { position:relative }
+  #map { position:absolute; inset:0 }
+  .maplibregl-ctrl-attrib { font-size:10px }
+  .map-actions { position:absolute; left:20px; bottom:24px; display:flex; gap:8px; z-index:5 }
+  .btn { border:1px solid var(--line); background:var(--panel); color:var(--ink); padding:12px 16px; font:600 14px var(--ui); border-radius:var(--radius); cursor:pointer }
+  .btn.primary { background:var(--accent); color:var(--accent-ink); border-color:transparent }
+  .sample-tag { position:absolute; right:20px; top:76px; z-index:5; font:500 11px var(--mono); letter-spacing:.12em; text-transform:uppercase;
+    padding:7px 10px; border:1px dashed var(--muted); color:var(--muted); background:var(--panel); border-radius:var(--radius) }
+  .counter { position:absolute; right:20px; bottom:24px; z-index:5; background:var(--panel); border:1px solid var(--line); padding:14px 18px; border-radius:var(--radius) }
+  .counter b { display:block; font:500 34px/1 var(--mono) } .counter span { font-size:12px; color:var(--muted) }
+  .hood { font:italic 400 17px var(--display); color:var(--ink); opacity:.85; pointer-events:none; text-shadow:0 0 6px var(--land), 0 0 2px var(--land); white-space:nowrap }
+  [data-dir="C"] .hood { font:700 11px 'Archivo'; font-style:normal; letter-spacing:.12em; text-transform:uppercase; font-stretch:90% }
+  .ping { width:14px; height:14px; position:relative; pointer-events:none }
+  .ping::before, .ping::after { content:''; position:absolute; inset:0; border-radius:50%; background:var(--accent) }
+  [data-dir="C"] .ping::before { border-radius:0; transform:rotate(45deg) }
+  .ping::after { background:transparent; border:2px solid var(--accent); animation:ring 1.6s cubic-bezier(.16,1,.3,1) forwards }
+  .ping.new::before { animation:drop .5s cubic-bezier(.34,1.56,.64,1) }
+  @keyframes ring { from { transform:scale(1); opacity:1 } to { transform:scale(6); opacity:0 } }
+  @keyframes drop { from { transform:scale(0) } to { transform:scale(1) } }
+  /* ---------- Phone ---------- */
+  .phonecol { display:grid; place-items:center; border-left:1px solid var(--line); background:var(--panel); padding:72px 20px 20px }
+  .phone { width:300px; height:620px; background:var(--phone); border-radius:46px; padding:12px; box-shadow:0 30px 60px -20px rgba(0,0,0,.45) }
+  [data-dir="B"] .phone { border-radius:34px } [data-dir="C"] .phone { border-radius:28px }
+  .screen { width:100%; height:100%; background:var(--bg); border-radius:36px; overflow:hidden; display:flex; flex-direction:column }
+  [data-dir="B"] .screen { border-radius:24px } [data-dir="C"] .screen { border-radius:18px }
+  .phone-head { padding:34px 16px 10px; text-align:center; border-bottom:1px solid var(--line) }
+  .phone-head b { display:block; font:600 15px var(--ui) } .phone-head small { font:400 11px var(--mono); color:var(--muted) }
+  .thread { flex:1; padding:14px 12px; display:flex; flex-direction:column; gap:8px; overflow:hidden; justify-content:flex-end }
+  .msg { max-width:86%; padding:9px 12px; font-size:13.5px; line-height:1.38; border-radius:18px; animation:pop .35s cubic-bezier(.34,1.4,.64,1) }
+  [data-dir="B"] .msg { border-radius:6px } [data-dir="C"] .msg { border-radius:0 }
+  .msg.in { background:var(--bubble-in); align-self:flex-start; border-bottom-left-radius:6px }
+  .msg.out { background:var(--bubble-out); color:var(--bubble-out-ink); align-self:flex-end; border-bottom-right-radius:6px; font-weight:600 }
+  .msg .r { display:block; margin-top:6px; padding-top:6px; border-top:1px solid var(--line) }
+  .msg .r b { font-weight:650 } .msg .r i { font-style:normal; color:var(--muted); font-size:12px }
+  .typing { align-self:flex-start; background:var(--bubble-in); padding:11px 14px; border-radius:18px; display:flex; gap:4px }
+  .typing i { width:6px; height:6px; border-radius:50%; background:var(--muted); animation:blink 1s infinite }
+  .typing i:nth-child(2){animation-delay:.15s} .typing i:nth-child(3){animation-delay:.3s}
+  @keyframes blink { 0%,100%{opacity:.25} 50%{opacity:1} }
+  @keyframes pop { from { transform:translateY(8px) scale(.96); opacity:0 } to { transform:none; opacity:1 } }
+  .compose { margin:8px; padding:11px 14px; border:1px solid var(--line); border-radius:22px; font-size:13px; color:var(--muted) }
+  [data-dir="C"] .compose, [data-dir="B"] .compose { border-radius:var(--radius) }
+  .spec { position:fixed; left:396px; top:72px; z-index:6; max-width:430px; background:rgba(16,16,16,.88); color:#eee; padding:14px 16px; border-radius:12px;
+    font:13px/1.45 'Geist',sans-serif; backdrop-filter:blur(8px) }
+  .spec h3 { font:600 15px 'Geist'; margin-bottom:6px } .spec .sw { display:flex; gap:6px; margin:8px 0 }
+  .spec .sw i { width:26px; height:26px; border-radius:6px; border:1px solid rgba(255,255,255,.2) }
+  .spec .x { float:right; cursor:pointer; color:#aaa; background:none; border:0; font-size:16px }
+</style>
+</head>
+<body data-dir="A">
+<nav class="switcher" aria-label="Design direction">
+  <button data-d="A" aria-pressed="true">A · Night Ledger</button>
+  <button data-d="B" aria-pressed="false">B · Broadsheet</button>
+  <button data-d="C" aria-pressed="false">C · Transit Signal</button>
+</nav>
+<aside class="spec" id="spec"></aside>
+<main class="stage">
+  <section class="story">
+    <div class="kicker">Wards 7 &amp; 8 · East of the Anacostia</div>
+    <h1>Four grocery stores. <em>One river.</em></h1>
+    <p class="lede">Of 78 full-service grocery stores operating in DC, four are east of the Anacostia. Every text to the line adds a dot to this map.</p>
+    <div class="stats">
+      <div class="stat"><b>4/78</b><span>full-service stores east of the river</span><small>Open Data DC, Grocery Store Locations (Aug 2026)</small></div>
+      <div class="stat"><b>17:3</b><span>stores in Ward 3 vs Ward 7</span><small>D.C. Hunger Solutions, Grocery Gap 2025</small></div>
+      <div class="stat"><b>38.5%</b><span>Ward 8 households on SNAP</span><small>ACS 2020–2024 5-year</small></div>
+    </div>
+    <div class="legend" id="legend"></div>
+  </section>
+  <section class="mapwrap">
+    <div id="map" role="img" aria-label="Map of DC grocery stores and low food access areas"></div>
+    <div class="sample-tag">Sample requests · not real residents</div>
+    <div class="map-actions">
+      <button class="btn" id="city">Citywide</button>
+      <button class="btn primary" id="focus">Focus Wards 7 &amp; 8</button>
+    </div>
+    <div class="counter"><b id="count">0</b><span>requests in the last hour</span></div>
+  </section>
+  <section class="phonecol">
+    <div class="phone"><div class="screen">
+      <div class="phone-head"><b>FoodLine</b><small>Text line · simulated SMS</small></div>
+      <div class="thread" id="thread"></div>
+      <div class="compose">Text a ZIP, neighborhood or cross street</div>
+    </div></div>
+  </section>
+</main>
+<script>
+const DIRS = {
+  A: { name:'Night Ledger', note:'Dark editorial. Instrument Serif headlines, Geist UI, Geist Mono numbers. Amber is reserved for live requests, so every ping reads instantly over a compressed video call. Fly-to transitions, soft ring pings.',
+       sw:['#0D1411','#173843','#EEEADF','#F4B740','#E26848','#7FD1A8'] },
+  B: { name:'Broadsheet', note:'Light newspaper print. Newsreader italic headlines, Public Sans UI, Plex Mono numbers. Low-access areas are cross-hatched like a printed atlas; vermilion ink for requests. Restrained motion: an ink-drop and a single ring.',
+       sw:['#F2ECE0','#FBF8F1','#1B1712','#C2381C','#BFD0CC','#8E826D'] },
+  C: { name:'Transit Signal', note:'Municipal wayfinding. Condensed Archivo caps, DC-flag red, square pins and heavy ward lines, like a Metro map. Most legible at a distance; feels like official city infrastructure.',
+       sw:['#FFFFFF','#EEF0EE','#101314','#E1141F','#0A7A4B','#B9D2DC'] },
+};
+let focused = false;
+const css = (v) => getComputedStyle(document.body).getPropertyValue(v).trim();
+const G = (f) => `/data/geo/${f}.geojson`;
+const HOODS = ['Historic Anacostia','Congress Heights','Deanwood','Benning','Bellevue','Hillcrest','Marshall Heights','Washington Highlands','Fort Dupont','Kenilworth','Barry Farm','Navy Yard','Georgetown','Columbia Heights','Cleveland Park'];
+
+function hatch(color) {
+  const s = 8, c = document.createElement('canvas'); c.width = c.height = s;
+  const g = c.getContext('2d'); g.strokeStyle = color; g.lineWidth = 1.6;
+  g.beginPath(); g.moveTo(0, s); g.lineTo(s, 0); g.moveTo(-2, 2); g.lineTo(2, -2); g.moveTo(s - 2, s + 2); g.lineTo(s + 2, s - 2); g.stroke();
+  return g.getImageData(0, 0, s, s);
+}
+function style(dir) {
+  const thick = dir === 'C';
+  return {
+    version: 8,
+    sources: {
+      dc: { type:'geojson', data:G('dc-boundary') }, east: { type:'geojson', data:G('east-of-river') },
+      water: { type:'geojson', data:G('water') }, wards: { type:'geojson', data:G('wards') },
+      lfa: { type:'geojson', data:G('low-food-access') }, grocery: { type:'geojson', data:G('grocery-stores') },
+    },
+    layers: [
+      { id:'bg', type:'background', paint:{ 'background-color': css('--bg') } },
+      { id:'land', type:'fill', source:'dc', paint:{ 'fill-color': css('--land') } },
+      { id:'east', type:'fill', source:'east', paint:{ 'fill-color': css('--land-east') } },
+      dir === 'B'
+        ? { id:'lfa', type:'fill', source:'lfa', layout:{ visibility: focused ? 'visible' : 'none' }, paint:{ 'fill-pattern':'hatch' } }
+        : { id:'lfa', type:'fill', source:'lfa', layout:{ visibility: focused ? 'visible' : 'none' }, paint:{ 'fill-color': css('--lfa') } },
+      { id:'water', type:'fill', source:'water', paint:{ 'fill-color': css('--water') } },
+      { id:'wards', type:'line', source:'wards', paint:{ 'line-color': css('--ward'), 'line-width': thick ? 2.2 : 1.2, 'line-dasharray': dir === 'B' ? [3, 2] : [1] } },
+      { id:'dc-edge', type:'line', source:'dc', paint:{ 'line-color': css('--ink'), 'line-width': thick ? 2.5 : 1, 'line-opacity': .5 } },
+      { id:'grocery', type:'circle', source:'grocery', filter:['==',['get','open_2026'],true], paint:{
+        'circle-radius':['interpolate',['linear'],['zoom'],10,4,14,8],
+        'circle-color':['case',['get','east_of_river'], css('--food-east'), css('--food')],
+        'circle-stroke-color': css('--bg'), 'circle-stroke-width': 1.5 } },
+    ],
+  };
+}
+const map = new maplibregl.Map({ container:'map', style: style('A'), center:[-77.02, 38.895], zoom:11.2, attributionControl:false,
+  maxBounds:[[-77.25, 38.75], [-76.80, 39.05]] });
+map.addControl(new maplibregl.AttributionControl({ compact:true, customAttribution:'Data: Open Data DC (CC BY 4.0)' }));
+map.on('styleimagemissing', (e) => { if (e.id === 'hatch') map.addImage('hatch', hatch(css('--lfa-line'))); });
+
+// neighborhood labels as HTML so they use the direction's typeface
+fetch(G('neighborhoods')).then(r => r.json()).then(g => {
+  for (const f of g.features) if (HOODS.includes(f.properties.name)) {
+    const el = document.createElement('div'); el.className = 'hood'; el.textContent = f.properties.name;
+    new maplibregl.Marker({ element: el }).setLngLat(f.geometry.coordinates).addTo(map);
+  }
+});
+
+function setDir(d) {
+  document.body.dataset.dir = d;
+  document.querySelectorAll('.switcher button').forEach(b => b.setAttribute('aria-pressed', b.dataset.d === d));
+  map.setStyle(style(d));
+  const x = DIRS[d];
+  document.getElementById('spec').innerHTML = `<button class="x" onclick="this.parentNode.style.display='none'" aria-label="Hide notes">×</button><h3>${d} · ${x.name}</h3>
+    <div class="sw">${x.sw.map(c => `<i style="background:${c}" title="${c}"></i>`).join('')}</div>${x.note}`;
+  document.getElementById('spec').style.display = '';
+  document.getElementById('legend').innerHTML =
+    `<span><i style="background:${css('--food')}"></i>Grocery store (west)</span>
+     <span><i style="background:${css('--food-east')}"></i>Grocery store (east of river)</span>
+     <span><i style="background:${d === 'B' ? 'transparent;border:1.5px solid ' + css('--lfa-line') : css('--lfa-line')}"></i>Low food access area (2017)</span>
+     <span><i style="background:${css('--accent')}"></i>Request (sample)</span>`;
+}
+document.querySelectorAll('.switcher button').forEach(b => b.onclick = () => setDir(b.dataset.d));
+document.getElementById('focus').onclick = () => { focused = true; map.setLayoutProperty('lfa','visibility','visible'); map.flyTo({ center:[-76.982, 38.862], zoom:12.7, speed:.8, curve:1.4 }); };
+document.getElementById('city').onclick = () => { focused = false; map.setLayoutProperty('lfa','visibility','none'); map.flyTo({ center:[-77.02, 38.895], zoom:11.2, speed:.8 }); };
+setDir('A');
+
+// ---------- sample pings + a scripted conversation using the real directory ----------
+let count = 0, eastHoods = [];
+fetch(G('neighborhoods')).then(r => r.json()).then(g => { eastHoods = g.features.filter(f => f.properties.east_of_river && f.properties.kind === 'neighborhood'); });
+function ping(lngLat) {
+  const el = document.createElement('div'); el.className = 'ping new';
+  const m = new maplibregl.Marker({ element: el }).setLngLat(lngLat).addTo(map);
+  setTimeout(() => el.classList.remove('new'), 600);
+  document.getElementById('count').textContent = ++count;
+  setTimeout(() => m.remove(), 60000);
+}
+setInterval(() => {
+  if (!eastHoods.length) return;
+  const f = eastHoods[Math.floor(Math.random() * eastHoods.length)];
+  const [x, y] = f.geometry.coordinates; ping([x + (Math.random() - .5) * .006, y + (Math.random() - .5) * .005]);
+}, 2600);
+
+const miles = (a, b) => { const R = 3958.8, r = Math.PI / 180, dl = (b[1] - a[1]) * r, dg = (b[0] - a[0]) * r;
+  const h = Math.sin(dl / 2) ** 2 + Math.cos(a[1] * r) * Math.cos(b[1] * r) * Math.sin(dg / 2) ** 2; return 2 * R * Math.asin(Math.sqrt(h)); };
+const TYPE = { grocery:'Grocery', pantry:'Free pantry', free_market:'Free market', farmers_market:'Farmers market', mobile_market:'Mobile market', corner_store:'Corner store' };
+fetch('/data/resources.json').then(r => r.json()).then(({ resources }) => {
+  const origin = [-76.9953, 38.8451]; // Congress Heights neighborhood label (approx.)
+  const near = resources.map(r => ({ r, d: miles(origin, [r.lng, r.lat]) })).sort((a, b) => a.d - b.d).slice(0, 3);
+  const reply = `Here are 3 places near Congress Heights:` + near.map(({ r, d }, i) =>
+    `<span class="r"><b>${i + 1}. ${r.name}</b><br>${TYPE[r.type] || r.type}${r.free ? ' · Free' : ''}${r.snap === true ? ' · SNAP/EBT' : ''}<br><i>${r.address.split(',')[0]} · ${d.toFixed(1)} mi</i></span>`).join('')
+    + `<span class="r"><i>Reply OPEN, FREE, MORE or ESPAÑOL</i></span>`;
+  const thread = document.getElementById('thread');
+  const add = (html, cls) => { const el = document.createElement('div'); el.className = cls; el.innerHTML = html; thread.appendChild(el); return el; };
+  async function loop() {
+    const wait = (ms) => new Promise(r => setTimeout(r, ms));
+    while (true) {
+      thread.innerHTML = '';
+      await wait(900); add('20032', 'msg out'); ping([origin[0], origin[1]]);
+      await wait(500); const t = add('<i></i><i></i><i></i>', 'typing');
+      await wait(1500); t.remove(); add(reply, 'msg in');
+      await wait(9000);
+    }
+  }
+  loop();
+});
+</script>
+</body>
+</html>

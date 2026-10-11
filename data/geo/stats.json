@@ -1,0 +1,1540 @@
+{
+  "generated_at": "2026-10-11T01:50:24.518Z",
+  "generated_by": "scripts/geo/stats.mjs",
+  "license": "Source data: Open Data DC, Creative Commons Attribution 4.0 International (CC BY 4.0).",
+  "datasets": {
+    "grocery-stores": {
+      "title": "Grocery Store Locations",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/4",
+      "feature_count": 93,
+      "last_updated": "2026-08-20T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2026-08-24T17:54:53.000Z",
+      "downloaded_at": "2026-10-11T01:26:38.230Z"
+    },
+    "low-food-access": {
+      "title": "Low Food Access Areas",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/61",
+      "feature_count": 381,
+      "last_updated": "2023-03-30T03:45:42.000Z",
+      "last_updated_source": "item.modified",
+      "item_info_updated": "2023-03-30T03:45:42.000Z",
+      "downloaded_at": "2026-10-11T01:26:39.064Z"
+    },
+    "farmers-markets": {
+      "title": "Farmers Market Locations",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+      "feature_count": 64,
+      "last_updated": "2026-09-27T09:35:14.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2026-09-27T13:35:22.000Z",
+      "downloaded_at": "2026-10-11T01:26:39.300Z"
+    },
+    "healthy-corners": {
+      "title": "Healthy Corner Stores",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::healthy-corner-stores",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Public_Service_WebMercator/MapServer/57",
+      "feature_count": 50,
+      "last_updated": "2024-10-04T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2024-10-07T02:59:48.000Z",
+      "downloaded_at": "2026-10-11T01:26:39.517Z"
+    },
+    "wards-2022": {
+      "title": "Wards from 2022",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::wards-from-2022",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/53",
+      "feature_count": 8,
+      "last_updated": "2025-01-17T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2026-06-23T16:34:13.000Z",
+      "downloaded_at": "2026-10-11T01:26:39.982Z"
+    },
+    "dc-boundary": {
+      "title": "Washington DC Administrative Boundary",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::washington-dc-administrative-boundary",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/10",
+      "feature_count": 1,
+      "last_updated": "2013-07-03T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2025-12-12T19:54:28.000Z",
+      "downloaded_at": "2026-10-11T01:26:40.309Z"
+    },
+    "waterbodies": {
+      "title": "Waterbodies",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::waterbodies",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Environment_Water_WebMercator/MapServer/24",
+      "feature_count": 1293,
+      "last_updated": "2026-02-20T14:43:58.000Z",
+      "last_updated_source": "item.modified",
+      "item_info_updated": "2026-02-20T14:43:58.000Z",
+      "downloaded_at": "2026-10-11T01:26:41.684Z"
+    },
+    "zipcodes": {
+      "title": "Zip Codes",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::zip-codes",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/FeatureServer/4",
+      "feature_count": 172,
+      "last_updated": "2022-10-14T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2025-06-04T15:27:29.000Z",
+      "downloaded_at": "2026-10-11T01:26:43.545Z"
+    },
+    "neighborhood-labels": {
+      "title": "Neighborhood Labels",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::neighborhood-labels",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/35",
+      "feature_count": 132,
+      "last_updated": "2019-05-03T00:00:00.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2024-09-05T16:41:05.000Z",
+      "downloaded_at": "2026-10-11T01:26:43.756Z"
+    },
+    "neighborhood-clusters": {
+      "title": "Neighborhood Clusters",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::neighborhood-clusters",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/17",
+      "feature_count": 46,
+      "last_updated": "2024-09-05T16:40:13.000Z",
+      "last_updated_source": "item.modified",
+      "item_info_updated": "2024-09-05T16:40:13.000Z",
+      "downloaded_at": "2026-10-11T01:26:44.806Z"
+    },
+    "east-of-the-river": {
+      "title": "East of the River",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::east-of-the-river-1",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Administrative_Other_Boundaries_WebMercator/MapServer/56",
+      "feature_count": 1,
+      "last_updated": "2024-04-10T17:27:18.000Z",
+      "last_updated_source": "item.modified",
+      "item_info_updated": "2024-04-10T17:27:18.000Z",
+      "downloaded_at": "2026-10-11T01:26:45.733Z"
+    },
+    "intersections": {
+      "title": "Intersection Points",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::intersection-points",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/FeatureServer/2",
+      "feature_count": 19088,
+      "last_updated": "2026-10-10T18:35:05.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2026-10-10T22:44:33.000Z",
+      "downloaded_at": "2026-10-11T01:27:02.588Z"
+    },
+    "bus-stops": {
+      "title": "Metro Bus Stops",
+      "page_url": "https://opendata.dc.gov/datasets/DCGIS::metro-bus-stops",
+      "rest_layer_url": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Transportation_Rail_Bus_WebMercator/MapServer/53",
+      "feature_count": 8335,
+      "last_updated": "2026-10-04T23:30:41.000Z",
+      "last_updated_source": "metadata.metadata.dataIdInfo.idCitation.date.reviseDate",
+      "item_info_updated": "2026-10-05T03:32:35.000Z",
+      "downloaded_at": "2026-10-11T01:27:04.764Z"
+    }
+  },
+  "stats": {
+    "east_of_river_method_agreement": {
+      "value": {
+        "official_polygon_km2": 51.787,
+        "derived_land_polygon_km2": 42.736,
+        "derived_inside_official_share": 0.9991,
+        "derived_outside_official_km2": 0.04,
+        "note": "The official polygon also contains ~8.9 km2 of Anacostia/Potomac water (it runs to mid-river); the derived polygon is land only, so the area difference is mostly water."
+      },
+      "method": "Primary classification = point-in-polygon against the official DC GIS 'East of the River' polygon. Independent check = DC boundary minus the main Waterbodies 'River' polygon (OBJECTID 30, 17.94 km2, covers both the Potomac and Anacostia) buffered 5 m, keeping the land component containing a seed point at Frederick Douglass NHS (-76.9853, 38.8633). Third coarse check = Neighborhood Clusters 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 43, 44.",
+      "dataset": "East of the River",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::east-of-the-river-1",
+      "dataset_last_updated": "2024-04-10T17:27:18.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "other_datasets": [
+        "Waterbodies",
+        "Washington DC Administrative Boundary",
+        "Neighborhood Clusters"
+      ]
+    },
+    "grocery_records_total": {
+      "value": 93,
+      "method": "Count of all features in the Grocery Store Locations layer (includes stores flagged as closed).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2026_total": {
+      "value": 78,
+      "method": "Count of features with PRESENT26 = \"Yes\" (operating in 2026 per the dataset). This is the headline \"full-service grocery stores in DC\" number.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2026_by_ward": {
+      "value": {
+        "1": 13,
+        "2": 13,
+        "3": 14,
+        "4": 11,
+        "5": 11,
+        "6": 10,
+        "7": 3,
+        "8": 3
+      },
+      "method": "PRESENT26 = \"Yes\" stores, ward assigned by point-in-polygon against the official 2022 ward polygons (Wards from 2022), not the dataset WARD attribute.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description).",
+      "other_datasets": [
+        "Wards from 2022"
+      ]
+    },
+    "grocery_all_records_by_ward": {
+      "value": {
+        "1": 14,
+        "2": 17,
+        "3": 16,
+        "4": 12,
+        "5": 13,
+        "6": 13,
+        "7": 4,
+        "8": 4
+      },
+      "method": "All 93 records (open + closed), ward by point-in-polygon against 2022 wards.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2022_by_ward": {
+      "value": {
+        "1": 12,
+        "2": 15,
+        "3": 14,
+        "4": 11,
+        "5": 9,
+        "6": 12,
+        "7": 3,
+        "8": 4
+      },
+      "method": "PRESENT22 = \"Yes\" stores (operating in 2022), ward by point-in-polygon against 2022 wards. For trend context.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2026_east_of_river": {
+      "value": 4,
+      "stores": [
+        {
+          "id": 707,
+          "name": "Safeway",
+          "address": "2845 ALABAMA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 708,
+          "name": "Giant",
+          "address": "1535 ALABAMA AVENUE SE",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": "Camp Simms"
+        },
+        {
+          "id": 718,
+          "name": "Safeway",
+          "address": "322 40TH STREET NE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 721,
+          "name": "Lidl",
+          "address": "2224 TOWN CENTER DRIVE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        }
+      ],
+      "method": "PRESENT26 = \"Yes\" stores inside the official DC GIS \"East of the River\" polygon (cross-checked against a river-derived polygon and Neighborhood Clusters; see east_of_river_method_agreement and grocery_east_method_disagreements).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description).",
+      "other_datasets": [
+        "East of the River"
+      ]
+    },
+    "grocery_all_records_east_of_river": {
+      "value": 6,
+      "stores": [
+        {
+          "id": 707,
+          "name": "Safeway",
+          "address": "2845 ALABAMA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 708,
+          "name": "Giant",
+          "address": "1535 ALABAMA AVENUE SE",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": "Camp Simms"
+        },
+        {
+          "id": 718,
+          "name": "Safeway",
+          "address": "322 40TH STREET NE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 719,
+          "name": "Yes! Organic",
+          "address": "2323 PENNSYLVANIA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 721,
+          "name": "Lidl",
+          "address": "2224 TOWN CENTER DRIVE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 722,
+          "name": "Good Food Markets",
+          "address": "4001 SOUTH CAPITOL STREET SW",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        }
+      ],
+      "method": "All records (open and closed) inside the official East of the River polygon.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2022_east_of_river": {
+      "value": 5,
+      "method": "PRESENT22 = \"Yes\" stores inside the East of the River polygon (trend context).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_open_2026_west_of_river": {
+      "value": 74,
+      "method": "grocery_open_2026_total minus grocery_open_2026_east_of_river.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_ward8_stores": {
+      "value": {
+        "all_records": 4,
+        "open_2026": 3,
+        "open_2026_east_of_river": 1,
+        "open_2026_west_of_river": 2
+      },
+      "stores": [
+        {
+          "id": 703,
+          "name": "Whole Foods Market",
+          "address": "101 H STREET SE",
+          "ward": 8,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 706,
+          "name": "Harris Teeter",
+          "address": "401 M St SE",
+          "ward": 8,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": "Navy Yard"
+        },
+        {
+          "id": 708,
+          "name": "Giant",
+          "address": "1535 ALABAMA AVENUE SE",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": "Camp Simms"
+        },
+        {
+          "id": 722,
+          "name": "Good Food Markets",
+          "address": "4001 SOUTH CAPITOL STREET SW",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        }
+      ],
+      "method": "Records whose point falls in the 2022 Ward 8 polygon, split by the East of the River polygon. Post-2022 Ward 8 includes Navy Yard / Capitol Riverfront west of the Anacostia.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_ward7_stores": {
+      "value": {
+        "all_records": 4,
+        "open_2026": 3,
+        "open_2026_east_of_river": 3,
+        "open_2026_west_of_river": 0
+      },
+      "stores": [
+        {
+          "id": 707,
+          "name": "Safeway",
+          "address": "2845 ALABAMA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 718,
+          "name": "Safeway",
+          "address": "322 40TH STREET NE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 719,
+          "name": "Yes! Organic",
+          "address": "2323 PENNSYLVANIA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 721,
+          "name": "Lidl",
+          "address": "2224 TOWN CENTER DRIVE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        }
+      ],
+      "method": "Records whose point falls in the 2022 Ward 7 polygon, split by the East of the River polygon.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_ward_attribute_mismatches": {
+      "value": [
+        {
+          "id": 1921,
+          "name": "Aldi",
+          "address": "5300 SOUTH DAKOTA AVENUE NE",
+          "ward_in_dataset": "Ward 2",
+          "ward_point_in_polygon": 5
+        }
+      ],
+      "method": "Records whose WARD attribute differs from the ward computed by point-in-polygon (2022 wards).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_closed_records": {
+      "value": [
+        {
+          "id": 648,
+          "name": "Tropimart International Foods",
+          "address": "607 KENNEDY STREET NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        },
+        {
+          "id": 665,
+          "name": "Good Food Markets",
+          "address": "2006 RHODE ISLAND AVENUE NE",
+          "ward": 5,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 668,
+          "name": "Save-A-Lot",
+          "address": "514 RHODE ISLAND AVENUE NE",
+          "ward": 5,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 675,
+          "name": "Yes! Organic",
+          "address": "2123 14TH STREET NW",
+          "ward": 1,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": "14th Street"
+        },
+        {
+          "id": 676,
+          "name": "Safeway",
+          "address": "4865 MACARTHUR BOULEVARD NW",
+          "ward": 3,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 684,
+          "name": "Metro Supermarket",
+          "address": "2130 P STREET NW #5",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024
+          ],
+          "notes": "Reported closed on May 21, 2025"
+        },
+        {
+          "id": 691,
+          "name": "Dean & DeLuca",
+          "address": "3276 M STREET NW",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": "Georgetown"
+        },
+        {
+          "id": 697,
+          "name": "Walmart Supercenter",
+          "address": "99 H STREET NW",
+          "ward": 6,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": "H Street"
+        },
+        {
+          "id": 704,
+          "name": "Harris Teeter",
+          "address": "1350 POTOMAC AVENUE SE",
+          "ward": 6,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": "Jenkins Row"
+        },
+        {
+          "id": 710,
+          "name": "Safeway",
+          "address": "4203 DAVENPORT STREET NW",
+          "ward": 3,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 715,
+          "name": "Dawson's Market",
+          "address": "2001 S STREET NW",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        },
+        {
+          "id": 719,
+          "name": "Yes! Organic",
+          "address": "2323 PENNSYLVANIA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 722,
+          "name": "Good Food Markets",
+          "address": "4001 SOUTH CAPITOL STREET SW",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        },
+        {
+          "id": 1281,
+          "name": "AmazonFresh",
+          "address": "1733 14TH STREET NW",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022,
+            2023
+          ],
+          "notes": null
+        },
+        {
+          "id": 1604,
+          "name": "Union Kitchen Grocery",
+          "address": "430 8TH STREET SE",
+          "ward": 6,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022,
+            2023
+          ],
+          "notes": null
+        }
+      ],
+      "method": "Records with PRESENT26 not \"Yes\" (closed or not operating in 2026 per the dataset).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_east_method_disagreements": {
+      "value": [],
+      "method": "Grocery points where the official polygon, the river-derived polygon and the Neighborhood Cluster method disagree (empty = all agree).",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "grocery_dataset_currency_checks": {
+      "value": [
+        {
+          "store": "Lidl, Skyland Town Center",
+          "reported": "Opened late September 2022 (ribbon cutting 27 Sep 2022) at 2224 Town Center Dr SE, Ward 7.",
+          "sources": [
+            "https://mayor.dc.gov/release/mayor-bowser-celebrates-grand-opening-dc%E2%80%99s-first-lidl-food-market",
+            "https://www.nbcwashington.com/news/local/dcs-first-lidl-grocery-store-opens-in-southeast/3167908/"
+          ],
+          "in_dataset": true,
+          "dataset_records": [
+            {
+              "id": 721,
+              "name": "Lidl",
+              "address": "2224 TOWN CENTER DRIVE SE",
+              "ward": 7,
+              "east_of_river": true,
+              "open_2026": true,
+              "years_present_2022_2026": [
+                2022,
+                2023,
+                2024,
+                2025,
+                2026
+              ],
+              "notes": null
+            }
+          ]
+        },
+        {
+          "store": "Marion Barry Avenue Market and Cafe (Dreaming Out Loud), Anacostia",
+          "reported": "Opened 27 Sep 2025 at 1303 Marion Barry Ave SE, Ward 8; ~4,770 sq ft grocery/food hub. Press describes it as a fresh-food access point; whether it meets the ABCA full-service definition is not established.",
+          "sources": [
+            "https://washingtonian.com/2025/10/10/new-anacostia-market-is-a-dream-come-true-for-community/"
+          ],
+          "in_dataset": false,
+          "dataset_records": []
+        }
+      ],
+      "method": "Name/address search of the grocery layer for stores reported in the press. Outside sources were read on 2026-10-10; the dataset was not modified.",
+      "dataset": "Grocery Store Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations",
+      "dataset_last_updated": "2026-08-20T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "dataset_note": "Dataset lists currently operating stores plus some recently closed ones; PRESENTyy = \"Yes\" marks stores operating in that calendar year. Stores follow the ABCA full-service grocery store definition (see dataset description)."
+    },
+    "healthy_corners_total": {
+      "value": 50,
+      "method": "Count of all Healthy Corner Stores features (DC Central Kitchen program participants as compiled by DC Office of Planning).",
+      "dataset": "Healthy Corner Stores",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::healthy-corner-stores",
+      "dataset_last_updated": "2024-10-04T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "healthy_corners_by_ward": {
+      "value": {
+        "1": 3,
+        "2": 0,
+        "3": 0,
+        "4": 3,
+        "5": 13,
+        "6": 0,
+        "7": 13,
+        "8": 18
+      },
+      "method": "Point-in-polygon against 2022 wards.",
+      "dataset": "Healthy Corner Stores",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::healthy-corner-stores",
+      "dataset_last_updated": "2024-10-04T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "healthy_corners_east_of_river": {
+      "value": 29,
+      "method": "Point-in-polygon against the official East of the River polygon.",
+      "dataset": "Healthy Corner Stores",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::healthy-corner-stores",
+      "dataset_last_updated": "2024-10-04T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "healthy_corners_east_method_disagreements": {
+      "value": [],
+      "method": "As grocery_east_method_disagreements.",
+      "dataset": "Healthy Corner Stores",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::healthy-corner-stores",
+      "dataset_last_updated": "2024-10-04T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "farmers_markets_total_records": {
+      "value": 64,
+      "method": "All features (dataset also lists markets in Montgomery and Prince George's counties, MD).",
+      "dataset": "Farmers Market Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "dataset_last_updated": "2026-09-27T09:35:14.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "farmers_markets_in_dc": {
+      "value": 50,
+      "method": "Markets whose point falls inside a 2022 DC ward polygon.",
+      "dataset": "Farmers Market Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "dataset_last_updated": "2026-09-27T09:35:14.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "farmers_markets_by_ward": {
+      "value": {
+        "1": 4,
+        "2": 7,
+        "3": 7,
+        "4": 5,
+        "5": 7,
+        "6": 5,
+        "7": 7,
+        "8": 8
+      },
+      "method": "Point-in-polygon against 2022 wards.",
+      "dataset": "Farmers Market Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "dataset_last_updated": "2026-09-27T09:35:14.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "farmers_markets_east_of_river": {
+      "value": 13,
+      "markets": [
+        {
+          "name": "Ward 8 Farmers Market",
+          "address": "2724 Martin Luther King Jr. Ave SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "Junes - October"
+        },
+        {
+          "name": "Dreaming Out Loud's Kelly Miller Market",
+          "address": "301 49th Street NE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "June - November"
+        },
+        {
+          "name": "Arcadia Mobile Market at Parkside",
+          "address": "650 Kenilworth Terrace NE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Wednesdays",
+          "season": "May - December"
+        },
+        {
+          "name": "FRESHFARM THEARC",
+          "address": "1901 Mississippi Ave SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "June - November"
+        },
+        {
+          "name": "Dreaming Out Loud's Anacostia Farmers Market",
+          "address": "1301 Marion Barry Ave SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "June - November"
+        },
+        {
+          "name": "Arcadia Mobile Market at Bellevue Library",
+          "address": "115 Atlantic Street SW",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Thursdays",
+          "season": "May - December"
+        },
+        {
+          "name": "FRESHFARM Simon Elementary Farm Stand",
+          "address": "401 Mississippi Ave SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Thursdays",
+          "season": "May - November"
+        },
+        {
+          "name": "FRESHFARM Kenilworth Rec Center",
+          "address": "4321 Ord St NE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "June - November"
+        },
+        {
+          "name": "FRESHFARM Minnesota Ave",
+          "address": "322 40th St NE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Thursdays",
+          "season": "June - November"
+        },
+        {
+          "name": "FRESHFARM Anacostia Community Museum",
+          "address": "1901 Fort Pl SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "April - November"
+        },
+        {
+          "name": "FRESHFARM Cesar Chavez",
+          "address": "700 Parkside Pl NE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "June - November"
+        },
+        {
+          "name": "UDC East Capitol Farmers Market",
+          "address": "5929 East Capitol St SE",
+          "ward": 7,
+          "east_of_river": true,
+          "days": "Saturdays",
+          "season": "May - November"
+        },
+        {
+          "name": "Arcadia Mobile Market at Oxon Run",
+          "address": "Wheeler Road SE & Valley Avenue SE",
+          "ward": 8,
+          "east_of_river": true,
+          "days": "Thursdays",
+          "season": "May - December"
+        }
+      ],
+      "method": "Point-in-polygon against the official East of the River polygon. Most are seasonal (see days/season).",
+      "dataset": "Farmers Market Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "dataset_last_updated": "2026-09-27T09:35:14.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "farmers_markets_east_method_disagreements": {
+      "value": [],
+      "method": "As grocery_east_method_disagreements (DC markets only).",
+      "dataset": "Farmers Market Locations",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::farmers-market-locations",
+      "dataset_last_updated": "2026-09-27T09:35:14.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)"
+    },
+    "lfa_population_total": {
+      "value": {
+        "PARTPOP2": 336449,
+        "PRTUND185": 111261,
+        "PRTOVR185": 225188,
+        "share_under_185pct_fpl": 0.3307
+      },
+      "method": "Sum over all 381 Low Food Access Area polygons of PARTPOP2 (estimated residents), PRTUND185 (estimated residents below 185% of the federal poverty line = the dataset's \"food insecure\" population) and PRTOVR185. Polygons were checked for overlap (none found), so the sums do not double count.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017."
+    },
+    "lfa_population_by_ward_dataset_fields": {
+      "value": {
+        "by_WARD_attribute": {
+          "1": {
+            "polygons": 14,
+            "PARTPOP2": 5180,
+            "PRTUND185": 1334
+          },
+          "2": {
+            "polygons": 28,
+            "PARTPOP2": 13002,
+            "PRTUND185": 2173
+          },
+          "3": {
+            "polygons": 59,
+            "PARTPOP2": 49418,
+            "PRTUND185": 7228
+          },
+          "4": {
+            "polygons": 73,
+            "PARTPOP2": 60298,
+            "PRTUND185": 13732
+          },
+          "5": {
+            "polygons": 63,
+            "PARTPOP2": 59703,
+            "PRTUND185": 18332
+          },
+          "6": {
+            "polygons": 27,
+            "PARTPOP2": 16324,
+            "PRTUND185": 3042
+          },
+          "7": {
+            "polygons": 72,
+            "PARTPOP2": 71336,
+            "PRTUND185": 29661
+          },
+          "8": {
+            "polygons": 45,
+            "PARTPOP2": 61188,
+            "PRTUND185": 35759
+          }
+        },
+        "by_NAME_attribute": {
+          "1": {
+            "polygons": 19,
+            "PARTPOP2": 12224,
+            "PRTUND185": 3999
+          },
+          "2": {
+            "polygons": 31,
+            "PARTPOP2": 13477,
+            "PRTUND185": 2570
+          },
+          "3": {
+            "polygons": 58,
+            "PARTPOP2": 48939,
+            "PRTUND185": 6724
+          },
+          "4": {
+            "polygons": 61,
+            "PARTPOP2": 50281,
+            "PRTUND185": 10332
+          },
+          "5": {
+            "polygons": 57,
+            "PARTPOP2": 54175,
+            "PRTUND185": 16735
+          },
+          "6": {
+            "polygons": 47,
+            "PARTPOP2": 29577,
+            "PRTUND185": 5225
+          },
+          "7": {
+            "polygons": 58,
+            "PARTPOP2": 62321,
+            "PRTUND185": 28163
+          },
+          "8": {
+            "polygons": 50,
+            "PARTPOP2": 65455,
+            "PRTUND185": 37513
+          }
+        }
+      },
+      "method": "Plain sums grouped by the dataset's own attributes (no geometry). The dataset has two ward attributes that disagree on 55 of 381 polygons: NAME (\"Ward n\") and WARD (number). Both predate the 2022 redistricting (layer built 2017). For current ward figures use lfa_population_by_ward_2022 (area-weighted overlay); NAME agrees with the 2022 overlay's majority ward far more often than WARD does (see lfa_ward_attribute_check).",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017."
+    },
+    "lfa_ward_attribute_check": {
+      "value": {
+        "polygons": 381,
+        "WARD_equals_2022_majority_ward": 331,
+        "NAME_equals_2022_majority_ward": 370
+      },
+      "method": "For each LFA polygon, the 2022 ward holding the largest share of its area was compared with the dataset WARD and NAME attributes.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017."
+    },
+    "lfa_population_by_ward_2022": {
+      "value": {
+        "1": {
+          "area_km2": 1.714,
+          "area_share_of_dc_lfa": 0.0201,
+          "PARTPOP2": 12253,
+          "PRTUND185": 4003,
+          "share_under_185pct_fpl": 0.3267
+        },
+        "2": {
+          "area_km2": 4.523,
+          "area_share_of_dc_lfa": 0.053,
+          "PARTPOP2": 12829,
+          "PRTUND185": 2478,
+          "share_under_185pct_fpl": 0.1932
+        },
+        "3": {
+          "area_km2": 14.691,
+          "area_share_of_dc_lfa": 0.1722,
+          "PARTPOP2": 48938,
+          "PRTUND185": 6724,
+          "share_under_185pct_fpl": 0.1374
+        },
+        "4": {
+          "area_km2": 12.379,
+          "area_share_of_dc_lfa": 0.1451,
+          "PARTPOP2": 50280,
+          "PRTUND185": 10332,
+          "share_under_185pct_fpl": 0.2055
+        },
+        "5": {
+          "area_km2": 18.545,
+          "area_share_of_dc_lfa": 0.2174,
+          "PARTPOP2": 54146,
+          "PRTUND185": 16731,
+          "share_under_185pct_fpl": 0.309
+        },
+        "6": {
+          "area_km2": 5.667,
+          "area_share_of_dc_lfa": 0.0664,
+          "PARTPOP2": 25577,
+          "PRTUND185": 4228,
+          "share_under_185pct_fpl": 0.1653
+        },
+        "7": {
+          "area_km2": 14.402,
+          "area_share_of_dc_lfa": 0.1688,
+          "PARTPOP2": 66659,
+          "PRTUND185": 29150,
+          "share_under_185pct_fpl": 0.4373
+        },
+        "8": {
+          "area_km2": 13.382,
+          "area_share_of_dc_lfa": 0.1569,
+          "PARTPOP2": 65765,
+          "PRTUND185": 37615,
+          "share_under_185pct_fpl": 0.572
+        }
+      },
+      "method": "Each LFA polygon was intersected with the unsimplified 2022 ward polygons (turf.intersect); its PARTPOP2 and PRTUND185 were allocated in proportion to the share of its area in each ward (assumes even population spread within the polygon, the same assumption the dataset itself uses). Values are estimates, rounded to whole people.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017.",
+      "other_datasets": [
+        "Wards from 2022"
+      ]
+    },
+    "lfa_population_wards_7_8": {
+      "value": {
+        "PARTPOP2": 132424,
+        "PRTUND185": 66764,
+        "share_of_dc_lfa_population": 0.3936,
+        "share_of_dc_lfa_under_185pct_fpl": 0.6001
+      },
+      "method": "Each LFA polygon was intersected with the unsimplified 2022 ward polygons (turf.intersect); its PARTPOP2 and PRTUND185 were allocated in proportion to the share of its area in each ward (assumes even population spread within the polygon, the same assumption the dataset itself uses). Values are estimates, rounded to whole people.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017."
+    },
+    "lfa_population_east_of_river": {
+      "value": {
+        "PARTPOP2": 126582,
+        "PRTUND185": 65189,
+        "share_of_dc_lfa_population": 0.3762,
+        "share_of_dc_lfa_under_185pct_fpl": 0.5859,
+        "share_under_185pct_fpl": 0.515
+      },
+      "method": "Each LFA polygon was intersected with the unsimplified official East of the River polygon (turf.intersect); its PARTPOP2 and PRTUND185 were allocated in proportion to the share of its area in each ward (assumes even population spread within the polygon, the same assumption the dataset itself uses). Values are estimates, rounded to whole people.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017.",
+      "other_datasets": [
+        "East of the River"
+      ]
+    },
+    "lfa_area_total": {
+      "value": {
+        "km2": 85.304,
+        "area_not_in_any_2022_ward_km2": 0.0007
+      },
+      "method": "Geodesic area (turf.area) of the unsimplified LFA polygons; second number is a coverage check.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017."
+    },
+    "lfa_area_share_wards_7_8": {
+      "value": 0.3257,
+      "detail": {
+        "ward7_share": 0.1688,
+        "ward8_share": 0.1569,
+        "wards_7_8_km2": 27.784,
+        "dc_lfa_km2": 85.304
+      },
+      "method": "Area of (LFA polygons intersect 2022 Ward 7 or Ward 8) / total LFA area, computed with turf on unsimplified geometry.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017.",
+      "other_datasets": [
+        "Wards from 2022"
+      ]
+    },
+    "lfa_area_share_east_of_river": {
+      "value": 0.3093,
+      "detail": {
+        "east_km2": 26.387,
+        "dc_lfa_km2": 85.304
+      },
+      "method": "Area of (LFA polygons intersect official East of the River polygon) / total LFA area (turf, unsimplified).",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017.",
+      "other_datasets": [
+        "East of the River"
+      ]
+    },
+    "lfa_staleness_stores_inside_lfa": {
+      "value": 15,
+      "stores": [
+        {
+          "id": 641,
+          "name": "Target",
+          "address": "7828 GEORGIA AVENUE NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 642,
+          "name": "International Progresso Market",
+          "address": "7719 GEORGIA AVENUE NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 648,
+          "name": "Tropimart International Foods",
+          "address": "607 KENNEDY STREET NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        },
+        {
+          "id": 650,
+          "name": "Avenue Supermarket",
+          "address": "5010 1ST STREET NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 653,
+          "name": "Wagshal’s Market",
+          "address": "4845 MASSACHUSETTS AVENUE NW",
+          "ward": 3,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 665,
+          "name": "Good Food Markets",
+          "address": "2006 RHODE ISLAND AVENUE NE",
+          "ward": 5,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 671,
+          "name": "Costco Wholesale",
+          "address": "2441 MARKET STREET NE",
+          "ward": 5,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": "Costco"
+        },
+        {
+          "id": 684,
+          "name": "Metro Supermarket",
+          "address": "2130 P STREET NW #5",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024
+          ],
+          "notes": "Reported closed on May 21, 2025"
+        },
+        {
+          "id": 719,
+          "name": "Yes! Organic",
+          "address": "2323 PENNSYLVANIA AVENUE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [],
+          "notes": null
+        },
+        {
+          "id": 720,
+          "name": "Wegmans",
+          "address": "41 RIDGE SQUARE NW",
+          "ward": 3,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 721,
+          "name": "Lidl",
+          "address": "2224 TOWN CENTER DRIVE SE",
+          "ward": 7,
+          "east_of_river": true,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 722,
+          "name": "Good Food Markets",
+          "address": "4001 SOUTH CAPITOL STREET SW",
+          "ward": 8,
+          "east_of_river": true,
+          "open_2026": false,
+          "years_present_2022_2026": [
+            2022
+          ],
+          "notes": null
+        },
+        {
+          "id": 961,
+          "name": "Streets Market",
+          "address": "2617 P STREET NW",
+          "ward": 2,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 962,
+          "name": "Whole Foods Market",
+          "address": "7130 12TH STREET NW",
+          "ward": 4,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "notes": null
+        },
+        {
+          "id": 2242,
+          "name": "Trader Joe's",
+          "address": "701 MONROE STREET NE",
+          "ward": 5,
+          "east_of_river": false,
+          "open_2026": true,
+          "years_present_2022_2026": [
+            2025,
+            2026
+          ],
+          "notes": "Opened May 15, 2025"
+        }
+      ],
+      "method": "Grocery records (any status) whose point falls inside a Low Food Access Area polygon. Because the LFA layer defines areas >10 minutes walk from a full-service grocery store, a store located inside one was not among the stores used by the Nov 2017 model (it opened later, closed earlier, or was not counted then). Not an error list by itself: check each store against its PRESENTyy history.",
+      "dataset": "Low Food Access Areas",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::low-food-access-areas",
+      "dataset_last_updated": "2023-03-30T03:45:42.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (item.modified)",
+      "dataset_content_vintage": "November 2017 (dataset description: \"Last updated November 2017\"); population from Census tract estimates of that period; grocery stores as of 2017.",
+      "other_datasets": [
+        "Grocery Store Locations"
+      ]
+    },
+    "context_area_shares": {
+      "value": {
+        "dc_km2_incl_water": 177.314,
+        "wards_7_8_share_of_dc_area": 0.3176,
+        "east_of_river_share_of_dc_area": 0.2921,
+        "lfa_share_of_ward7_area": 0.6005,
+        "lfa_share_of_ward8_area": 0.4138,
+        "lfa_share_of_east_of_river_area": 0.5095,
+        "lfa_share_of_dc_area": 0.4811
+      },
+      "method": "Geodesic areas (turf.area) of the DC boundary, 2022 wards, East of the River polygon and LFA overlaps. Areas include river water, so land-only shares would be somewhat higher.",
+      "dataset": "Washington DC Administrative Boundary",
+      "dataset_page": "https://opendata.dc.gov/datasets/DCGIS::washington-dc-administrative-boundary",
+      "dataset_last_updated": "2013-07-03T00:00:00.000Z",
+      "dataset_last_updated_source": "Open Data DC Hub 'modified' (metadata.metadata.dataIdInfo.idCitation.date.reviseDate)",
+      "other_datasets": [
+        "Wards from 2022",
+        "East of the River",
+        "Low Food Access Areas"
+      ]
+    }
+  }
+}
