@@ -20,6 +20,7 @@ export function nearest(place: Place, resources: Resource[], o: LookupOptions): 
   return resources
     .filter((r) => !o.freeOnly || r.free)
     .map((r) => ({ resource: r, distanceMi: milesBetween(place, r), status: openStatus(r, o.now) }))
+    .filter((x) => x.status.state !== 'out_of_season') // a market closed for the season is not somewhere to send anyone
     .filter((x) => !o.openNow || x.status.state === 'open')
     .sort((a, b) => a.distanceMi - b.distanceMi)
     .slice(o.offset ?? 0, (o.offset ?? 0) + (o.limit ?? 3));

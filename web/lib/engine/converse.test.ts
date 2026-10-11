@@ -30,6 +30,12 @@ describe('nearest', () => {
     const r = nearest({ kind: 'zip', label: '20032', lat: 38.8336, lng: -77.0061 }, resources, { now, freeOnly: true });
     expect(r.every((x) => x.resource.free)).toBe(true);
   });
+  it('leaves out places that are closed for the season', () => {
+    const december = new Date('2026-12-05T16:00:00Z'); // a Saturday after the Nov 21 market season ends
+    const r = nearest({ kind: 'neighborhood', label: 'Anacostia', lat: 38.8632, lng: -76.9847 }, resources, { now: december, limit: 50 });
+    expect(r.length).toBeGreaterThan(0);
+    expect(r.every((x) => x.status.state !== 'out_of_season')).toBe(true);
+  });
   it('filters to places open now', () => {
     const r = nearest({ kind: 'zip', label: '20032', lat: 38.8336, lng: -77.0061 }, resources, { now, openNow: true });
     expect(r.length).toBeGreaterThan(0);

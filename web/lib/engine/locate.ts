@@ -8,7 +8,7 @@ const NEIGHBORHOOD_FIXES: [RegExp, string][] = [[/\bhts\b/g, 'heights'], [/\bft\
 export function resolveLocation(text: string, places: Places): Place | null {
   const t = norm(text);
   if (!t) return null;
-  return byZip(t, places) ?? byIntersection(t, places) ?? byNeighborhood(t, places);
+  return byAddress(t, places) ?? byZip(t, places) ?? byIntersection(t, places) ?? byNeighborhood(t, places);
 }
 
 function byZip(t: string, places: Places): Place | null {
@@ -26,6 +26,45 @@ function streetScore(typed: Street, stored: Street): number {
   if (typed.name === stored.name) return 1;
   if (typed.base.length >= 5 && stored.base.startsWith(typed.base + ' ')) return 1;
   return 0;
+}
+
+const addressCache: WeakMap<object, [string, Street][]> = new WeakMap();
+
+const STREET_WORD = /^(ave|av|avenue|st|str|street|rd|road|pl|place|dr|drive|ter|terr|terrace|ct|court|pkwy|parkway|blvd|boulevard|ln|lane|cir|circle|way)$/;
+// "alabama ave se i need free food" -> "alabama ave se": stop after the quadrant, or after the street type.
+function streetPart(rest: string): string {
+  const toks = rest.split(' ');
+  const q = toks.findIndex((t) => /^(ne|se|sw|nw)$/.test(t));
+  if (q > 0) return toks.slice(0, q + 1).join(' ');
+  const s = toks.findIndex((t, i) => i > 0 && STREET_WORD.test(t));
+  return s > 0 ? toks.slice(0, s + 1).join(' ') : rest;
+}
+
+// "1535 Alabama Ave SE" -> the DC address point (or the nearest house number on that street).
+function byAddress(t: string, places: Places): Place | null {
+  const book = places.addresses;
+  if (!book) return null;
+  const m = t.match(/(?:^|\s)(\d{1,5})\s+([a-z].*)$/);
+  if (!m) return null;
+  const num = Number(m[1]);
+  const rest = m[2].replace(/\b(washington|d ?c)\b/g, ' ').replace(/\b\d{5}\b/g, ' ').replace(/\s+/g, ' ').trim();
+  const typed = parseStreet(streetPart(rest));
+  if (!typed.name) return null;
+  let keys = addressCache.get(book);
+  if (!keys) { keys = Object.keys(book).map((k) => [k, parseStreet(k)]); addressCache.set(book, keys); }
+  let best: string | null = null, bestScore = 0;
+  for (const [k, st] of keys) {
+    const sc = streetScore(typed, st);
+    if (sc > bestScore) { bestScore = sc; best = k; }
+  }
+  if (!best) return null;
+  let hit: [number, number, number] | null = null, gap = Infinity;
+  for (const p of book[best]) {
+    const d = Math.abs(p[0] - num) + (p[0] % 2 === num % 2 ? 0 : 0.5); // same side of the street first
+    if (d < gap) { gap = d; hit = p; }
+  }
+  if (!hit || gap > 300) return null;
+  return { kind: 'address', label: `${num} ${prettyStreet(best)}`, lat: hit[1], lng: hit[2] };
 }
 
 let streetCache: WeakMap<Places, { a: Street; b: Street }[]> = new WeakMap();

@@ -51,6 +51,33 @@ describe('resolveLocation', () => {
     expect(p!.lat).toBeCloseTo(38.8674, 3);
   });
 
+  it('finds a street address from DC address points', () => {
+    const p = loc('1535 Alabama Ave SE');
+    expect(p).toMatchObject({ kind: 'address', label: '1535 Alabama Ave SE' });
+    expect(p!.lat).toBeCloseTo(38.8449, 3);
+    expect(loc('I live at 1535 alabama avenue')).toMatchObject({ kind: 'address' });
+  });
+
+  it('uses the nearest house number when the exact one is missing', () => {
+    const p = loc('1537 Alabama Ave SE');
+    expect(p?.kind).toBe('address');
+    expect(p!.lat).toBeCloseTo(38.845, 2);
+  });
+
+  it('prefers the street address over a ZIP in the same message', () => {
+    expect(loc('1535 Alabama Ave SE 20032')).toMatchObject({ kind: 'address' });
+  });
+
+  it('finds an address followed by more words, in English or Spanish', () => {
+    expect(loc('1535 Alabama Ave SE, I need free food')).toMatchObject({ kind: 'address', label: '1535 Alabama Ave SE' });
+    expect(loc('vivo en 2845 Alabama Ave SE, necesito comida gratis')).toMatchObject({ kind: 'address', label: '2845 Alabama Ave SE' });
+    expect(loc('4001 South Capitol St near the library')).toMatchObject({ kind: 'address' });
+  });
+
+  it('does not read a ZIP plus words as an address', () => {
+    expect(loc('20019 thanks')).toMatchObject({ kind: 'zip', zip: '20019' });
+  });
+
   it('returns null for text with no place', () => {
     expect(loc('hello')).toBeNull();
     expect(loc('i need food')).toBeNull();

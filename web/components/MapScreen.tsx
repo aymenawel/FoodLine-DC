@@ -109,7 +109,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
 
       {/* Left editorial panel */}
       <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>
-        <div className="pointer-events-auto w-[min(640px,calc(100vw-48px))]">
+        <div className="pointer-events-auto -mx-4 -mt-16 w-[calc(100%+32px)] bg-gradient-to-b from-bg via-bg/85 to-transparent px-4 pb-6 pt-16 md:mx-0 md:mt-0 md:w-[min(640px,calc(100vw-48px))] md:bg-none md:p-0">
           <p className="kicker hidden md:block">FoodLine DC · {view === 'city' ? 'All of DC' : 'Wards 7 & 8, east of the Anacostia'}</p>
           <AnimatePresence mode="wait">
             <motion.h1 key={view} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.35 }}

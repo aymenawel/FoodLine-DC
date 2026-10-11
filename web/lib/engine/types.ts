@@ -33,7 +33,7 @@ export interface Resource {
 }
 
 export interface Place {
-  kind: 'zip' | 'neighborhood' | 'intersection';
+  kind: 'zip' | 'neighborhood' | 'intersection' | 'address';
   label: string;
   lat: number;
   lng: number;
@@ -44,6 +44,8 @@ export interface Places {
   zips: Record<string, { zip: string; lat: number; lng: number; eastShare: number }>;
   neighborhoods: { name: string; names: string[]; lat: number; lng: number; ward: number | null; east: boolean }[];
   intersections: { a: string; b: string; lat: number; lng: number; ward: number | null }[];
+  // Ward 7/8 address points by street, e.g. "ALABAMA AVENUE SE": [[1535, lat, lng], ...] sorted by number
+  addresses?: Record<string, [number, number, number][]>;
 }
 
 export type OpenState = 'open' | 'closed' | 'unknown' | 'out_of_season';

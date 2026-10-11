@@ -2,26 +2,38 @@
 import { useEffect, useState } from 'react';
 import QRCode from 'qrcode';
 
-// Points at /chat on whatever address this page was opened from (localhost, LAN IP or a tunnel URL).
-// Override with ?url=https://example.trycloudflare.com
+// Points phones at /chat. Order of preference: ?url=… override, then (when this page is open on
+// localhost) the public tunnel URL, then this laptop's Wi-Fi address; otherwise the address in use.
 export default function QrCard() {
   const [url, setUrl] = useState('');
   const [svg, setSvg] = useState('');
+  const [note, setNote] = useState('');
   useEffect(() => {
-    const base = new URLSearchParams(window.location.search).get('url') || window.location.origin;
-    const target = `${base.replace(/\/$/, '')}/chat`;
-    setUrl(target);
-    QRCode.toString(target, { type: 'svg', margin: 0, color: { dark: '#0d1411', light: '#eeeadf' }, errorCorrectionLevel: 'M' })
-      .then(setSvg).catch(() => setSvg(''));
+    (async () => {
+      const override = new URLSearchParams(window.location.search).get('url');
+      let base = override || window.location.origin;
+      let hint = '';
+      if (!override && /^(localhost|127\.0\.0\.1|\[::1\])$/.test(window.location.hostname)) {
+        try {
+          const info = (await (await fetch('/api/info', { cache: 'no-store' })).json()) as { publicUrl: string | null; lanUrl: string | null };
+          if (info.publicUrl) { base = info.publicUrl; hint = 'Public link: works from any phone.'; }
+          else if (info.lanUrl) { base = info.lanUrl; hint = 'Phone must be on the same Wi-Fi as this laptop.'; }
+        } catch { /* keep origin */ }
+      }
+      const target = `${base.replace(/\/$/, '')}/chat`;
+      setUrl(target); setNote(hint);
+      setSvg(await QRCode.toString(target, { type: 'svg', margin: 0, color: { dark: '#0d1411', light: '#eeeadf' }, errorCorrectionLevel: 'M' }).catch(() => ''));
+    })();
   }, []);
   return (
     <figure className="grid gap-4 rounded-3xl border border-line bg-panel p-6">
-      <div className="aspect-square w-full rounded-2xl bg-ink p-5" aria-label={`QR code for ${url}`} role="img"
+      <div className="aspect-square w-full rounded-2xl bg-ink p-5" aria-label={`QR code that opens ${url}`} role="img"
         dangerouslySetInnerHTML={{ __html: svg }} />
       <figcaption>
         <p className="font-serif text-3xl leading-tight">Text the line</p>
         <p className="mt-1 text-sm text-muted">Scan with your phone camera. It works like a text conversation.</p>
         <p className="mt-2 break-all font-mono text-xs text-faint">{url}</p>
+        {note && <p className="mt-1 text-xs text-faint">{note}</p>}
       </figcaption>
     </figure>
   );
