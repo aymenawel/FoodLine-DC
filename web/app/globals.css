@@ -1,26 +1,78 @@
 @import "tailwindcss";
 
+/* Night Ledger — dark editorial. Amber is reserved for live requests. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0d1411;
+  --panel: #111a16;
+  --panel-2: #16211c;
+  --line: #26342d;
+  --land: #151e1a;
+  --land-east: #19251f;
+  --water: #173843;
+  --ink: #eeeadf;
+  --muted: #a3ada6;          /* 7.6:1 on --bg */
+  --faint: #7d8a82;          /* 4.9:1 on --bg */
+  --accent: #f4b740;         /* live requests */
+  --accent-ink: #1a1206;
+  --food: #e9e3d0;
+  --food-east: #7fd1a8;
+  --free: #8fc3ff;
+  --lfa: #e26848;
+  --ward: #34463d;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-panel-2: var(--panel-2);
+  --color-line: var(--line);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-food-east: var(--food-east);
+  --color-free: var(--free);
+  --color-lfa: var(--lfa);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-serif: var(--font-serif);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-geist-sans), system-ui, sans-serif; }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+::selection { background: var(--accent); color: var(--accent-ink); }
+
+.kicker { font: 500 12px/1.2 var(--font-geist-mono), monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.num { font-family: var(--font-geist-mono), monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
+
+/* Map pings */
+.ping { width: 16px; height: 16px; position: relative; pointer-events: none; }
+.ping::before, .ping::after { content: ''; position: absolute; inset: 0; border-radius: 50%; }
+.ping::before { background: var(--accent); box-shadow: 0 0 0 2px var(--bg); }
+.ping.sample::before { background: #b98a34; width: 9px; height: 9px; inset: 3.5px; box-shadow: none; opacity: .85; }
+.ping.live::after { border: 2.5px solid var(--accent); animation: ring 2.2s cubic-bezier(.16,1,.3,1) 3; }
+.ping.live::before { animation: drop .55s cubic-bezier(.34,1.56,.64,1); }
+.ping-label { position: absolute; left: 22px; top: -6px; white-space: nowrap; font: 600 13px var(--font-geist-sans); color: var(--accent-ink);
+  background: var(--accent); padding: 3px 8px; border-radius: 999px; animation: fadeout 6s forwards; }
+@keyframes ring { from { transform: scale(1); opacity: 1 } to { transform: scale(7); opacity: 0 } }
+@keyframes drop { from { transform: scale(0) } to { transform: scale(1) } }
+@keyframes fadeout { 0%, 75% { opacity: 1 } 100% { opacity: 0 } }
+
+.hood-label { font: italic 400 18px var(--font-serif), serif; color: var(--ink); opacity: .9; pointer-events: none; white-space: nowrap;
+  text-shadow: 0 0 8px var(--bg), 0 0 3px var(--bg), 0 0 1px var(--bg); }
+
+.maplibregl-ctrl-attrib { background: rgba(13,20,17,.75) !important; color: var(--muted) !important; font-size: 11px; }
+.maplibregl-ctrl-attrib a { color: var(--muted) !important; }
+.maplibregl-popup-content { background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font: 14px var(--font-geist-sans); }
+.maplibregl-popup-tip { border-top-color: var(--panel-2) !important; border-bottom-color: var(--panel-2) !important; }
+
+/* Chat */
+@keyframes blink { 0%, 100% { opacity: .25 } 50% { opacity: 1 } }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--muted); animation: blink 1s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }

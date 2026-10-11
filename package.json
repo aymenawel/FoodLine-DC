@@ -1,0 +1,13 @@
+{
+  "name": "foodline-dc",
+  "private": true,
+  "description": "FoodLine DC: a text line for food in Wards 7 and 8, and a live map of unmet need.",
+  "scripts": {
+    "demo": "node scripts/start.mjs",
+    "demo:tunnel": "node scripts/start.mjs --tunnel",
+    "rebuild": "node scripts/start.mjs --rebuild",
+    "dev": "npm --prefix web run dev",
+    "test": "npm --prefix web test",
+    "data": "cd scripts/geo && npm install && npm run all && node build-resources.mjs && node build-app-data.mjs"
+  }
+}

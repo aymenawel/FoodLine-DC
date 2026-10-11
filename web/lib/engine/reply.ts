@@ -96,7 +96,9 @@ export function directionsReply(x: Ranked, lang: Lang, now: Date): string {
     r.address,
     es ? `Unos ${walk} min a pie (${x.distanceMi.toFixed(1)} millas)` : `About a ${walk} min walk (${x.distanceMi.toFixed(1)} mi)`,
     today ? `${es ? 'Hoy' : 'Today'}: ${today}` : statusLine(r, x.status, lang, now),
-    r.eligibility && r.eligibility !== 'Open to all' ? `${es ? 'Quién puede ir' : 'Who can go'}: ${short(r.eligibility, 140)}` : (es ? 'Abierto a todos' : 'Open to all'),
+    !r.eligibility || /not published/i.test(r.eligibility) ? (es ? 'Llame para preguntar quién puede ir' : 'Call to ask who can go')
+      : r.eligibility === 'Open to all' ? (es ? 'Abierto a todos' : 'Open to all')
+      : `${es ? 'Quién puede ir' : 'Who can go'}: ${short(r.eligibility, 140)}`,
     r.phone ? `${es ? 'Teléfono' : 'Call'}: ${r.phone}` : null,
     `${es ? 'Mapa' : 'Map'}: https://www.google.com/maps/dir/?api=1&destination=${r.lat},${r.lng}`,
   ];
