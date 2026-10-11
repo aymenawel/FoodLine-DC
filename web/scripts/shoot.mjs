@@ -7,6 +7,7 @@ const page = await browser.newPage({ viewport: { width: +w, height: +h }, device
 const errors = [];
 page.on('pageerror', (e) => errors.push(e.message));
 page.on('console', (m) => m.type() === 'error' && errors.push(m.text()));
+if (process.env.THEME) await page.addInitScript((t) => localStorage.setItem('foodline-theme', t), process.env.THEME);
 await page.goto(`http://localhost:3000/${path.replace(/^\/+/, '')}`, { waitUntil: 'domcontentloaded' });
 await page.waitForTimeout(4000);
 for (const k of keys) {

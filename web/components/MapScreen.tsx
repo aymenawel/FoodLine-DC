@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Gap } from '@/lib/engine/gap';
 import { adminAction, useLive } from '@/lib/client/useLive';
+import { useTheme } from '@/lib/client/useTheme';
+import ThemeToggle from './ThemeToggle';
 import { MAP_SOURCES, STATS, type Stat } from '@/lib/stats';
 import type { MapView, Padding } from './LiveMap';
 
@@ -30,10 +32,10 @@ function Source({ s }: { s: Pick<Stat, 'source' | 'url'> }) {
 
 function Legend({ view }: { view: MapView }) {
   const items: [string, string, string?][] = view === 'city'
-    ? [['#233634', 'Full-service grocery store'], ['#2f7a2b', 'Grocery store east of the river']]
-    : [['#233634', 'Grocery store'], ['#1f7a8c', 'Free food (pantry, free market)', 'ring'], ['#479442', 'Farmers or mobile market'],
-       ['#8c7a5b', 'Corner store with produce'], ['#fe5921', 'Request (live)'], ['#c98a12', 'Request (sample)'],
-       ...(view === 'focus' ? [['#d9531e', 'Low food access area (DC, 2017)', 'square'] as [string, string, string]] : [])];
+    ? [['var(--c-food)', 'Full-service grocery store'], ['var(--c-east)', 'Grocery store east of the river']]
+    : [['var(--c-food)', 'Grocery store'], ['var(--c-free)', 'Free food (pantry, free market)', 'ring'], ['var(--c-market)', 'Farmers or mobile market'],
+       ['var(--c-corner)', 'Corner store with produce'], ['var(--c-live)', 'Request (live)'], ['var(--c-sample)', 'Request (sample)'],
+       ...(view === 'focus' ? [['var(--c-lfa)', 'Low food access area (DC, 2017)', 'square'] as [string, string, string]] : [])];
   return (
     <ul className="grid gap-1.5 text-base text-muted">
       {items.map(([c, l, shape]) => (
@@ -50,6 +52,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
   const [view, setView] = useState<MapView>(initialView);
   const [present, setPresent] = useState(false);
   const [streets, setStreets] = useState(true);
+  const { theme } = useTheme();
   const [gaps, setGaps] = useState<Gap[]>([]);
   const [basis, setBasis] = useState({ requests24h: 0, sample: 0 });
   const [busy, setBusy] = useState(false);
@@ -115,7 +118,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
 
   return (
     <div className={`relative h-full min-h-[600px] w-full overflow-hidden bg-bg ${compact ? '' : '[&_.maplibregl-ctrl-bottom-right]:!bottom-[112px]'}`}>
-      <LiveMap view={view} requests={requests} latest={latest} route={route} gaps={gaps} streets={streets} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
+      <LiveMap key={theme} theme={theme} view={view} requests={requests} latest={latest} route={route} gaps={gaps} streets={streets} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
 
       {/* Left editorial panel */}
       <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>
@@ -147,9 +150,9 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
             <div className="grid gap-4">
               <div className="flex items-end gap-6">
                 <div><p className="num text-[56px] font-medium leading-none text-accent-text">{live.length}</p><p className="text-base text-muted">live requests</p></div>
-                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[#8a5a0a]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
+                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[color:var(--sample-text)]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
                 <p className="ml-auto flex items-center gap-2 text-[15px] text-muted">
-                  <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-[#c98a12]' : 'bg-faint'}`} />
+                  <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-[color:var(--c-sample)]' : 'bg-faint'}`} />
                   {mode === 'live' ? 'Live' : mode === 'polling' ? 'Live (polling)' : 'Connecting'}
                 </p>
               </div>
@@ -157,8 +160,8 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                 <AnimatePresence initial={false}>
                   {recent.length === 0 && <li className="text-base text-muted">Waiting for the first text. Scan the code or open /chat.</li>}
                   {recent.map((r) => (
-                    <motion.li key={r.id} layout initial={{ opacity: 0, x: -12, backgroundColor: 'rgba(254,89,33,.22)' }}
-                      animate={{ opacity: 1, x: 0, backgroundColor: 'rgba(254,89,33,0)' }} transition={{ duration: 1.2 }}
+                    <motion.li key={r.id} layout initial={{ opacity: 0, x: -12, backgroundColor: theme === 'dark' ? 'rgba(244,183,64,.25)' : 'rgba(254,89,33,.22)' }}
+                      animate={{ opacity: 1, x: 0, backgroundColor: theme === 'dark' ? 'rgba(244,183,64,0)' : 'rgba(254,89,33,0)' }} transition={{ duration: 1.2 }}
                       className="flex items-baseline justify-between gap-3 rounded-md px-2 py-1 text-base">
                       <span className="num text-muted">{new Date(r.ts).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>
                       <span className="flex-1 truncate">{r.zip ?? (labelFor.current(r.lat, r.lng).replace('Historic ', '') || 'Ward 7/8')}</span>
@@ -208,6 +211,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
           ))}
         </div>
         <button onClick={() => setStreets((v) => !v)} aria-pressed={streets} className="min-h-11 rounded-full border border-line-strong bg-panel/90 px-4 text-base font-semibold text-ink">Streets {streets ? 'on' : 'off'}</button>
+        <ThemeToggle />
         <div className="hidden gap-2 text-base md:flex">
           {sampleCount > 0
             ? <button disabled={busy} onClick={() => run('unseed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Remove sample data</button>
@@ -217,7 +221,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </div>
 
       {sampleCount > 0 && view !== 'city' && (
-        <p className="absolute right-5 top-[176px] hidden rounded-md md:block border border-dashed border-[#8a5a0a] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[#8a5a0a]">
+        <p className="absolute right-5 top-[176px] hidden rounded-md md:block border border-dashed border-[color:var(--sample-text)] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[color:var(--sample-text)]">
           Includes {sampleCount} sample requests · not real residents
         </p>
       )}

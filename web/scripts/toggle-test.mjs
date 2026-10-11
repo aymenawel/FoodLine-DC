@@ -1,0 +1,14 @@
+import { chromium } from 'playwright-core';
+const b = await chromium.launch({ channel: 'msedge' });
+const p = await b.newPage({ viewport: { width: 1920, height: 1080 } });
+const errs = []; p.on('pageerror', (e) => errs.push(e.message));
+await p.goto('http://localhost:3000/map'); await p.waitForTimeout(3500);
+const theme = () => p.evaluate(() => document.documentElement.dataset.theme ?? 'light');
+console.log('start:', await theme());
+await p.getByRole('button', { name: 'Dark mode' }).click(); await p.waitForTimeout(2500);
+console.log('after click:', await theme(), '| pressed:', await p.getByRole('button', { name: 'Dark mode' }).getAttribute('aria-pressed'), '| map canvas:', await p.locator('canvas.maplibregl-canvas').count());
+await p.reload(); await p.waitForTimeout(3000);
+console.log('after reload:', await theme());
+await p.getByRole('button', { name: 'Dark mode' }).click(); await p.waitForTimeout(2000);
+console.log('toggled back:', await theme(), '| errors:', errs.length ? errs : 'none');
+await b.close();

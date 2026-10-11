@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import QrCard from '@/components/QrCard';
+import ThemeToggle from '@/components/ThemeToggle';
 import { STATS, type Stat } from '@/lib/stats';
 
 const POP_URL = 'https://dcfoodpolicy.org/wp-content/uploads/2023/09/2022-assessment-of-the-food-system-in-the-district-of-columbia-report.pdf';
@@ -16,6 +17,8 @@ function StatBlock({ s }: { s: Stat }) {
 
 export default function Home() {
   return (
+    <>
+    <ThemeToggle className="fixed right-4 top-4 z-10" />
     <main className="mx-auto grid min-h-dvh w-full max-w-[1400px] items-center gap-12 px-6 py-10 lg:grid-cols-[1fr_380px] lg:px-14">
       <section>
         <p className="kicker">STEAM4U · Food deserts · Washington, DC</p>
@@ -31,8 +34,8 @@ export default function Home() {
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <Link href="/map" className="inline-flex min-h-12 items-center rounded-full bg-cta px-6 font-semibold text-cta-ink transition active:scale-[.98]">Open the live map</Link>
-          <Link href="/demo" className="inline-flex min-h-12 items-center rounded-full border-2 border-ink px-6 font-semibold transition hover:border-cta">Side-by-side demo</Link>
-          <Link href="/chat" className="inline-flex min-h-12 items-center rounded-full border-2 border-ink px-6 font-semibold transition hover:border-cta">Try the text line</Link>
+          <Link href="/demo" className="inline-flex min-h-12 items-center rounded-full border-[length:var(--btn-bw)] border-[color:var(--btn-border)] px-6 font-semibold transition hover:border-cta">Side-by-side demo</Link>
+          <Link href="/chat" className="inline-flex min-h-12 items-center rounded-full border-[length:var(--btn-bw)] border-[color:var(--btn-border)] px-6 font-semibold transition hover:border-cta">Try the text line</Link>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           <StatBlock s={STATS.eastStores} />
@@ -45,5 +48,6 @@ export default function Home() {
       </section>
       <aside className="mx-auto w-full max-w-[380px]"><QrCard /></aside>
     </main>
+    </>
   );
 }

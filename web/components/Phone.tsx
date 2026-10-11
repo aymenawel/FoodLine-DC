@@ -160,7 +160,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
         <label htmlFor="msg" className="sr-only" lang={lang}>{t.message}</label>
         <input id="msg" ref={input} value={text} onChange={(e) => setText(e.target.value)} autoComplete="off" enterKeyHint="send" lang={lang}
           placeholder={t.placeholder}
-          className="min-h-11 flex-1 rounded-full border border-line-strong bg-panel px-4 text-base text-ink placeholder:text-faint focus:border-cta" />
+          className="min-h-11 flex-1 rounded-full border border-[color:var(--line-input)] bg-panel px-4 text-base text-ink placeholder:text-faint focus:border-cta" />
         <button type="submit" disabled={!text.trim() || typing} aria-label={t.send} lang={lang}
           className="grid size-11 place-items-center rounded-full bg-cta text-cta-ink transition active:scale-95 disabled:opacity-40">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden><path d="M12 19V5M5 12l7-7 7 7" /></svg>
@@ -172,8 +172,8 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
   if (!framed) return <div className="h-full w-full">{screen}</div>;
   // Full-screen on a phone; drawn as a device on larger screens.
   return (
-    <div className="relative h-dvh w-full sm:h-[min(780px,calc(100dvh-48px))] sm:w-[380px] sm:rounded-[52px] sm:bg-ink sm:p-3 sm:shadow-[0_30px_60px_-25px_rgba(35,54,52,.55)]">
-      <div aria-hidden className="absolute left-1/2 top-5 z-10 hidden h-6 w-24 -translate-x-1/2 rounded-full bg-ink sm:block" />
+    <div className="relative h-dvh w-full sm:h-[min(780px,calc(100dvh-48px))] sm:w-[380px] sm:rounded-[52px] sm:bg-[color:var(--phone-frame)] sm:p-3 sm:[box-shadow:var(--phone-shadow)]">
+      <div aria-hidden className="absolute left-1/2 top-5 z-10 hidden h-6 w-24 -translate-x-1/2 rounded-full bg-[color:var(--phone-frame)] sm:block" />
       <div className="h-full overflow-hidden sm:rounded-[42px] sm:pt-6">{screen}</div>
     </div>
   );
