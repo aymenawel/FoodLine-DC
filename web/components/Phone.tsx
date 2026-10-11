@@ -172,7 +172,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
   if (!framed) return <div className="h-full w-full">{screen}</div>;
   // Full-screen on a phone; drawn as a device on larger screens.
   return (
-    <div className="relative h-dvh w-full sm:h-[min(780px,calc(100dvh-48px))] sm:w-[380px] sm:rounded-[52px] sm:bg-[color:var(--phone-frame)] sm:p-3 sm:[box-shadow:var(--phone-shadow)]">
+    <div className="relative h-dvh w-full sm:h-[min(46rem,calc(100dvh-3rem))] sm:w-[20.5rem] sm:rounded-[52px] sm:bg-[color:var(--phone-frame)] sm:p-3 sm:[box-shadow:var(--phone-shadow)]">
       <div aria-hidden className="absolute left-1/2 top-5 z-10 hidden h-6 w-24 -translate-x-1/2 rounded-full bg-[color:var(--phone-frame)] sm:block" />
       <div className="h-full overflow-hidden sm:rounded-[42px] sm:pt-6">{screen}</div>
     </div>

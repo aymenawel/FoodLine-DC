@@ -8,8 +8,8 @@ export const metadata: Metadata = { title: 'Demo · FoodLine DC' };
 // Keys: ← → step views, 1/2/3 jump, P hides controls, Shift+S loads sample data. Clearing live requests is button-only.
 export default function DemoPage() {
   return (
-    <main className="grid w-full grid-cols-1 bg-bg lg:h-dvh lg:grid-cols-[440px_1fr]">
-      <section className="flex items-center justify-center border-line bg-panel p-0 sm:p-6 lg:border-r" aria-label="Text line">
+    <main className="grid w-full grid-cols-1 bg-bg lg:h-dvh lg:grid-cols-[24rem_1fr]">
+      <section className="flex items-center justify-center border-line bg-panel p-0 sm:p-4 lg:border-r" aria-label="Text line">
         <Phone />
       </section>
       <section className="relative min-h-[80dvh] lg:min-h-0" aria-label="Live demand map">
