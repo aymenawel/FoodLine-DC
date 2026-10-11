@@ -1,0 +1,76 @@
+{
+  "checked": "2026-10-11",
+  "entries": [
+    {
+      "id": "giant-alabama-ave-se",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://stores.giantfood.com/dc/washington/1535-alabama-avenue-se",
+        "https://dcwic.org/find-your-store-map",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Giant store page (fetched 2026-10-11) still shows store #0384 open 7am-9pm daily, phone (202) 610-6464. WIC now confirmed by DC WIC's 'Authorized Store Locations - October 2026' PDF (Giant Foods, 1535 Alabama Ave SE, 202-610-6464, Ward 8), replacing the old c. 2019 list; USDA SNAP data (edited 2026-10-07) lists 'Super Giant 384'."
+    },
+    {
+      "id": "lidl-skyland-town-center",
+      "verdict": "updated",
+      "changes": {
+        "wic": false
+      },
+      "confidence": "high",
+      "sources": [
+        "https://www.lidl.com/s/en-US/stores/washington/town-center-drive-se-2224/",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Lidl store page structured data (2026-10-11) still gives 8:00-21:00 Mon-Sun and no phone. Lidl is not on DC WIC's October 2026 authorized store list (which lists every DC WIC store by quadrant), so WIC should be false; USDA SNAP data (2026-10-07) still lists 'Lidl 1436' as SNAP-authorized."
+    },
+    {
+      "id": "safeway-alabama-ave-se",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://local.safeway.com/safeway/dc/washington/2845-alabama-ave-se.html",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Safeway store page (2026-10-11): 6am-10pm daily, (202) 575-7525, payment list includes EBT, SNAP, WIC and eWIC. Also on DC WIC's October 2026 authorized list (Ward 7) and in USDA SNAP data (Safeway 1445, 2026-10-07)."
+    },
+    {
+      "id": "safeway-40th-st-ne",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://local.safeway.com/safeway/dc/washington/322-40th-st-ne.html",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Safeway store page (2026-10-11): 6am-10pm daily, (202) 397-2802, payment list includes EBT, SNAP, WIC and eWIC. Also on DC WIC's October 2026 authorized list (Ward 7) and in USDA SNAP data (Safeway 1177, 2026-10-07)."
+    },
+    {
+      "id": "dol-marion-barry-avenue-market",
+      "verdict": "updated",
+      "changes": {
+        "wic": false,
+        "schedule_note": "Wed-Sat 8am-7pm per Dreaming Out Loud's current market page; closed Sun-Tue (no hours listed for those days). An older DOL fundraising page written before the Sept 2025 opening listed Sunday 8am-7pm too, but the current page does not, so Sunday is treated as closed. Check before a visit."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://dreamingoutloud.org/marion-barry-avenue-market-and-cafe/",
+        "https://dreamingoutloud.org/marion-barry-avenue-market/",
+        "https://dolgrocery.org",
+        "https://ma.to/venue/dolmarkets",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://civileats.com/2026/05/13/in-d-c-an-innovative-neighborhood-grocery-store/"
+      ],
+      "evidence": "Operating: DOL's grocery site lists CSA pickups here for the week of Oct 8-10, 2026 ('year-round'), a venue listing shows a 'Final Fish Fryday' on Oct 9, 2026 and a one-year anniversary on Sep 25, 2026, and Civil Eats (May 13, 2026) profiles the open store. The Sunday 8-7 listing is on DOL's pre-opening 'help us open' page, while the current market page lists only Wed-Sat 8am-7pm. Not on DC WIC's October 2026 authorized store list (so WIC false); USDA SNAP data (2026-10-07) lists it as SNAP-authorized. Produce Plus still unconfirmed."
+    }
+  ],
+  "new_resources": []
+}

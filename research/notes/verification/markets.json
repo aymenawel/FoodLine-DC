@@ -1,0 +1,178 @@
+{
+  "checked": "2026-10-11",
+  "entries": [
+    {
+      "id": "freshfarm-thearc",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/thearc",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+        "https://www.freshfarm.org/freshmatch"
+      ],
+      "evidence": "FRESHFARM's market page (checked 2026-10-11) shows 'Open for Season', Saturdays 10am-2pm, Jun 6 - Nov 21 (both Saturdays in 2026), at THEARC, 1901 Mississippi Ave SE; accepts SNAP/EBT, WIC and Senior FMNP with FreshMatch. No winter schedule is listed, so the last market is Sat Nov 21, 2026."
+    },
+    {
+      "id": "freshfarm-anacostia-community-museum",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/anacostia-community-museum",
+        "https://www.congressheightsontherise.com/blog/june-6-shop-local-every-saturday-at-the-freshfarm-farm-stand-in-anacostia",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "FRESHFARM's page (checked 2026-10-11) shows 'Open for Season', Saturdays 10am-2pm, Apr 18 - Nov 21 at 1901 Fort Pl SE; a 2026 Congress Heights on the Rise post gives the same April 18 - November 21, 2026 run and notes it is weather-dependent. No winter schedule."
+    },
+    {
+      "id": "freshfarm-minnesota-ave",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/minnesota-ave",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "FRESHFARM's page (checked 2026-10-11) shows 'Open for Season', Thursdays 1-4pm, Jun 4 - Nov 19 (both Thursdays in 2026), East River Park shopping center lot, 322 40th St NE; SNAP/EBT, WIC, Senior FMNP and FreshMatch. No winter schedule; last market Thu Nov 19, 2026."
+    },
+    {
+      "id": "freshfarm-kenilworth-rec-center",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/kenilworth-rec-center",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "FRESHFARM's page (checked 2026-10-11) shows 'Open for Season', Saturdays 9am-1pm, Jun 6 - Nov 21 at 4321 Ord St NE; SNAP/EBT, WIC, Senior FMNP and FreshMatch. No winter schedule; last market Sat Nov 21, 2026."
+    },
+    {
+      "id": "freshfarm-cesar-chavez",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/cesar-chavez",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "FRESHFARM's page (checked 2026-10-11) shows 'Open for Season', Saturdays 9am-1pm, Jun 6 - Nov 21 at Cesar Chavez High School, 700 Parkside Pl NE; SNAP/EBT, WIC, Senior FMNP and FreshMatch. No winter schedule; last market Sat Nov 21, 2026."
+    },
+    {
+      "id": "freshfarm-simon-elementary-farm-stand",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.freshfarm.org/markets/simon-farm-stand",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "FRESHFARM's page (checked 2026-10-11) shows 'Open for Season', Thursdays 2:30-5:30pm, May 7 - Nov 19 at Simon Elementary, 401 Mississippi Ave SE, and says SNAP/EBT shoppers can 'double your dollars'. It still does not say whether the stand is open to the general public; no winter schedule."
+    },
+    {
+      "id": "dol-kelly-miller-farmers-market",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://dreamingoutloud.org/farmers-markets/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf"
+      ],
+      "evidence": "DOL farmers-markets page (2026 copyright, checked 2026-10-11) still lists Kelly Miller at 301 49th St NE, Saturdays 10AM-1PM, June 6 to November 21 (Saturdays in 2026); no winter market or cancellation notice. Benefits still only from the DC Health 2026 guide and Open Data DC 2026 layer (SNAP, WIC FMNP, Senior FMNP, Produce Plus, SNAP doubling); last market Sat Nov 21, 2026."
+    },
+    {
+      "id": "dol-anacostia-farmers-market",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://dreamingoutloud.org/farmers-markets/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Location_WebMercator/MapServer/0"
+      ],
+      "evidence": "DOL page (checked 2026-10-11) lists \"1303 Marion Barry Ave SE\", Saturdays 11AM-2PM, June 6 - November 21; Open Data DC 2026 says 1301 (SNAP, WIC FMNP, Senior FMNP, Produce Plus, Breadcoin, doubles SNAP). Both are active DC MAR address points about 11 m apart on the same frontage (1303: 38.866823,-76.986848), so keeping the operator address 1303 is correct; no winter market."
+    },
+    {
+      "id": "ward-8-farmers-market",
+      "verdict": "closed",
+      "changes": {
+        "season": {
+          "start": "2026-06-06",
+          "end": "2026-09-26"
+        },
+        "schedule_note": "Saturdays 10am-2pm in the Red Lot at the Barns at St. Elizabeths (MLK Ave SE at Elm St). The 2026 season ran June 6 - September 26, 2026 per the organizers listing; it is closed until next summer. (The DC Health 2026 guide said June-October.)",
+        "confidence": "medium",
+        "source_url": "https://vendorsmap.com/events/7741",
+        "extra_source_urls": [
+          "https://ward8farmersmarket.org/",
+          "https://www.freshfarm.org/app/uploads/2026/07/2026-Farmers-Market-Mini-Guide.pdf",
+          "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+        ]
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://vendorsmap.com/events/7741",
+        "https://ward8farmersmarket.org/",
+        "https://notboredindc.com/farmers-markets-in-dc/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "evidence": "Season ended (not closed for good): a VendorsMap listing credited to \"Ward 8 Farmers Market Organizers\" gives the 2026 season as \"Jun 6 - Sep 26, 2026\" at the St. Elizabeths Red Lot, matching the market site (June-September) and Not Bored in DC (updated 2026-04-15). Only the DC Health guide / Open Data DC (2026) say October; no source shows an October 2026 market, so it should not be offered now."
+    },
+    {
+      "id": "udc-east-capitol-farmers-market",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "Every other Saturday (not weekly), 10am-3pm, at UDC East Capitol Urban Farm across from Capitol Heights Metro. 2026 season started May 9; exact market dates and the end date are not published (DC Health guide says May-October, Open Data DC says May-November). Call or email before going.",
+        "phone": "(202) 560-9171",
+        "website": "https://www.thefarmersalliance.org/markets/east-capitol",
+        "confidence": "low"
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.thefarmersalliance.org/markets/east-capitol",
+        "https://www.thefarmersalliance.org/post/growing-together-the-journey-of-our-farmers-market-and-celebrating-national-fruits-veggies-month",
+        "https://www.udc.edu/causes/land-grant/center-for-urban-resilience-innovation-and-infrastructure/",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "evidence": "The Farmers Alliance (co-operator) page (2026 footer, October 2026 calendar, no dates filled in) lists 5929 East Capitol St SE, Saturday, \"Every 2 Weeks\", contact eastcapitol@thefarmersalliance.org / (202) 560-9171; its blog (updated Nov 2025) says \"every other Saturday from 10 AM to 3 PM\". UDC CURII page says the season starts May 9 (a Saturday in 2026). No 2026 date list or end date found and no source settles SNAP, so snap stays \"unknown\"; the hours object still shows every Saturday, so the note must carry the biweekly caveat."
+    },
+    {
+      "id": "arcadia-mobile-market-parkside-mayfair",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.arcadiafood.org/mobile-market-1",
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "evidence": "Arcadia 2026 schedule page (checked 2026-10-11) still lists Parkside/Mayfair, Wednesdays \"2:30 - 5:00pm\", \"600 Kenilworth Terrace NE\"; its public calendar (fetched 2026-10-11, event last modified 2026-07-14) has an open-ended weekly Wednesday 3:00-5:00pm series from 2026-05-20, pinned at geo 38.898675,-76.950522, which is the DC MAR point for 600 Kenilworth Ter NE (650 is the older 2021-2025 calendar address used by DC Health/Open Data DC). No 2026 end date, cancellation or winter schedule published; past seasons ran to about Dec 20-24 and DC Health/Open Data DC say May-December."
+    },
+    {
+      "id": "arcadia-mobile-market-oxon-run",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.arcadiafood.org/mobile-market-1",
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "evidence": "Arcadia 2026 page and calendar (series modified 2026-06-25, open-ended weekly from 2026-05-21) both give Thursdays 10:30am-12:30pm at 3700 9th St SE (an active DC MAR address). The Wheeler Rd & Valley Ave SE location in the DC Health guide / Open Data DC was the 2021-2025 Friday 3-6pm stop on the same calendar, so 3700 9th St SE is current. No 2026 end date published (DC Health says May-December)."
+    },
+    {
+      "id": "arcadia-mobile-market-bellevue-library",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://www.arcadiafood.org/mobile-market-1",
+        "https://calendar.google.com/calendar/ical/c_t1krgf0h4h35ivve01s2e4cpqs%40group.calendar.google.com/public/basic.ics",
+        "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
+      ],
+      "evidence": "Arcadia 2026 page lists Bellevue Library, Thursdays \"2:30 - 5:00pm\", 115 Atlantic St SW; the calendar (modified 2026-06-25) has an open-ended weekly Thursday 3:00-5:00pm series from 2026-05-21. Start-time conflict (2:30 vs 3:00) remains; no 2026 end date, cancellation or winter schedule published (DC Health says May-December)."
+    }
+  ],
+  "new_resources": []
+}

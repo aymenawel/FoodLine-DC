@@ -1,0 +1,108 @@
+{
+  "checked": "2026-10-11",
+  "entries": [
+    {
+      "id": "bread-for-the-city-southeast-food-pantry",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://breadforthecity.org/food/",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "evidence": "Operator food page (checked 2026-10-11) still gives the Southeast pantry at 1700 Marion Barry Ave SE, Mon-Thu 9am-3pm, groceries once per month for DC households, phone (202) 265-2400, and the notice that both centers close Mon Oct 12 for Indigenous Peoples' Day and reopen Tue Oct 13; CAFB source layer (last edited 2026-09-28) agrees on Mon-Thu 9-3 'DC Residents Only'. CAFB lists a different number, (202) 985-2788 (likely the SE center line); the operator page gives (202) 265-2400, so the existing phone is kept. No ID/income rules on the operator page (only undated third-party listings mention ID, proof of address, 200% FPL)."
+    },
+    {
+      "id": "allen-chapel-ame-church-pantry",
+      "verdict": "updated",
+      "changes": {
+        "eligibility": "Church's own food pantry page: \"A food supplement is provided to any person expressing a need for food.\" (Its ministry page says the pantry concentrates on Wards 7 and 8.) No ID rule on the church site; one third-party directory says \"ID required\" -- not confirmed by the church.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Friday 9:30am-12pm at 2439 Ainger Pl SE, phone (202) 494-9824. The church's own site (acamec.org/food-pantry, (c) 2025, no schedule) confirms a Food Pantry & Outreach ministry; the church office is at 2498 Alabama Ave SE, phone (202) 889-7296. A third-party directory (FoodHelpline/Lemontree) lists the same Friday 9:30am-12pm hours but a different phone, (202) 610-7250. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://acamec.org/food-pantry",
+        "https://acamec.org/ministries",
+        "https://www.foodhelpline.org/resources/allen-chapel-ame"
+      ],
+      "evidence": "CAFB source layer (last edited 2026-09-28) still lists every Friday 9:30am-12pm; the church's undated (c2025) pantry page confirms the ministry and says food is given to 'any person expressing a need for food', with no hours. No 2026 operator-dated post found."
+    },
+    {
+      "id": "good-success-christian-church-pantry",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [],
+          "tue": [
+            [
+              "09:00",
+              "12:00"
+            ]
+          ],
+          "wed": [],
+          "thu": [],
+          "fri": [],
+          "sat": [],
+          "sun": []
+        },
+        "schedule_note": "Tuesdays 9am-12pm (church site and CAFB agree on Tuesday). Second day is unclear: the church website says weekly free groceries \"on Tuesday and Wednesday\"; the CAFB 2026 map says Tuesday and Thursday 9am-12pm. Call before going on a Wednesday or Thursday.",
+        "phone": "(202) 398-3000",
+        "notes": "Church calls it the Food Harvest Ministry (weekly free groceries; also a Clothing Bank). Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) as Tue and Thu 9am-12pm with no phone; church website (goodsuccesschurch.org, sermons posted through May 2026) says Tuesday and Wednesday and gives (202) 398-3000. Third-party directories conflict (Tue 9-12 vs Tue 2-5pm; some say ID and proof of address required) -- not confirmed. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://goodsuccesschurch.org/",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/good-success-christian-church"
+      ],
+      "evidence": "Church home page (site active in 2026) says 'weekly free groceries give away through our Food Harvest Ministry on Tuesday and Wednesday', phone (202) 398-3000; CAFB layer (2026-09-28) says Tue and Thu 9am-12pm. Only Tuesday is consistent, so the hours table keeps Tuesday and the note flags the second day."
+    },
+    {
+      "id": "friends-of-douglass-community-center-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "CAFB entry mixes walk-up and home-delivery slots; only the Tuesday walk-up slot is put in the hours table. Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) at 1812 Erie St SE. Do NOT send people to the old Douglass Community Center (1922 Frederick Douglass Ct SE): DC DPR says it closed to the public on April 25, 2025 for an ~18-month rebuild (groundbreaking Feb 19, 2026), yet older directories (FoodHelpline/Lemontree, FeedAM) still list the pantry there (Thu/Sat 10am-12pm, ID and proof of address required, call in advance) -- those listings look out of date. No operator website or 2026 social post found. Call (202) 285-5354 before going. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://dpr.dc.gov/douglass",
+        "https://foodhelpline.org/directory/resources/cle82ep2d024m0d02wab71pxi"
+      ],
+      "evidence": "Only 2026 source is the CAFB layer (edited 2026-09-28): 1812 Erie St SE, Tue 12-4 walk-up/home delivery plus Mon/Wed/Thu 10-4, Sat 9-12 (appointment) and Sun 10-1 delivery, 'Please call to be added to delivery schedule'. DPR confirms the old Douglass Community Center site has been closed since Apr 25, 2025, which explains the move; hours and address left unchanged."
+    },
+    {
+      "id": "new-macedonia-baptist-church-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "Every Wednesday 9-11am; drive-thru distribution (pre-selected loose groceries). The church's website now gives its address as 3985 Massachusetts Ave SE and lists events at its \"Satellite Parking Lot\" -- call (202) 583-5555 to confirm where the drive-thru is held.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) at 4115 Alabama Ave SE, Wed 9-11am drive-thru; the phone (202) 583-5555 matches the church office number on tnmbc.org (2026). The church website (c) 2026 does not mention a food pantry, gives its address as 3985 Massachusetts Ave SE, and has a banner saying Sunday service moved to Dupont Park Seventh-day Adventist Church, plus a \"Building Project\" page -- so the Alabama Ave site may be affected by construction. Third-party directories (FoodHelpline, FeedAM) list the same Wed 9-11am, no requirements. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "low",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.tnmbc.org/",
+        "https://tnmbc.org/upcoming-events/",
+        "https://tnmbc.org/building-project/",
+        "https://www.foodhelpline.org/resources/new-macedonia-baptist-church"
+      ],
+      "evidence": "CAFB layer (2026-09-28) still lists every Wednesday 9-11am drive-thru at 4115 Alabama Ave SE. The church's own 2026 site is silent on the pantry, lists 3985 Massachusetts Ave SE and a building project, and its Oct 31, 2026 event is at a 'Satellite Parking Lot' -- the distribution spot should be confirmed by phone."
+    },
+    {
+      "id": "brighter-day-ministries-food-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): 2525 12th Pl SE, every Thursday 11am-4pm, walk-up, \"BRING BAG\", phone (301) 455-6384. No operator website found. Undated third-party directories conflict: Plentiful lists 2525 12th Pl SE on Thursdays 4-6:30pm serving \"DC residents\"; FoodHelpline/Lemontree lists a Brighter Day pantry at 3209 5th St SE, Thu 11am-2pm, phone (301) 806-4305, DC ID and proof of address required; WhyHunger has an old 421 Alabama Ave SE listing. CAFB 2026 data kept as the most recent source; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://directory.plentiful.org/district-of-columbia/washington/brighter-day-ministries-food-pantry-0c426ccb",
+        "https://foodhelpline.org/directory/locations/congress_heights"
+      ],
+      "evidence": "CAFB layer (2026-09-28) is the only dated 2026 source: Thursdays 11am-4pm at 2525 12th Pl SE. Undated directories give other hours/addresses (Thu 4-6:30pm; 3209 5th St SE Thu 11-2), so the entry is kept but flagged for a call."
+    }
+  ],
+  "new_resources": []
+}
