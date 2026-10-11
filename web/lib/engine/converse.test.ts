@@ -26,6 +26,11 @@ describe('nearest', () => {
     expect(r[0].distanceMi).toBeLessThanOrEqual(r[1].distanceMi);
     expect(r[1].distanceMi).toBeLessThanOrEqual(r[2].distanceMi);
   });
+  it('sends someone near H Street (20002) to the grocery store next door, not a pantry across the river', () => {
+    const r = nearest({ kind: 'zip', label: '20002', lat: 38.9, lng: -76.98 }, resources, { now });
+    expect(r[0].distanceMi).toBeLessThan(1);
+    expect(r.some((x) => x.resource.type === 'grocery')).toBe(true);
+  });
   it('filters to free places', () => {
     const r = nearest({ kind: 'zip', label: '20032', lat: 38.8336, lng: -77.0061 }, resources, { now, freeOnly: true });
     expect(r.every((x) => x.resource.free)).toBe(true);

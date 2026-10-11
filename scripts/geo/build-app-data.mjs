@@ -79,7 +79,26 @@ writeFileSync(path.join(WEB, 'data/places.json'), JSON.stringify({
 
 // ---- Resources
 const res = JSON.parse(readFileSync(path.join(ROOT, 'data/resources.json'), 'utf8'));
-copyFileSync(path.join(ROOT, 'data/resources.json'), path.join(WEB, 'data/resources.json'));
+// The text line also knows every other full-service grocery store in DC (Open Data DC), so someone texting from just
+// west of the river is sent to the grocery store next door instead of a pantry 2 miles east. Hours are not in that
+// dataset, so replies say to check with the store; nothing is invented.
+const QUAD = new Set(['NE', 'SE', 'SW', 'NW']);
+const titleAddr = (a) => a.toLowerCase().split(' ').map((w) => (QUAD.has(w.toUpperCase()) ? w.toUpperCase() : /^\d/.test(w) ? w : w[0].toUpperCase() + w.slice(1)))
+  .join(' ').replace(/\bAvenue\b/, 'Ave').replace(/\bStreet\b/, 'St').replace(/\bRoad\b/, 'Rd');
+const have = res.resources.filter((r) => r.type === 'grocery');
+const extra = load('grocery-stores.geojson').features.filter((f) => f.properties.open_2026)
+  .filter((f) => !have.some((r) => Math.hypot((r.lat - f.geometry.coordinates[1]) * 111, (r.lng - f.geometry.coordinates[0]) * 86) < 0.15))
+  .map((f) => ({
+    id: `ods-grocery-${f.properties.id}`, name: f.properties.name, type: 'grocery',
+    address: `${titleAddr(f.properties.address)}, Washington, DC ${f.properties.zipcode}`, zip: f.properties.zipcode, neighborhood: null,
+    lat: f.geometry.coordinates[1], lng: f.geometry.coordinates[0], geocode_source: 'open-data-dc', ward: f.properties.ward,
+    east_of_river: f.properties.east_of_river, hours: null, schedule_note: 'Hours not listed here; check with the store.', season: null,
+    free: false, snap: 'unknown', wic: 'unknown', produce_plus: 'unknown', eligibility: 'Open to all', languages: ['en'], phone: null, website: null,
+    source_url: 'https://opendata.dc.gov/datasets/DCGIS::grocery-store-locations', extra_source_urls: [], last_verified: '2026-10-11', confidence: 'medium',
+    notes: 'Full-service grocery store from Open Data DC Grocery Store Locations (operating in 2026). Hours and SNAP not verified.',
+  }));
+writeFileSync(path.join(WEB, 'data/resources.json'), JSON.stringify({ ...res, count: res.resources.length + extra.length, resources: [...res.resources, ...extra] }));
+console.log(`lookup list: ${res.resources.length} curated + ${extra.length} citywide grocery stores`);
 
 // ---- Gap cells: ~0.45 km hexes clipped to the east-of-river area
 const groceries = load('grocery-stores.geojson').features.filter((f) => f.properties.open_2026);
