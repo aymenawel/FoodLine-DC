@@ -27,7 +27,7 @@ const pretty = (s: string) => s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperC
   .replace(/\b(Ne|Se|Sw|Nw)\b/g, (q) => q.toUpperCase()).replace(/\bAvenue\b/g, 'Ave').replace(/\bStreet\b/g, 'St').replace(/\bRoad\b/g, 'Rd').replace(/\bPlace\b/g, 'Pl');
 
 function Source({ s }: { s: Pick<Stat, 'source' | 'url'> }) {
-  return <a href={s.url} target="_blank" rel="noreferrer" className="text-[15px] text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>;
+  return <a href={s.url} target="_blank" rel="noreferrer" className="text-[0.9375rem] text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>;
 }
 
 function Legend({ view }: { view: MapView }) {
@@ -126,7 +126,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
           <p className="kicker hidden md:block">FoodLine DC · {view === 'city' ? 'All of DC' : 'Wards 7 & 8, east of the Anacostia'}</p>
           <AnimatePresence mode="wait">
             <motion.h1 key={view} initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} transition={{ duration: 0.35 }}
-              className={`mt-3 font-serif leading-[1.02] tracking-[-0.01em] ${compact ? 'text-[38px]' : 'text-[34px] sm:text-[50px]'}`}>
+              className={`mt-3 font-serif leading-[1.02] tracking-[-0.01em] ${compact ? 'text-[2.375rem]' : 'text-[2.125rem] sm:text-[3.125rem]'}`}>
               {t1}<br /><em className="text-cta">{t2}</em>
             </motion.h1>
           </AnimatePresence>
@@ -136,22 +136,22 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
           {view === 'city' && (
             <div className="grid gap-4">
               <div>
-                <p className="num text-[56px] font-medium leading-none">5<span className="text-muted"> of 80</span></p>
-                <p className="mt-2 text-[17px] leading-snug">full-service grocery stores in DC are east of the river, where more than 150,000 people live.</p>
+                <p className="num text-[3.5rem] font-medium leading-none">5<span className="text-muted"> of 80</span></p>
+                <p className="mt-2 text-[1.0625rem] leading-snug">full-service grocery stores in DC are east of the river, where more than 150,000 people live.</p>
                 <div className="mt-1.5 flex flex-col gap-1.5"><Source s={STATS.eastStores} />
-                  <a className="text-[15px] text-faint underline decoration-line underline-offset-2" href="https://dcfoodpolicy.org/wp-content/uploads/2023/09/2022-assessment-of-the-food-system-in-the-district-of-columbia-report.pdf" target="_blank" rel="noreferrer">Population: DC Food Policy Council, Food System Assessment 2023</a></div>
+                  <a className="text-[0.9375rem] text-faint underline decoration-line underline-offset-2" href="https://dcfoodpolicy.org/wp-content/uploads/2023/09/2022-assessment-of-the-food-system-in-the-district-of-columbia-report.pdf" target="_blank" rel="noreferrer">Population: DC Food Policy Council, Food System Assessment 2023</a></div>
               </div>
               <Legend view="city" />
-              <p className="text-[15px] text-faint">Dots: {MAP_SOURCES[0].label}, plus the Marion Barry Avenue Market (opened Sept 2025).</p>
+              <p className="text-[0.9375rem] text-faint">Dots: {MAP_SOURCES[0].label}, plus the Marion Barry Avenue Market (opened Sept 2025).</p>
             </div>
           )}
 
           {view === 'focus' && (
             <div className="grid gap-4">
               <div className="flex items-end gap-6">
-                <div><p className="num text-[56px] font-medium leading-none text-accent-text">{live.length}</p><p className="text-base text-muted">live requests</p></div>
+                <div><p className="num text-[3.5rem] font-medium leading-none text-accent-text">{live.length}</p><p className="text-base text-muted">live requests</p></div>
                 {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[color:var(--sample-text)]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
-                <p className="ml-auto flex items-center gap-2 text-[15px] text-muted">
+                <p className="ml-auto flex items-center gap-2 text-[0.9375rem] text-muted">
                   <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-[color:var(--c-sample)]' : 'bg-faint'}`} />
                   {mode === 'live' ? 'Live' : mode === 'polling' ? 'Live (polling)' : 'Connecting'}
                 </p>
@@ -171,14 +171,14 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                 </AnimatePresence>
               </ul>
               <Legend view="focus" />
-              <p className="text-[15px] text-faint">Each dot stores only time, ZIP or rounded location, need and language. No names, numbers or message text.</p>
+              <p className="text-[0.9375rem] text-faint">Each dot stores only time, ZIP or rounded location, need and language. No names, numbers or message text.</p>
             </div>
           )}
 
           {view === 'gap' && (
             <div className="grid gap-4">
               {gaps.length === 0 ? (
-                <p className="text-[15px] text-muted">Not enough requests yet. Send a few texts, or load the labelled sample data.</p>
+                <p className="text-[0.9375rem] text-muted">Not enough requests yet. Send a few texts, or load the labelled sample data.</p>
               ) : (
                 <ol className="grid gap-4">
                   {gaps.map((g, i) => (
@@ -196,7 +196,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                   ))}
                 </ol>
               )}
-              <p className="text-[15px] text-faint">Score = requests × distance-to-grocery factor ÷ (1 + nearby food sites). Based on {basis.requests24h} requests in the last 24 h{basis.sample ? `, ${basis.sample} of them SAMPLE data` : ''}.</p>
+              <p className="text-[0.9375rem] text-faint">Score = requests × distance-to-grocery factor ÷ (1 + nearby food sites). Based on {basis.requests24h} requests in the last 24 h{basis.sample ? `, ${basis.sample} of them SAMPLE data` : ''}.</p>
             </div>
           )}
         </div>
@@ -221,7 +221,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </div>
 
       {sampleCount > 0 && view !== 'city' && (
-        <p className="absolute right-5 top-[176px] hidden rounded-md md:block border border-dashed border-[color:var(--sample-text)] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[color:var(--sample-text)]">
+        <p className="absolute right-5 top-[176px] hidden rounded-md md:block border border-dashed border-[color:var(--sample-text)] bg-panel/90 px-3 py-1.5 font-mono text-[0.9375rem] uppercase tracking-[.12em] text-[color:var(--sample-text)]">
           Includes {sampleCount} sample requests · not real residents
         </p>
       )}

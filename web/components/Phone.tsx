@@ -109,7 +109,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
           <span aria-hidden className="grid size-9 place-items-center rounded-full bg-cta font-serif text-xl text-cta-ink">F</span>
           <div>
             <p className="font-semibold leading-tight">FoodLine</p>
-            <p className="text-[15px] text-muted">Simulated text line · Wards 7 &amp; 8</p>
+            <p className="text-[0.9375rem] text-muted">Simulated text line · Wards 7 &amp; 8</p>
           </div>
         </div>
         <div role="group" aria-label="Language / Idioma" className="flex rounded-full border border-line-strong p-0.5 text-base">
@@ -128,11 +128,11 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
                 transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 className={`flex flex-col ${m.from === 'me' ? 'items-end' : 'items-start'}`}>
                 <span className="sr-only">{m.from === 'me' ? 'You:' : 'FoodLine:'}</span>
-                <div className={`max-w-[86%] whitespace-pre-wrap rounded-[20px] px-3.5 py-2.5 text-[18px] leading-snug ${
+                <div className={`max-w-[86%] whitespace-pre-wrap rounded-[20px] px-3.5 py-2.5 text-[1.125rem] leading-snug ${
                   m.from === 'me' ? 'rounded-br-md bg-cta font-medium text-cta-ink' : 'rounded-bl-md bg-panel-2 text-ink'}`}>
                   <Linkified text={m.text} lang={m.lang} />
                 </div>
-                <span aria-hidden className="mt-1 px-1 text-[13px] text-faint">{m.from === 'me' ? `Delivered ${time(m.at)}` : time(m.at)}</span>
+                <span aria-hidden className="mt-1 px-1 text-[0.8125rem] text-faint">{m.from === 'me' ? `Delivered ${time(m.at)}` : time(m.at)}</span>
               </motion.li>
             ))}
             {typing && (

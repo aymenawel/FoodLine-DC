@@ -39,8 +39,8 @@ export default function QrCard() {
       <figcaption>
         <h2 className="font-serif text-3xl leading-tight">Text the line</h2>
         <p className="mt-1 text-base text-muted">Scan with your phone camera. It works like a text conversation.</p>
-        <p className="mt-2 break-all font-mono text-[15px] text-faint">{url}</p>
-        {note && <p className="mt-1 text-[15px] text-faint">{note}</p>}
+        <p className="mt-2 break-all font-mono text-[0.9375rem] text-faint">{url}</p>
+        {note && <p className="mt-1 text-[0.9375rem] text-faint">{note}</p>}
       </figcaption>
     </figure>
   );
