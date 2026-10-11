@@ -8,8 +8,8 @@ function StatBlock({ s }: { s: Stat }) {
   return (
     <div className="border-t border-line pt-4">
       <p className="num text-4xl font-medium leading-none">{s.value}</p>
-      <p className="mt-2 text-[15px] leading-snug">{s.label}</p>
-      <a href={s.url} target="_blank" rel="noreferrer" className="mt-1 inline-block text-xs text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>
+      <p className="mt-2 text-[17px] leading-snug">{s.label}</p>
+      <a href={s.url} target="_blank" rel="noreferrer" className="mt-1 inline-block text-[15px] text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>
     </div>
   );
 }
@@ -39,7 +39,7 @@ export default function Home() {
           <StatBlock s={STATS.income} />
           <StatBlock s={STATS.dcInsecure} />
         </div>
-        <p className="mt-4 text-xs text-faint">
+        <p className="mt-4 text-[15px] text-faint">
           “More than 150,000 people” east of the river: <a className="underline decoration-line underline-offset-2" href={POP_URL} target="_blank" rel="noreferrer">DC Food Policy Council, Food System Assessment (2023)</a>.
         </p>
       </section>

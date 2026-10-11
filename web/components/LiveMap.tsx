@@ -31,6 +31,7 @@ function style(): StyleSpecification {
   const g = (f: string) => `/geo/${f}.geojson`;
   return {
     version: 8,
+    glyphs: 'https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf',
     sources: {
       dc: { type: 'geojson', data: g('dc-boundary') },
       east: { type: 'geojson', data: g('east-of-river') },
@@ -40,16 +41,27 @@ function style(): StyleSpecification {
       grocery: { type: 'geojson', data: empty },
       resources: { type: 'geojson', data: g('resources') },
       requests: { type: 'geojson', data: empty },
+      // OpenFreeMap (OpenStreetMap data), no API key. Only roads are drawn, restyled to match the site. Fails quietly offline.
+      streets: { type: 'vector', url: 'https://tiles.openfreemap.org/planet', attribution: '© OpenFreeMap © OpenMapTiles Data from OpenStreetMap' },
     },
     layers: [
       { id: 'bg', type: 'background', paint: { 'background-color': C.bg } },
       { id: 'land', type: 'fill', source: 'dc', paint: { 'fill-color': C.land, 'fill-color-transition': { duration: 900 } } },
       { id: 'east', type: 'fill', source: 'east', paint: { 'fill-color': C.east, 'fill-opacity': 0 , 'fill-opacity-transition': { duration: 900 } } },
+      { id: 'streets', type: 'line', source: 'streets', 'source-layer': 'transportation', minzoom: 11,
+        filter: ['in', ['get', 'class'], ['literal', ['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'minor', 'service']]],
+        layout: { 'line-cap': 'round', 'line-join': 'round' },
+        paint: { 'line-color': ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], '#6d8478', ['secondary', 'tertiary'], '#506459', '#3c4d44'],
+          'line-width': ['interpolate', ['linear'], ['zoom'], 11, ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], 1.6, 0.5], 15, ['match', ['get', 'class'], ['motorway', 'trunk', 'primary'], 5, ['secondary', 'tertiary'], 3.5, 1.8]] } },
       { id: 'lfa', type: 'fill', source: 'lfa', paint: { 'fill-color': C.lfa, 'fill-opacity': 0, 'fill-opacity-transition': { duration: 900 } } },
       { id: 'lfa-edge', type: 'line', source: 'lfa', paint: { 'line-color': C.lfa, 'line-width': 0.8, 'line-opacity': 0, 'line-opacity-transition': { duration: 900 } } },
       { id: 'water', type: 'fill', source: 'water', paint: { 'fill-color': C.water } },
       { id: 'wards', type: 'line', source: 'wards', paint: { 'line-color': C.ward, 'line-width': ['interpolate', ['linear'], ['zoom'], 11, 1.2, 14, 2.2] } },
       { id: 'east-edge', type: 'line', source: 'east', paint: { 'line-color': C.foodEast, 'line-width': 1.6, 'line-dasharray': [2, 2], 'line-opacity': 0, 'line-opacity-transition': { duration: 900 } } },
+      { id: 'street-names', type: 'symbol', source: 'streets', 'source-layer': 'transportation_name', minzoom: 13.2,
+        filter: ['in', ['get', 'class'], ['literal', ['motorway', 'trunk', 'primary', 'secondary', 'tertiary', 'minor']]],
+        layout: { 'symbol-placement': 'line', 'text-field': ['coalesce', ['get', 'name:en'], ['get', 'name']], 'text-font': ['Noto Sans Regular'], 'text-size': 14, 'text-letter-spacing': 0.02 },
+        paint: { 'text-color': '#c9d3cc', 'text-halo-color': '#0d1411', 'text-halo-width': 2 } },
       { id: 'dc-edge', type: 'line', source: 'dc', paint: { 'line-color': C.ink, 'line-width': 1, 'line-opacity': 0.35 } },
       { id: 'heat', type: 'heatmap', source: 'requests', paint: {
         'heatmap-weight': 1, 'heatmap-intensity': ['interpolate', ['linear'], ['zoom'], 11, 0.8, 15, 2],
@@ -76,7 +88,8 @@ function style(): StyleSpecification {
 
 type Hood = { name: string; lng: number; lat: number };
 
-export default function LiveMap({ view, requests, latest, gaps, padding, onLabelFor }: {
+export default function LiveMap({ view, requests, latest, gaps, padding, onLabelFor, streets = true }: {
+  streets?: boolean;
   view: MapView;
   requests: StoredRequest[];
   latest: StoredRequest | null;
@@ -136,14 +149,28 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
           hoodMarkers.current.push({ name, m: new lib.Marker({ element: d }).setLngLat(f.geometry.coordinates).addTo(m) });
         }
         // resource popups
-        m.on('click', 'resources', (e) => {
-          const f = e.features?.[0];
+        const hit = (pt: { x: number; y: number }) => {
+          const r = 16; // generous touch target: anything within 16 px of the tap counts
+          const layers = ['grocery', 'resources'].filter((l) => m.getLayoutProperty(l, 'visibility') !== 'none');
+          return m.queryRenderedFeatures([[pt.x - r, pt.y - r], [pt.x + r, pt.y + r]], { layers })[0];
+        };
+        const esc = (s: unknown) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c] as string));
+        const KIND: Record<string, string> = { grocery: 'Grocery store', farmers_market: 'Farmers market', mobile_market: 'Mobile market', corner_store: 'Corner store with produce',
+          pantry: 'Food pantry', free_market: 'Free market', community_fridge: 'Community fridge', meal_site: 'Free meals' };
+        let popup: import('maplibre-gl').Popup | null = null;
+        m.on('click', (e) => {
+          const f = hit(e.point);
+          popup?.remove();
           if (!f) return;
-          new lib.Popup({ closeButton: false, offset: 10 }).setLngLat(e.lngLat)
-            .setHTML(`<strong>${f.properties.name}</strong><br><span style="color:#a3ada6">${String(f.properties.type).replace('_', ' ')}${f.properties.free ? ' · free' : ''}</span>`).addTo(m);
+          const p = f.properties as Record<string, unknown>;
+          const kind = KIND[String(p.type ?? 'grocery')] ?? 'Food';
+          const addr = p.address ? String(p.address).toLowerCase().replace(/(^| )[a-z]/g, (c) => c.toUpperCase()).replace(/ (ne|se|sw|nw)$/i, (q) => q.toUpperCase()) : '';
+          const tags = [kind, p.free ? 'Free' : '', p.snap ? 'SNAP/EBT' : ''].filter(Boolean).join(' · ');
+          const coords = (f.geometry as unknown as { coordinates: [number, number] }).coordinates;
+          popup = new lib.Popup({ closeButton: true, closeOnClick: false, offset: 14, maxWidth: '340px' }).setLngLat(coords)
+            .setHTML(`<div class="pop"><strong>${esc(p.name)}</strong><span>${esc(tags)}</span>${addr ? `<span>${esc(addr)}</span>` : ''}${p.note ? `<em>${esc(p.note)}</em>` : ''}</div>`).addTo(m);
         });
-        m.on('mouseenter', 'resources', () => (m.getCanvas().style.cursor = 'pointer'));
-        m.on('mouseleave', 'resources', () => (m.getCanvas().style.cursor = ''));
+        m.on('mousemove', (e) => { m.getCanvas().style.cursor = hit(e.point) ? 'pointer' : ''; });
         applyView(true);
         syncRequests();
         drawGaps();
@@ -200,6 +227,10 @@ export default function LiveMap({ view, requests, latest, gaps, padding, onLabel
   }
 
   useEffect(() => { applyView(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [view, padding.left, padding.right, padding.top, padding.bottom]);
+  useEffect(() => {
+    const m = map.current;
+    if (m && ready.current) for (const l of ['streets', 'street-names']) m.setLayoutProperty(l, 'visibility', streets ? 'visible' : 'none');
+  }, [streets]);
   useEffect(() => { syncRequests(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [requests]);
   useEffect(() => { drawGaps(); /* eslint-disable-next-line react-hooks/exhaustive-deps */ }, [gaps]);
 

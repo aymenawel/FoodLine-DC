@@ -45,7 +45,7 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-geist-s
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
 ::selection { background: var(--accent); color: var(--accent-ink); }
 
-.kicker { font: 500 12px/1.2 var(--font-geist-mono), monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.kicker { font: 500 14px/1.2 var(--font-geist-mono), monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .num { font-family: var(--font-geist-mono), monospace; font-variant-numeric: tabular-nums; letter-spacing: -0.03em; }
 
 /* Map pings */
@@ -55,19 +55,27 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-geist-s
 .ping.sample::before { background: #b98a34; width: 9px; height: 9px; inset: 3.5px; box-shadow: none; opacity: .85; }
 .ping.live::after { border: 2.5px solid var(--accent); animation: ring 2.2s cubic-bezier(.16,1,.3,1) 2; }
 .ping.live::before { animation: drop .55s cubic-bezier(.34,1.56,.64,1); }
-.ping-label { position: absolute; left: 22px; top: -6px; white-space: nowrap; font: 600 13px var(--font-geist-sans); color: var(--accent-ink);
+.ping-label { position: absolute; left: 22px; top: -6px; white-space: nowrap; font: 600 17px var(--font-geist-sans); color: var(--accent-ink);
   background: var(--accent); padding: 3px 8px; border-radius: 999px; animation: fadeout 6s forwards; }
 @keyframes ring { from { transform: scale(1); opacity: 1 } to { transform: scale(7); opacity: 0 } }
 @keyframes drop { from { transform: scale(0) } to { transform: scale(1) } }
 @keyframes fadeout { 0%, 75% { opacity: 1 } 100% { opacity: 0 } }
 
-.hood-label { font: italic 400 18px var(--font-serif), serif; color: var(--ink); opacity: .9; pointer-events: none; white-space: nowrap;
+.hood-label { font: italic 400 21px var(--font-serif), serif; color: var(--ink); opacity: .9; pointer-events: none; white-space: nowrap;
   text-shadow: 0 0 8px var(--bg), 0 0 3px var(--bg), 0 0 1px var(--bg); }
 
-.maplibregl-ctrl-attrib { background: rgba(13,20,17,.75) !important; color: var(--muted) !important; font-size: 11px; }
+.maplibregl-ctrl-attrib { background: rgba(13,20,17,.85) !important; color: var(--muted) !important; font-size: 13px; }
 .maplibregl-ctrl-attrib a { color: var(--muted) !important; }
-.maplibregl-popup-content { background: var(--panel-2); color: var(--ink); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; font: 14px var(--font-geist-sans); }
-.maplibregl-popup-tip { border-top-color: var(--panel-2) !important; border-bottom-color: var(--panel-2) !important; }
+.maplibregl-popup-content { background: var(--panel-2) !important; color: var(--ink) !important; border: 1px solid #4a5a51; border-radius: 12px; padding: 14px 40px 14px 16px !important; font: 17px/1.4 var(--font-geist-sans); box-shadow: 0 12px 30px rgba(0,0,0,.6) !important; }
+.maplibregl-popup-content .pop { display: grid; gap: 4px; }
+.maplibregl-popup-content .pop strong { font-size: 20px; line-height: 1.25; color: var(--ink); }
+.maplibregl-popup-content .pop span { color: var(--muted); }
+.maplibregl-popup-content .pop em { font-style: normal; font-size: 15px; color: var(--muted); margin-top: 4px; }
+.maplibregl-popup-close-button { color: var(--ink) !important; font-size: 26px; width: 40px; height: 40px; line-height: 1; }
+.maplibregl-popup-anchor-top .maplibregl-popup-tip, .maplibregl-popup-anchor-top-left .maplibregl-popup-tip, .maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: var(--panel-2) !important; }
+.maplibregl-popup-anchor-bottom .maplibregl-popup-tip, .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip, .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: var(--panel-2) !important; }
+.maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--panel-2) !important; }
+.maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--panel-2) !important; }
 
 /* Chat */
 @keyframes blink { 0%, 100% { opacity: .25 } 50% { opacity: 1 } }

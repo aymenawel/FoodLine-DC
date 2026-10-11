@@ -25,7 +25,7 @@ const pretty = (s: string) => s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperC
   .replace(/\b(Ne|Se|Sw|Nw)\b/g, (q) => q.toUpperCase()).replace(/\bAvenue\b/g, 'Ave').replace(/\bStreet\b/g, 'St').replace(/\bRoad\b/g, 'Rd').replace(/\bPlace\b/g, 'Pl');
 
 function Source({ s }: { s: Pick<Stat, 'source' | 'url'> }) {
-  return <a href={s.url} target="_blank" rel="noreferrer" className="text-xs text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>;
+  return <a href={s.url} target="_blank" rel="noreferrer" className="text-[15px] text-faint underline decoration-line underline-offset-2 hover:text-muted">{s.source}</a>;
 }
 
 function Legend({ view }: { view: MapView }) {
@@ -35,7 +35,7 @@ function Legend({ view }: { view: MapView }) {
        ['#9fb5a9', 'Corner store with produce'], ['#f4b740', 'Request (live)'], ['#b98a34', 'Request (sample)'],
        ...(view === 'focus' ? [['#e26848', 'Low food access area (DC, 2017)', 'square'] as [string, string, string]] : [])];
   return (
-    <ul className="grid gap-1.5 text-sm text-muted">
+    <ul className="grid gap-1.5 text-base text-muted">
       {items.map(([c, l, shape]) => (
         <li key={l} className="flex items-center gap-2.5">
           <i aria-hidden className={`inline-block size-3 shrink-0 ${shape === 'square' ? 'rounded-[2px] opacity-70' : 'rounded-full'}`}
@@ -49,6 +49,7 @@ function Legend({ view }: { view: MapView }) {
 export default function MapScreen({ compact = false, initialView = 'city' }: { compact?: boolean; initialView?: MapView }) {
   const [view, setView] = useState<MapView>(initialView);
   const [present, setPresent] = useState(false);
+  const [streets, setStreets] = useState(true);
   const [gaps, setGaps] = useState<Gap[]>([]);
   const [basis, setBasis] = useState({ requests24h: 0, sample: 0 });
   const [busy, setBusy] = useState(false);
@@ -114,7 +115,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
 
   return (
     <div className={`relative h-full min-h-[600px] w-full overflow-hidden bg-bg ${compact ? '' : '[&_.maplibregl-ctrl-bottom-right]:!bottom-[112px]'}`}>
-      <LiveMap view={view} requests={requests} latest={latest} gaps={gaps} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
+      <LiveMap view={view} requests={requests} latest={latest} gaps={gaps} streets={streets} padding={padding} onLabelFor={(fn) => (labelFor.current = fn)} />
 
       {/* Left editorial panel */}
       <section className="pointer-events-none absolute inset-y-0 left-0 flex w-full flex-col justify-between gap-5 p-4 pt-16 md:justify-start md:p-6" style={{ maxWidth: narrow ? undefined : panelW }}>
@@ -133,32 +134,32 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
             <div className="grid gap-4">
               <div>
                 <p className="num text-[56px] font-medium leading-none">5<span className="text-muted"> of 80</span></p>
-                <p className="mt-2 text-[15px] leading-snug">full-service grocery stores in DC are east of the river, where more than 150,000 people live.</p>
+                <p className="mt-2 text-[17px] leading-snug">full-service grocery stores in DC are east of the river, where more than 150,000 people live.</p>
                 <div className="mt-1.5 flex flex-col gap-1.5"><Source s={STATS.eastStores} />
-                  <a className="text-xs text-faint underline decoration-line underline-offset-2" href="https://dcfoodpolicy.org/wp-content/uploads/2023/09/2022-assessment-of-the-food-system-in-the-district-of-columbia-report.pdf" target="_blank" rel="noreferrer">Population: DC Food Policy Council, Food System Assessment 2023</a></div>
+                  <a className="text-[15px] text-faint underline decoration-line underline-offset-2" href="https://dcfoodpolicy.org/wp-content/uploads/2023/09/2022-assessment-of-the-food-system-in-the-district-of-columbia-report.pdf" target="_blank" rel="noreferrer">Population: DC Food Policy Council, Food System Assessment 2023</a></div>
               </div>
               <Legend view="city" />
-              <p className="text-xs text-faint">Dots: {MAP_SOURCES[0].label}, plus the Marion Barry Avenue Market (opened Sept 2025).</p>
+              <p className="text-[15px] text-faint">Dots: {MAP_SOURCES[0].label}, plus the Marion Barry Avenue Market (opened Sept 2025).</p>
             </div>
           )}
 
           {view === 'focus' && (
             <div className="grid gap-4">
               <div className="flex items-end gap-6">
-                <div><p className="num text-[56px] font-medium leading-none text-accent">{live.length}</p><p className="text-sm text-muted">live requests</p></div>
-                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[#b98a34]">{sampleCount}</p><p className="text-sm text-muted">sample</p></div>}
-                <p className="ml-auto flex items-center gap-2 text-xs text-muted">
+                <div><p className="num text-[56px] font-medium leading-none text-accent">{live.length}</p><p className="text-base text-muted">live requests</p></div>
+                {sampleCount > 0 && <div><p className="num text-3xl leading-none text-[#b98a34]">{sampleCount}</p><p className="text-base text-muted">sample</p></div>}
+                <p className="ml-auto flex items-center gap-2 text-[15px] text-muted">
                   <span className={`size-2 rounded-full ${mode === 'live' ? 'bg-food-east' : mode === 'polling' ? 'bg-accent' : 'bg-faint'}`} />
                   {mode === 'live' ? 'Live' : mode === 'polling' ? 'Live (polling)' : 'Connecting'}
                 </p>
               </div>
               <ul className="grid gap-1" aria-label="Latest requests">
                 <AnimatePresence initial={false}>
-                  {recent.length === 0 && <li className="text-sm text-muted">Waiting for the first text. Scan the code or open /chat.</li>}
+                  {recent.length === 0 && <li className="text-base text-muted">Waiting for the first text. Scan the code or open /chat.</li>}
                   {recent.map((r) => (
                     <motion.li key={r.id} layout initial={{ opacity: 0, x: -12, backgroundColor: 'rgba(244,183,64,.25)' }}
                       animate={{ opacity: 1, x: 0, backgroundColor: 'rgba(244,183,64,0)' }} transition={{ duration: 1.2 }}
-                      className="flex items-baseline justify-between gap-3 rounded-md px-2 py-1 text-sm">
+                      className="flex items-baseline justify-between gap-3 rounded-md px-2 py-1 text-base">
                       <span className="num text-muted">{new Date(r.ts).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</span>
                       <span className="flex-1 truncate">{r.zip ?? (labelFor.current(r.lat, r.lng).replace('Historic ', '') || 'Ward 7/8')}</span>
                       <span className="text-muted">{NEED[r.need]}{r.lang === 'es' ? ' · ES' : ''}</span>
@@ -167,7 +168,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                 </AnimatePresence>
               </ul>
               <Legend view="focus" />
-              <p className="text-xs text-faint">Each dot stores only time, ZIP or rounded location, need and language. No names, numbers or message text.</p>
+              <p className="text-[15px] text-faint">Each dot stores only time, ZIP or rounded location, need and language. No names, numbers or message text.</p>
             </div>
           )}
 
@@ -182,17 +183,17 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
                       <span className="num grid size-9 place-items-center rounded-full bg-ink text-lg font-semibold text-bg">{i + 1}</span>
                       <div>
                         <h2 className="font-serif text-2xl leading-tight">{g.hood === 'Historic Anacostia' ? 'Anacostia' : g.hood ?? 'East of the river'}</h2>
-                        <p className="text-sm leading-snug text-muted">
+                        <p className="text-base leading-snug text-muted">
                           <span className="text-ink">{g.requests} request{g.requests === 1 ? '' : 's'}</span> in 24 h · nearest grocery {mi(g.nearestGroceryKm)} mi ·{' '}
                           {g.freeWithin1km === 0 ? 'no free food site' : `${g.freeWithin1km} free site${g.freeWithin1km > 1 ? 's' : ''}`} within 0.6 mi
                         </p>
-                        {g.stop && <p className="mt-0.5 text-sm">Suggested stop: <span className="text-accent">{pretty(g.stop.a)} &amp; {pretty(g.stop.b)}</span></p>}
+                        {g.stop && <p className="mt-0.5 text-base">Suggested stop: <span className="text-accent">{pretty(g.stop.a)} &amp; {pretty(g.stop.b)}</span></p>}
                       </div>
                     </li>
                   ))}
                 </ol>
               )}
-              <p className="text-xs text-faint">Score = requests × distance-to-grocery factor ÷ (1 + nearby food sites). Based on {basis.requests24h} requests in the last 24 h{basis.sample ? `, ${basis.sample} of them SAMPLE data` : ''}.</p>
+              <p className="text-[15px] text-faint">Score = requests × distance-to-grocery factor ÷ (1 + nearby food sites). Based on {basis.requests24h} requests in the last 24 h{basis.sample ? `, ${basis.sample} of them SAMPLE data` : ''}.</p>
             </div>
           )}
         </div>
@@ -203,10 +204,11 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
         <div role="group" aria-label="Map view" className="flex max-w-[calc(100vw-24px)] flex-wrap justify-end rounded-[22px] border border-line bg-panel/90 p-1 backdrop-blur-sm">
           {VIEWS.map((v) => (
             <button key={v.id} onClick={() => setView(v.id)} aria-pressed={view === v.id}
-              className={`min-h-10 rounded-full px-4 text-sm font-semibold transition ${view === v.id ? 'bg-ink text-bg' : 'text-muted hover:text-ink'}`}>{v.label}</button>
+              className={`min-h-10 rounded-full px-4 text-base font-semibold transition ${view === v.id ? 'bg-ink text-bg' : 'text-muted hover:text-ink'}`}>{v.label}</button>
           ))}
         </div>
-        <div className="hidden gap-2 text-sm md:flex">
+        <button onClick={() => setStreets((v) => !v)} aria-pressed={streets} className="min-h-11 rounded-full border border-[#4a5a51] bg-panel/90 px-4 text-base font-semibold text-ink">Streets {streets ? 'on' : 'off'}</button>
+        <div className="hidden gap-2 text-base md:flex">
           {sampleCount > 0
             ? <button disabled={busy} onClick={() => run('unseed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Remove sample data</button>
             : <button disabled={busy} onClick={() => run('seed')} className="min-h-9 rounded-full border border-line bg-panel/90 px-3 text-muted hover:text-ink">Load sample data</button>}
@@ -215,7 +217,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
       </div>
 
       {sampleCount > 0 && view !== 'city' && (
-        <p className="absolute right-5 top-[116px] hidden rounded-md md:block border border-dashed border-[#b98a34] bg-panel/90 px-3 py-1.5 font-mono text-xs uppercase tracking-[.12em] text-[#d9a94d]">
+        <p className="absolute right-5 top-[116px] hidden rounded-md md:block border border-dashed border-[#b98a34] bg-panel/90 px-3 py-1.5 font-mono text-[15px] uppercase tracking-[.12em] text-[#d9a94d]">
           Includes {sampleCount} sample requests · not real residents
         </p>
       )}
@@ -228,7 +230,7 @@ export default function MapScreen({ compact = false, initialView = 'city' }: { c
           {[STATS.wardGap, STATS.snap, STATS.noCar, STATS.dcInsecure].map((s) => (
             <div key={s.id} className="bg-bg/92 px-6 py-4 backdrop-blur-sm">
               <p className="num text-3xl font-medium leading-none">{s.value}</p>
-              <p className="mt-1.5 text-sm leading-snug">{s.label}</p>
+              <p className="mt-1.5 text-base leading-snug">{s.label}</p>
               <Source s={s} />
             </div>
           ))}

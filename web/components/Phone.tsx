@@ -109,10 +109,10 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
           <span aria-hidden className="grid size-9 place-items-center rounded-full bg-accent font-serif text-xl text-accent-ink">F</span>
           <div>
             <p className="font-semibold leading-tight">FoodLine</p>
-            <p className="text-xs text-muted">Simulated text line · Wards 7 &amp; 8</p>
+            <p className="text-[15px] text-muted">Simulated text line · Wards 7 &amp; 8</p>
           </div>
         </div>
-        <div role="group" aria-label="Language / Idioma" className="flex rounded-full border border-[#4a5a51] p-0.5 text-sm">
+        <div role="group" aria-label="Language / Idioma" className="flex rounded-full border border-[#4a5a51] p-0.5 text-base">
           <button onClick={() => switchLang('en')} aria-pressed={lang === 'en'} aria-label="English"
             className={`min-h-9 rounded-full px-3 font-semibold ${lang === 'en' ? 'bg-ink text-bg' : 'text-muted'}`}>EN</button>
           <button onClick={() => switchLang('es')} aria-pressed={lang === 'es'} aria-label="Español" lang="es"
@@ -128,11 +128,11 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
                 transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                 className={`flex flex-col ${m.from === 'me' ? 'items-end' : 'items-start'}`}>
                 <span className="sr-only">{m.from === 'me' ? 'You:' : 'FoodLine:'}</span>
-                <div className={`max-w-[86%] whitespace-pre-wrap rounded-[20px] px-3.5 py-2.5 text-[15px] leading-snug ${
+                <div className={`max-w-[86%] whitespace-pre-wrap rounded-[20px] px-3.5 py-2.5 text-[18px] leading-snug ${
                   m.from === 'me' ? 'rounded-br-md bg-accent font-medium text-accent-ink' : 'rounded-bl-md bg-panel-2 text-ink'}`}>
                   <Linkified text={m.text} lang={m.lang} />
                 </div>
-                <span aria-hidden className="mt-1 px-1 text-[11px] text-faint">{m.from === 'me' ? `Delivered ${time(m.at)}` : time(m.at)}</span>
+                <span aria-hidden className="mt-1 px-1 text-[13px] text-faint">{m.from === 'me' ? `Delivered ${time(m.at)}` : time(m.at)}</span>
               </motion.li>
             ))}
             {typing && (
@@ -151,7 +151,7 @@ export default function Phone({ framed = true, onResult }: { framed?: boolean; o
       <div role="group" aria-label={t.chips} lang={lang} className="flex gap-2 overflow-x-auto px-3 py-1.5">
         {chips.map((c) => (
           <button key={c} data-chip onClick={() => send(c)} aria-disabled={typing}
-            className="min-h-10 shrink-0 rounded-full border border-[#4a5a51] px-3 text-sm text-ink transition hover:border-accent aria-disabled:opacity-50">
+            className="min-h-10 shrink-0 rounded-full border border-[#4a5a51] px-3 text-base text-ink transition hover:border-accent aria-disabled:opacity-50">
             {c}
           </button>
         ))}

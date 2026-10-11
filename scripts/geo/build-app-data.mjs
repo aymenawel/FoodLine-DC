@@ -118,7 +118,7 @@ for (const f of ['dc-boundary', 'east-of-river', 'water', 'wards', 'low-food-acc
 }
 writeFileSync(path.join(WEB, 'public/geo/resources.geojson'), JSON.stringify({ type: 'FeatureCollection', features:
   res.resources.map((r) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: [r.lng, r.lat] },
-    properties: { id: r.id, name: r.name, type: r.type, free: r.free } })) }));
+    properties: { id: r.id, name: r.name, type: r.type, free: r.free, address: r.address.split(',')[0], snap: r.snap === true, note: (r.schedule_note || '').slice(0, 140) } })) }));
 
 console.log(`zips ${Object.keys(zips).length}, neighborhoods ${hoods.length}, intersections ${inter.length}, cells ${cells.length}, resources ${res.resources.length}`);
 console.log('east-of-river ZIPs:', Object.values(zips).filter((z) => z.eastShare > 0.05).map((z) => `${z.zip}(${z.eastShare})`).join(' '));
