@@ -70,6 +70,668 @@
         "https://civileats.com/2026/05/13/in-d-c-an-innovative-neighborhood-grocery-store/"
       ],
       "evidence": "Operating: DOL's grocery site lists CSA pickups here for the week of Oct 8-10, 2026 ('year-round'), a venue listing shows a 'Final Fish Fryday' on Oct 9, 2026 and a one-year anniversary on Sep 25, 2026, and Civil Eats (May 13, 2026) profiles the open store. The Sunday 8-7 listing is on DOL's pre-opening 'help us open' page, while the current market page lists only Wed-Sat 8am-7pm. Not on DC WIC's October 2026 authorized store list (so WIC false); USDA SNAP data (2026-10-07) lists it as SNAP-authorized. Produce Plus still unconfirmed."
+    },
+    {
+      "id": "marthas-table-market-the-commons",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "Weekdays 11am-4pm. Closed on holidays: Mon Oct 12, 2026 (Indigenous Peoples’ Day) and Wed Nov 11, 2026 (Veterans Day) per marthastable.org/operations. Check marthastable.org/operations for other closures. Guests may shop twice monthly."
+      },
+      "confidence": "high",
+      "sources": [
+        "https://marthastable.org/markets/",
+        "https://marthastable.org/operations",
+        "https://marthastable.org/events/"
+      ],
+      "evidence": "Markets page (2026-10-11) still says The Commons, 2375 Elvans Rd SE, Mon-Fri 11am-4pm, free membership card with photo ID, twice monthly, 16+. Events calendar lists October 2026 market days at The Commons through Oct 30 (no Oct 12), and the operations page adds a Wed Nov 11 (Veterans Day) closure, so the note is updated."
+    },
+    {
+      "id": "bread-for-the-city-southeast-free-farmers-market",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "Usually the 2nd and 4th Friday (and 5th Friday when applicable), starting 9am and ending at 11:45am \"or until we run out of food\". BFTC events calendar (checked Oct 11, 2026) lists only these upcoming Southeast dates: Fri Oct 23 and Fri Dec 11, 2026, 9am-12pm. No Southeast date is posted for Oct 30 or any November Friday, so check breadforthecity.org/events or call (202) 265-2400 before going."
+      },
+      "confidence": "high",
+      "sources": [
+        "https://breadforthecity.org/food/",
+        "https://breadforthecity.org/events/?_event_category=farmers-markets",
+        "https://breadforthecity.org/events/free-farmers-market-friday-4-2026-10-23/",
+        "https://breadforthecity.org/events/free-farmers-market-friday-2-2026-12-11/",
+        "https://breadforthecity.org/events/free-farmers-market-friday-2-2026-10-09/"
+      ],
+      "evidence": "BFTC farmers-market calendar (2026-10-11) lists Southeast Center events on Oct 9 (past), Oct 23 and Dec 11, 2026 (9am-12pm); the other listed dates (Oct 16, Dec 4, Dec 18) are at the Northwest Center. Event pages for Oct 30, Nov 13, Nov 20 and Nov 27 return 404. The food page still describes the free market as open to the wider community with no ID or registration stated."
+    },
+    {
+      "id": "thearc-farm-food-and-farm-fridays",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "high",
+      "sources": [
+        "https://buildingbridgesdc.org/series/food-and-farm-fridays/",
+        "https://buildingbridgesdc.org/event/food-farm-fridays/2026-11-13/"
+      ],
+      "evidence": "Building Bridges series page (2026-10-11) lists Food and Farm Fridays at THEARC Farm, 1901 Mississippi Ave SE, Fri 12-2pm on Oct 16, 23, 30, Nov 6 and Nov 13, 2026. Nov 13 is the last listed date (Nov 20/27 and Dec 4 event URLs redirect away). The page does not call Nov 13 the season finale, and no eligibility, ID or registration is stated (free)."
+    },
+    {
+      "id": "dpr-lederer-gardens-veggie-giveaway",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "medium",
+      "sources": [
+        "https://dpr.dc.gov/featured-content/free-produce-dpr",
+        "https://dpr.dc.gov/node/1727331",
+        "https://grassrootsdc.org/events-list/2026/dpr-weekly-veggie-giveaways-sd7bh-khkfn-geps7",
+        "https://dprveggies.splashthat.com/"
+      ],
+      "evidence": "DPR free-produce page (2026-10-11) says \"WEDNESDAYS and SATURDAYS at Lederer Gardens\", \"Weekly from May - November 2026 (weather permitting)\"; a community calendar lists the Sat Sep 19, 2026 10-11am giveaway at Lederer Garden, 4801 Nannie Helen Burroughs Ave NE, for DC residents. The exact Nov 25 end date and times come from the registration page (dprveggies.splashthat.com), which now returns 403, so the end date could not be re-checked today."
+    },
+    {
+      "id": "hc-fort-drum-market",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "23:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "23:00"
+            ]
+          ]
+        },
+        "phone": "(202) 525-2845",
+        "schedule_note": "Hours per the store’s Google Maps listing (Mon-Fri 7am-11pm, Sat-Sun 8am-11pm, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call (202) 525-2845 to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://www.google.com/maps/search/Fort+Drum+Market+4686+Martin+Luther+King+Jr+Ave+SW+Washington+DC",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=4686%20Martin%20Luther%20King%20Jr%20Ave%20SE%2C%20Washington%2C%20DC%2020032&benchmark=Public_AR_Current&format=json"
+      ],
+      "evidence": "Quadrant is SW: DC WIC’s October 2026 authorized store list gives \"Fort Drum Market, 4686 Martin Luther King Jr Avenue SW, 202-525-2845, Ward 8\" (so WIC stays true), USDA SNAP data (2026-10-07) and Google Maps also say SW, and the Census geocoder turns the SE spelling into the SW address. Google Maps listing (open, same phone, reviews as recent as a month ago) shows Mon-Fri 7am-11pm, Sat-Sun 8am-11pm."
+    },
+    {
+      "id": "hc-a-1-grocery",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ]
+        },
+        "phone": "(202) 571-3922",
+        "schedule_note": "Hours per the store’s Google Maps listing (Mon-Fri 7am-9pm, Sat-Sun 8am-9pm, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/place/A-1+Grocery+Store/data=!4m7!3m6!1s0x89b7b8b6c1135639:0xaa2b8e1eedbe6188!8m2!3d38.8978781!4d-76.9256644",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Google Maps listing \"A-1 Grocery Store\", 615 Division Ave NE (open on 2026-10-11) shows Mon-Fri 7am-9pm, Sat-Sun 8am-9pm and phone (202) 571-3922. DC WIC’s October 2026 authorized list confirms WIC (it lists a different phone, 240-388-1830, possibly an owner line), and it is still on DCCK’s Apr 2026 list and in USDA SNAP data (2026-10-07)."
+    },
+    {
+      "id": "hc-ken-mart",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "tue": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "wed": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "thu": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "fri": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sun": [
+            [
+              "09:00",
+              "21:00"
+            ]
+          ]
+        },
+        "wic": false,
+        "schedule_note": "Hours per Google Maps (Mon-Sat 8am-9pm, Sun 9am-9pm, seen Oct 11, 2026), where the store at this address is listed as \"Z mart\"; not published by the store or DC Central Kitchen. Call or check before visiting."
+      },
+      "confidence": "low",
+      "sources": [
+        "https://www.google.com/maps/place/Z+mart/data=!4m7!3m6!1s0x89b7b8a3f997c827:0xe41761f3fcb05369!8m2!3d38.9098309!4d-76.9357736",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf"
+      ],
+      "evidence": "The only public hours found are a Google Maps listing named \"Z mart\" at 1507 Kenilworth Ave NE (same spot as our point, open on 2026-10-11, reviews up to 3 months old, no phone): Mon-Sat 8am-9pm, Sun 9am-9pm. DCCK (Apr 2026) and USDA SNAP data (2026-10-07) still say \"Ken Mart\" here, so the storefront may use a different name. It is not on DC WIC’s October 2026 authorized list, so WIC is false."
+    },
+    {
+      "id": "hc-minnesota-big-market",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "sat": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "sun": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ]
+        },
+        "phone": "(202) 204-2440",
+        "wic": false,
+        "schedule_note": "Hours per the store’s Google Maps listing (7am-10pm every day, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/place/Minnesota+Big+Market/data=!4m7!3m6!1s0x89b7b900793c48c9:0xdb485c4fe9d4c4ad!8m2!3d38.8763561!4d-76.9652928",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf"
+      ],
+      "evidence": "Google Maps listing \"Minnesota Big Market\", 2924 Minnesota Ave SE (unit B), open on 2026-10-11: 7am-10pm daily, phone (202) 204-2440. It is still on DCCK’s Apr 2026 list and in USDA SNAP data (2026-10-07) under this name. Not on DC WIC’s October 2026 authorized list, so WIC is false. (A cannabis shop, \"Creep Co.\", shares the building, so make sure the address is not confused with it.)"
+    },
+    {
+      "id": "hc-surprise-grocery",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "21:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ]
+        },
+        "phone": "(202) 582-3334",
+        "wic": false,
+        "schedule_note": "Hours per the store’s Google Maps listing (Mon-Fri 7am-9pm, Sat-Sun 8am-9pm, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/search/2233+Minnesota+Ave+SE+Washington+DC+20020+grocery",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf"
+      ],
+      "evidence": "Google Maps listing \"Surprise Grocery (2233 Minnesota Ave)\", open on 2026-10-11 with reviews as recent as 2 months ago: Mon-Fri 7am-9pm, Sat-Sun 8am-9pm, phone (202) 582-3334. On DCCK’s Apr 2026 list and in USDA SNAP data (2026-10-07, \"Surprise Market 1\"). Not on DC WIC’s October 2026 list, so WIC is false. (The nearby \"Minnesota Market\" at 2237 Minnesota Ave SE shows as temporarily closed; that is a different store.)"
+    },
+    {
+      "id": "hc-texas-avenue-convenience",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "tue": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "wed": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "thu": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "fri": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "21:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "20:00"
+            ]
+          ]
+        },
+        "phone": "(202) 582-2070",
+        "wic": false,
+        "schedule_note": "Also known as Jones Grocery Store. Hours per Google Maps (Mon-Sat 8am-9pm, Sun 8am-8pm, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/search/4350+Texas+Ave+SE+Washington+DC+20019+convenience+store",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf"
+      ],
+      "evidence": "Google Maps lists two matching listings at 4350 Texas Ave SE, \"Jones Grocery Store\" (110 reviews, latest ~6 months ago) and \"Texas Convenience Store\" (located in Jones Grocery Store). Both are open on 2026-10-11 with the same hours (Mon-Sat 8am-9pm, Sun 8am-8pm) and phone (202) 582-2070. DCCK (Apr 2026) and USDA SNAP data (2026-10-07) list Texas (Avenue) Convenience Store here. Not on DC WIC’s October 2026 list, so WIC is false."
+    },
+    {
+      "id": "hc-thomas-and-sons-food-market",
+      "verdict": "updated",
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "24:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "24:00"
+            ]
+          ],
+          "sat": [
+            [
+              "07:00",
+              "24:00"
+            ]
+          ],
+          "sun": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ]
+        },
+        "phone": "(202) 397-7500",
+        "wic": false,
+        "schedule_note": "Hours per the store’s Google Maps listing (Sun-Wed 7am-11pm, Thu-Sat 7am-midnight, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/place/Thomas+%26+Sons+Mini+Grocery/data=!4m7!3m6!1s0x89b7b8f33d78e587:0xe66dcc4e412da395!8m2!3d38.8960706!4d-76.9567125",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf"
+      ],
+      "evidence": "Google Maps listing \"Thomas & Sons Mini Grocery\", 3425 Benning Rd NE (121 reviews, newest about 9 months old), open on 2026-10-11: Sun-Wed 7am-11pm, Thu-Sat 7am-12am, phone (202) 397-7500. Still on DCCK’s Apr 2026 list and in USDA SNAP data (2026-10-07). Not on DC WIC’s October 2026 list, so WIC is false."
+    },
+    {
+      "id": "hc-stanton-supermarket",
+      "verdict": "updated",
+      "promote": true,
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "08:00",
+              "22:00"
+            ]
+          ],
+          "tue": [
+            [
+              "08:00",
+              "22:00"
+            ]
+          ],
+          "wed": [
+            [
+              "08:00",
+              "22:00"
+            ]
+          ],
+          "thu": [
+            [
+              "08:00",
+              "22:00"
+            ]
+          ],
+          "fri": [
+            [
+              "08:00",
+              "24:00"
+            ]
+          ],
+          "sat": [
+            [
+              "08:00",
+              "24:00"
+            ]
+          ],
+          "sun": [
+            [
+              "08:00",
+              "22:00"
+            ]
+          ]
+        },
+        "phone": "(202) 516-5758",
+        "schedule_note": "Hours per the store’s Google Maps listing (Sun-Thu 8am-10pm, Fri-Sat 8am-midnight, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/search/Stanton+Supermarket+1453+Howard+Rd+SE+Washington+DC",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Google Maps listing \"Stanton Supermarket\", 1453 Howard Rd SE (49 reviews, newest ~8 months old), open on 2026-10-11: Sun-Thu 8am-10pm, Fri-Sat 8am-12am, phone (202) 516-5758. DC WIC’s October 2026 list confirms WIC (Ward 8; it lists phone 202-375-4639). DCCK Apr 2026 marks SNAP, SNAP Match and WIC."
+    },
+    {
+      "id": "hc-shipley-super-market",
+      "verdict": "updated",
+      "promote": true,
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "sat": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "sun": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ]
+        },
+        "phone": "(202) 248-1997",
+        "schedule_note": "Hours per the store’s Google Maps listing (7am-11pm every day, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/search/Shipley+Super+Market+2283+Savannah+St+SE+Washington+DC",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Google Maps listing \"Shipley Super Market\", 2283 Savannah St SE (57 reviews, newest ~5 months old), open on 2026-10-11: 7am-11pm daily, phone (202) 248-1997. DC WIC’s October 2026 list confirms WIC (Ward 8; it lists phone 202-695-1374). DCCK Apr 2026 marks SNAP, SNAP Match and WIC."
+    },
+    {
+      "id": "hc-chesapeake-big-market",
+      "verdict": "updated",
+      "promote": true,
+      "changes": {
+        "hours": {
+          "mon": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "tue": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "wed": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "thu": [
+            [
+              "07:00",
+              "22:00"
+            ]
+          ],
+          "fri": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "sat": [
+            [
+              "07:00",
+              "23:00"
+            ]
+          ],
+          "sun": [
+            [
+              "07:00",
+              "22:30"
+            ]
+          ]
+        },
+        "phone": "(202) 563-6529",
+        "schedule_note": "Hours per the store’s Google Maps listing (Mon-Thu 7am-10pm, Fri-Sat 7am-11pm, Sun 7am-10:30pm, seen Oct 11, 2026); not published by the store or DC Central Kitchen, and Google notes holiday hours may differ. Call to confirm."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://www.google.com/maps/search/Chesapeake+Big+Market+601+Chesapeake+St+SE+Washington+DC",
+        "https://cdn.prod.website-files.com/629e19a8ddd0b2816dea0372/6ac7aacb78877b223bebb6b4_DC%20WIC%20Authorized%20Store%20Locations%20-%20October%202026%20(2).pdf",
+        "https://dccentralkitchen.org/wp-content/uploads/2026/04/Website-Copy-of-HC-Store-List-w-benefits-updated-4.28.26.pdf",
+        "https://services1.arcgis.com/RLQu0rK7h4kbsBq5/arcgis/rest/services/snap_retailer_location_data/FeatureServer/0"
+      ],
+      "evidence": "Google Maps listing \"Chesapeake Big Market\", 601 Chesapeake St SE (67 reviews, newest ~4 months old), open on 2026-10-11: Mon-Thu 7am-10pm, Fri-Sat 7am-11pm, Sun 7am-10:30pm. Google lists no phone, so the phone 202-563-6529 is from DC WIC’s October 2026 authorized list, which also confirms WIC. DCCK Apr 2026 marks SNAP, SNAP Match and WIC."
     }
   ],
   "new_resources": []

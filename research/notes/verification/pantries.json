@@ -102,7 +102,308 @@
         "https://foodhelpline.org/directory/locations/congress_heights"
       ],
       "evidence": "CAFB layer (2026-09-28) is the only dated 2026 source: Thursdays 11am-4pm at 2525 12th Pl SE. Undated directories give other hours/addresses (Thu 4-6:30pm; 3209 5th St SE Thu 11-2), so the entry is kept but flagged for a call."
+    },
+    {
+      "id": "covenant-baptist-food-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Thursday 9:30am-12:30pm, \"parking on Zenia St only\"; phone (202) 562-5576 matches the church's own site (cbuccdc.org, formerly covenantdc.org; 2026 church theme posted), which does not describe the pantry. Some directories call it the \"Covenant Baptist UCC - JSM Family Foundation Food Pantry\". Undated third-party directories (FoodHelpline/Lemontree, WhyHunger) give the same Thursday hours and say: DC residents, once a week, photo ID and proof of address, birth certificates for children (or a lease/SSNs showing children in the household), side entrance on Xenia St -- not confirmed by CAFB or the church. Coordinates from DC MAR address points (DC GIS Location_WebMercator/MapServer/0) because the Census geocoder matched a different street/quadrant (3845 S CAPITOL ST SE). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.cbuccdc.org/",
+        "https://www.foodhelpline.org/resources/covenant-baptist-food-bank",
+        "https://networks.whyhunger.org/organisation/32553"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists every Thursday 9:30am-12:30pm; the church's 2026 website confirms the address and phone but has no pantry page. Third-party listings agree on the Thursday hours. Nothing to change in user-facing fields."
+    },
+    {
+      "id": "assumption-outreach-food-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): Mon/Wed/Fri 9am-12pm walk-up, \"Ward 8 residents only\", (202) 561-5941. The parish outreach page (assumptiondc.org/outreach) blocks automated access (HTTP 403), so it could not be read. FoodHelpline/Lemontree calls the site the \"Pope Francis Outreach Center\" at 220A Highview Pl SE (parish-run, clothing closet too) and lists: once a month, ID required, proof of address required, bring your own bags/cart -- but that page also shows a \"closed\" banner with \"we're not confident about the information below\"; a FeedAM listing for an Assumption/JSM pantry at the church itself (3401 Martin Luther King Jr Ave SE) is marked closed. CAFB 2026 still lists 220 Highview Pl SE as active, so the entry is kept -- call before sending people. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/assumption-food-bank",
+        "https://feedam.org/resource/170229"
+      ],
+      "evidence": "CAFB layer (2026-09-28) still lists Mon/Wed/Fri 9am-12pm, Ward 8 residents only. Operator page unreadable (403); an undated FoodHelpline page carries a 'closed' banner but no closure evidence, so this is not marked closed."
+    },
+    {
+      "id": "dupont-park-sda-church-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Tuesday 10am-12pm, walk-up or drive-thru, (301) 980-6274. Church website (dupontpark.org) no longer resolves. Undated third-party directories differ: WhyHunger says 1st, 3rd and 4th Tuesdays 10am-12pm; FoodHelpline/Lemontree says Tuesdays 10am-12pm (summer 9:30am-12pm) and \"ID required\"; other phone numbers listed are (240) 535-1136 and (202) 583-7416. FeedAM record last verified 2026-04-21 (hours unknown, active). Call ahead. ZIP set to 20020 per DC MAR address point (source listed 20019). Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://networks.whyhunger.org/organisation/44770",
+        "https://feedam.org/resource/170219",
+        "https://www.foodhelpline.org/directory/resources/clefwtbw40000l70f11xrvdko"
+      ],
+      "evidence": "CAFB layer (2026-09-28) is the newest dated source: every Tuesday 10am-12pm. No operator page (website domain dead); older directories suggest some Tuesdays may be skipped, so keep the weekly listing with a call-ahead note."
+    },
+    {
+      "id": "salvation-army-solomon-g-brown-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): Friday 9am-2pm walk-up, appointment only, closed for lunch 12-12:30; Wednesday 9am-2pm home delivery, appointment only. The Salvation Army's own Solomon G. Brown page confirms the center at 2300 Martin Luther King Jr Ave SE, phone (202) 678-9770, with Social Services Mon-Fri 8:30am-4:30pm (the Ward 7/8 emergency-assistance office), but it does not describe the pantry schedule. An undated WhyHunger listing gives a different schedule (Fri 10am-2pm, 4th Sat 9am-12pm, 3rd Wed by appointment) and phone 202-678-9771 -- not confirmed. Call (202) 678-9770 to book. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://southernusa.salvationarmy.org/nca/solomon-g-brown",
+        "https://networks.whyhunger.org/organisation/44763"
+      ],
+      "evidence": "CAFB layer (2026-09-28) still lists the appointment-only Friday walk-up and Wednesday home delivery. The operator page (current) confirms address, phone and weekday social-services hours but not pantry days; no holiday notice found."
+    },
+    {
+      "id": "our-lady-of-perpetual-help-pantry",
+      "verdict": "confirmed",
+      "changes": {},
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://networks.whyhunger.org/organisation/44764",
+        "https://feedam.org/resource/170220",
+        "https://aic.ladiesofcharity.us/?p=20822"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists every Thursday 10:30am-12:30pm walk-up (and home delivery), (202) 575-1663; WhyHunger, FeedAM and the parish Ladies of Charity (older, COVID-era post: open to the community Thursdays 10:30am-12:30pm) agree. No parish website or 2026 bulletin found; existing notes already flag the alternate parish phone (202) 678-4999 and Ward 8 focus."
+    },
+    {
+      "id": "paramount-baptist-church-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Wednesday 11am-12pm, walk-up, full choice. Church website (paramountbaptistchurch.org, updated June 2026) confirms address and phone (202) 562-6339 and shows a \"Feed the Community 2026\" graphic, but publishes no pantry schedule. Undated directories: FoodHelpline/Lemontree says Ward 8 focus and to bring photo ID, Medicaid card, SNAP card or a referral, no appointment; WhyHunger says by appointment only -- neither confirmed by CAFB or the church. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://paramountbaptistchurch.org/",
+        "https://www.foodhelpline.org/resources/paramount-baptist-church",
+        "https://networks.whyhunger.org/organisation/44772"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists every Wednesday 11am-12pm; the church's 2026 site confirms the address/phone and a 2026 'Feed the Community' effort but no hours. User-facing fields unchanged."
+    },
+    {
+      "id": "urban-outreach-inc-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "Every Saturday 10am-2pm; walk-up. Bring your own bags or cart. CAFB lists the address as 5343 C St SE Suite 204.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Saturday 10am-2pm walk-up, (202) 575-4867. No operator website or 2026 social post found. Undated directories (Plentiful, FoodHelpline/Lemontree, FeedAM) give the same Saturday 10am-2pm hours, say no appointment is needed and to bring your own bags/cart; one older FoodHelpline duplicate is marked closed. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/urban-outreach-inc",
+        "https://directory.plentiful.org/district-of-columbia/washington/urban-outreach-distribution-center-f21eb47b"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists every Saturday 10am-2pm; third-party listings agree on the hours. Only change is adding 'bring your own bags or cart' from the directories."
+    },
+    {
+      "id": "greater-fellowship-missionary-baptist-church-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Tuesday 9-10am, walk-up, (202) 528-0641. No church website found. Undated directories disagree: FoodHelpline/Lemontree says Tuesdays 8:30-10:30am and \"Bring ID and proof of residence\"; WhyHunger lists \"Greater Fellowship Gospel Baptist Church\" on the last Wednesday 8:30-10:30am, phone (202) 561-5594; FeedAM calls it Greater Fellowship Full Gospel Baptist Church. CAFB 2026 kept as the newest source; call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://foodhelpline.org/directory/resources/cle82ftyn04di0d02kyw8ddqi",
+        "https://networks.whyhunger.org/organisation/32732",
+        "https://feedam.org/resource/170234"
+      ],
+      "evidence": "CAFB layer (2026-09-28) is the only dated 2026 source: every Tuesday 9-10am. Older directories differ on the window and one says last Wednesday, so the entry stays with a call-ahead note."
+    },
+    {
+      "id": "children-of-mine-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "notes": "CAFB lists the agency as \"Children of Mine\". Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): every Tuesday 9-10am, phone (202) 374-6029, requirements \"None\". The center's own website (childrenofminedc.org, (c) 2022, no 2026 content) confirms 2263 Mount View Pl SE but gives a different phone, (202) 610-1055, and describes an after-school youth program for Ward 8 children; it does not describe the Tuesday pantry. FeedAM lists it as a walk-in food pantry (no hours). Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://childrenofminedc.org/",
+        "https://feedam.org/resource/170864"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists every Tuesday 9-10am with no requirements. Operator site is stale (2022) and silent on the pantry; its phone (202) 610-1055 is noted as an alternate."
+    },
+    {
+      "id": "temple-of-praise-free-groceries",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "Sundays about 1-2pm, after the 11am worship service (\"Worship attendance OPTIONAL, not required\") -- Sunday slot is from the CAFB 2026 map only. Monthly \"Third Saturday Community Resource Day\" food distribution 10am-2pm (church's own 2026 events calendar: \"Every Third Saturday\"; next dates Sat Oct 17, Nov 21 and Dec 19, 2026). Bring your own cart or bags.",
+        "website": "https://thetempleofpraise.org/",
+        "source_url": "https://thetempleofpraise.org/events/outreach-food-distribution-2/",
+        "notes": "Church events page (2026) lists \"Outreach Food Distribution\" on Saturday Oct 17, 2026, 10am-2pm at 700 Southern Ave SE, described as \"our monthly Community Food Distribution\" held \"Every Third Saturday\" (calendar recurrence runs to Jan 16, 2027), open to any household that \"could use food support\"; no ID or registration rule stated. The Sunday 1-2pm after-service groceries come from Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) and are not mentioned on the church site. Phone (202) 561-0100 matches the church contact page. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "high",
+      "sources": [
+        "https://thetempleofpraise.org/events/outreach-food-distribution-2/",
+        "https://thetempleofpraise.org/events-page/",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "evidence": "Operator event page (2026) confirms the third-Saturday 10am-2pm Community Food Distribution with a dated Oct 17, 2026 instance and a monthly recurrence through Jan 2027; the Sunday 1-2pm slot is only on the CAFB layer (2026-09-28), so it stays in the hours table at medium confidence."
+    },
+    {
+      "id": "emmanuel-baptist-church-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "3rd Wednesday of each month, 3-5pm (Oct 21, Nov 18, Dec 16, 2026); walk-up, drive-thru or home delivery. A third-party directory lists Wednesdays 3:30-5pm -- arrive by 3:30pm to be safe."
+      },
+      "confidence": "medium",
+      "promote": false,
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://feedam.org/resource/170295",
+        "https://www.congressheightsontherise.com/blog/june-13-ward-8-clergy-and-faith-leaders-invited-to-community-breakfast"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists the 3rd Wednesday 3-5pm; FeedAM lists Wednesday 3:30-5pm (no monthly pattern). The church is active in 2026 (hosted a June 13, 2026 Ward 8 faith-leaders breakfast) but no church-published pantry schedule was found, so not worth promoting."
+    },
+    {
+      "id": "hillcrest-children-family-center-pantry",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "1st Friday of each month at the Hillcrest Southeast DC Clinic: Hillcrest's 2026 events calendar lists Fri Nov 6 and Fri Dec 4, 2026 (and Jan 1, 2027), 12-4pm; its Food Pantry page says 11am-4pm -- arrive after 12 to be safe. Jan 1, 2027 is New Year's Day: call to confirm. One bag per individual or family; perishable and non-perishable food. Check-in ahead of time online is encouraged.",
+        "eligibility": "Hillcrest Food Pantry page: must be a \"DC resident\" and bring a \"valid ID\"; one bag per individual or family.",
+        "website": "https://hillcrest-dc.org/food-pantry-project/",
+        "source_url": "https://hillcrest-dc.org/food-pantry-project/",
+        "notes": "Operator-run (Hillcrest Children & Family Center). Hillcrest's Food Pantry page says the pantry opened at two locations beginning December 5, 2025 (SE clinic first Friday; NW clinic at 915 Rhode Island Ave NW third Wednesday, not east of the river). The operator events calendar lists Monthly Food Distribution dates Nov 6 and Dec 4, 2026, Jan 1, Feb 5 and Mar 5, 2027, 12-4pm; no October 2026 date appears on the calendar (Oct 2 had already passed). Also on Capital Area Food Bank \"Get Help Map 2026\" (1st Friday 12-4pm). CAFB spells the street \"Martin Luther Jr Ave SE\"; normalized to Martin Luther King Jr Ave SE. Phone (202) 232-6100. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "high",
+      "promote": true,
+      "sources": [
+        "https://hillcrest-dc.org/food-pantry-project/",
+        "https://hillcrest-dc.org/organizer/hillcrest-children-family-center/",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0"
+      ],
+      "evidence": "Hillcrest's own events calendar (checked 2026-10-11) lists first-Friday Monthly Food Distribution at 3029 MLK Jr Ave SE on Nov 6 and Dec 4, 2026, 12-4pm; its Food Pantry page (pantry since Dec 5, 2025) gives 11am-4pm and requires DC residency and a valid ID. Operator-confirmed with dated fall-2026 instances, so worth promoting."
+    },
+    {
+      "id": "rccg-new-wine-assembly-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "2nd and last Saturday of each month, 10am-12pm (CAFB note: \"We are on the 2nd and last Saturdays of a month\"). Upcoming by that pattern: Oct 31, Nov 14, Nov 28, Dec 12 and Dec 26, 2026 (Dec 26 is the day after Christmas -- call first). First come, first served.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) at 1625 Olive St NE, phone (202) 491-5917. No church website or 2026 social post found. Undated directories (FoodHelpline/Lemontree, FeedAM, Plentiful) agree on 2nd and last Saturdays 10am-12pm, first come first served, no appointment, but list a different phone, (202) 398-2211, and Plentiful/FeedAM also show a second RCCG New Wine Assembly site at 1515 Kenilworth Ave NE; one FeedAM record (Apr 2026) marks the Olive St listing as closed without detail. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "promote": false,
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/rccg-new-wine-assembly",
+        "https://feedam.org/resource/170858",
+        "https://directory.plentiful.org/district-of-columbia/washington/rccg-new-wine-assembly-7ede5082"
+      ],
+      "evidence": "CAFB layer (2026-09-28) is the only dated 2026 source (2nd and last Saturdays 10am-12pm). Directories agree on the schedule but differ on phone and mention a Kenilworth Ave site; no operator confirmation, so not promoted."
+    },
+    {
+      "id": "faith-tabernacle-of-prayer-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "1st Saturday of each month, 11:30am-1:30pm (next: Nov 7 and Dec 5, 2026); pre-bagged groceries."
+      },
+      "confidence": "medium",
+      "promote": false,
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://feedam.org/resource/170213",
+        "https://networks.whyhunger.org/organisation/32739"
+      ],
+      "evidence": "CAFB layer (2026-09-28) lists the 1st Saturday 11:30am-1:30pm with 'no income, ID, or zip code requirement'; FeedAM ('Faith Tabernacle of Prayer for all People') has the same address and phone (301) 613-5259. An older WhyHunger record says Wednesdays 1-8pm, phone 202-678-6012 (likely outdated). No church site found; not promoted."
+    },
+    {
+      "id": "st-francis-xavier-church-food-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "2nd Saturday of each month, 9-11:30am (next: Nov 14 and Dec 12, 2026); walk-up, pre-bagged groceries. Some directories list Saturdays 1-3:30pm or 2nd and 4th Saturdays -- the CAFB 2026 listing is used.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): 2nd Saturday 9-11:30am, pantry phone (202) 251-7692. Parish website (stfrancisxavierdc.org) blocks automated access (HTTP 403); parish office is at 2800 Pennsylvania Ave SE, (202) 582-5021 (MassTimes/DiscoverMass). Undated directories conflict: FoodHelpline/Lemontree says 2nd Saturday 9-11:30am (or 9-11am), \"closed on major holidays\", bring ID and proof of residence; WhyHunger says 2nd and 4th Saturdays 9-11:30am; FeedAM/Plentiful say Saturdays 1-3:30pm. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "promote": false,
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/directory/locations/randle_highlands",
+        "https://networks.whyhunger.org/organisation/44767",
+        "https://feedam.org/resource/171624",
+        "https://discovermass.com/church/st-francis-xavier-washington/"
+      ],
+      "evidence": "CAFB layer (2026-09-28) still lists the 2nd Saturday 9-11:30am. Parish site unreadable and directories disagree on hours, so it stays as a monthly listing and is not promoted."
+    },
+    {
+      "id": "atonement-food-pantry",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "Monthly, per the church's own public Google Calendar (recurring \"Food Pantry\" events): 1st Wednesday 4-7pm (next Nov 4, Dec 2, 2026); 3rd Tuesday 10am-1pm (Oct 20, Nov 17, Dec 15, 2026); 4th Saturday 9am-1pm (Oct 24, Nov 28, 2026). In December 2025 the Saturday pantry moved to the 3rd Saturday (Dec 20) -- the 4th Saturday this year is Dec 26, so call about December. CAFB's 2026 map also lists a 3rd Monday 9am-1pm, which is not on the church calendar. Walk-up or drive-thru; fresh produce first come, first served, non-perishables, meat if available. Use the rear entrance.",
+        "website": "https://atonementepiscopaldc.org/",
+        "notes": "Operator source: the Episcopal Church of the Atonement's public Google Calendar (embedded at atonementepiscopaldc.org/calendar) has open-ended recurring Food Pantry events -- 1st Wednesday 4-7pm (since Apr 2024), 3rd Tuesday 10am-1pm (since Sep 2024), 4th Saturday 9am-1pm (since Nov 22, 2025; one-off override to Sat Dec 20, 2025). The church's News & Events post (older, 2024 dates) says the pantry \"has expanded to three (3) days a month\". Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) lists the same three slots plus a 3rd Monday 9am-1pm. Third-party directories say rear entrance and (FoodHelpline/Lemontree) \"on-site registration required\" -- not confirmed by the church. Church office (202) 582-4200, Mon-Thu 9:30am-4:30pm. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "high",
+      "promote": true,
+      "sources": [
+        "https://atonementepiscopaldc.org/calendar/",
+        "https://calendar.google.com/calendar/ical/eihsbg8sh1ag5akt7ght9u9400%40group.calendar.google.com/public/basic.ics",
+        "https://atonementepiscopaldc.org/news-and-events/",
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/atonement-food-pantry-1"
+      ],
+      "evidence": "The church's own public calendar feed (fetched 2026-10-11; Saturday series last modified 2025-11-13) has ongoing monthly Food Pantry series on the 1st Wed 4-7pm, 3rd Tue 10am-1pm and 4th Sat 9am-1pm, matching CAFB (2026-09-28) except CAFB's extra 3rd Monday. Operator-confirmed, three dates a month -- worth promoting; the 3rd Monday slot is flagged as CAFB-only."
+    },
+    {
+      "id": "church-of-the-incarnation-svdp-pantry",
+      "verdict": "confirmed",
+      "changes": {
+        "schedule_note": "3rd Tuesday of each month, 10:30am-1:30pm (next Oct 20, Nov 17, Dec 15, 2026); walk-up, pre-bagged groceries. Some directories list 11am-2:30pm -- arrive by 11am to be safe.",
+        "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28): 3rd Tuesday 10:30am-1:30pm, contact (540) 760-5608 (St. Vincent de Paul Society). No parish website or bulletin found. Undated directories (FoodHelpline/Lemontree, FeedAM) list the 3rd Tuesday 11am-2:30pm, walk-ins accepted, and the parish phone (202) 396-0942. Call ahead. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages not stated by source (defaulted to en)."
+      },
+      "confidence": "medium",
+      "promote": false,
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://feedam.org/resource/170838",
+        "https://www.foodhelpline.org/locations/deanwood_park"
+      ],
+      "evidence": "CAFB layer (2026-09-28) is the only dated 2026 source (3rd Tuesday 10:30am-1:30pm); directories agree on the 3rd Tuesday but give 11am-2:30pm. No operator confirmation, so not promoted."
     }
   ],
-  "new_resources": []
+  "new_resources": [
+    {
+      "id": "peace-lutheran-ward-7-food-center",
+      "name": "Ward 7 Food Center of Peace Lutheran Church",
+      "type": "pantry",
+      "address": "4929 Ames St NE, Washington, DC 20019",
+      "zip": "20019",
+      "neighborhood": "Capitol View",
+      "lat": 38.890729,
+      "lng": -76.931677,
+      "geocode_source": "census-geocoder",
+      "ward": 7,
+      "hours": null,
+      "schedule_note": "APPOINTMENT ONLY -- call first. Sources disagree on days: findhelp.org (reviewed Oct 9, 2026) lists Mon-Thu 10am-2pm by appointment; FoodHelpline/Lemontree lists one monthly pickup on the 3rd Tuesday at 11am (Oct 20, Nov 17, Dec 15, 2026), appointment made by a referring agency the day before. Emergency supply, once a month.",
+      "season": null,
+      "free": true,
+      "snap": false,
+      "wic": false,
+      "produce_plus": false,
+      "eligibility": "By appointment only (findhelp: \"Call 202-398-5503 to schedule an appointment\"). Documents listed by findhelp: photo ID, proof of income, proof of residency. FoodHelpline adds: \"Families in far NE DC (Ward 7); referral required\", proof of household size on the first visit, \"One can access once a month.\" Not confirmed on an operator website.",
+      "languages": [
+        "en"
+      ],
+      "phone": "(202) 398-5503",
+      "website": null,
+      "source_url": "https://www.findhelp.org/food-&-clothing-center-of-ward-7--washington,-dc--emergency-food,-food-pantry/5618629083136000",
+      "extra_source_urls": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.foodhelpline.org/resources/ward-7-food-center-of-peace-lutheran-church"
+      ],
+      "last_verified": "2026-10-11",
+      "confidence": "low",
+      "notes": "Listed on Capital Area Food Bank \"Get Help Map 2026\" (ArcGIS source layer last edited 2026-09-28) as \"Ward 7 Food Center of Peace Lutheran Church\", 4929 Ames St NE, (202) 398-5504, with no hours (which is why it was left out before). findhelp.org listing \"Food Bank - Peace Lutheran Church\" (last updated 10/01/2026, reviewed Oct 9, 2026) gives Mon-Thu 10am-2pm by appointment and phone 202-398-5503 (also shows 202-398-5504). FoodHelpline/Lemontree lists it at 15 49th Pl NE (same church corner) with a 3rd-Tuesday 11am referral-only pickup. Referral/appointment program, not a walk-in pantry -- tell callers to phone first. No operator website found. Free food, so SNAP/WIC/Produce Plus are not applicable (set false). Languages: findhelp says English. Coordinates from the Census geocoder (exact match); ward from DC GIS Ward 2022; neighborhood is the nearest DC Office of Planning label (cluster 33).",
+      "east_of_river": true
+    }
+  ]
 }

@@ -64,15 +64,9 @@ Grocery Store Locations (revised 2026-08-20), Low Food Access Areas (2017 analys
 
 ## 6. Food resource directory
 
-`data/resources.json` — **50 curated entries** east of the river: 5 grocery (incl. the small Marion Barry Avenue Market), 10 farmers markets, 8 mobile markets, 4 free markets, 16 pantries, 7 Healthy Corners stores. 20 high / 30 medium confidence. `data/resources-extended.json` — 65 more (35 Joyful Food Market schools, 22 corner stores, 7 monthly-only pantries, 1 west-of-river Safeway).
+`data/resources.json`: **52 places** east of the river, re-checked online on 2026-10-11: 5 grocery stores, 9 farmers markets, 8 mobile markets, 4 free markets, 17 pantries, 9 Healthy Corners stores. Each has a source URL, last-verified date and confidence. Ward 8 Farmers Market was removed (season ended Sept 26); New Macedonia pantry and Ken Mart were moved off pending a phone check; Hillcrest and Atonement pantries and three Healthy Corners stores (Stanton, Shipley, Chesapeake) were added after confirmation. WIC status comes from DC WIC's October 2026 store list. Raw results: `research/notes/verification/`.
 
-**Hand-check before the event (most important first):**
-1. All 16 CAFB partner pantries — hours are partner-reported; call ahead. Salvation Army Solomon G. Brown is appointment-only; Assumption Outreach serves Ward 8 residents only; Atonement's schedule conflicts between directories.
-2. Seasonal markets: most FRESHFARM / Dreaming Out Loud markets end Nov 21, 2026; THEARC Food & Farm Fridays end Nov 13; DPR Lederer giveaway ends Nov 25. Ward 8 Farmers Market may already be closed for the season (sources say Sept or Oct).
-3. Marion Barry Avenue Market Sunday hours (sources disagree; encoded closed).
-4. Arcadia mobile market stop addresses and start time (2:30 vs 3:00).
-5. Healthy Corners hours are unknown for all corner stores (shown as "Call ahead for hours").
-6. Bread for the City document rules (ID, proof of address) are not on its site.
+**Phone checks still worth doing:** see `research/call-list.md`.
 
 ## 7. Real SMS: feasibility and cost (for judge Q&A)
 

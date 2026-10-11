@@ -172,6 +172,77 @@
         "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Business_Goods_and_Service_WebMercator/MapServer/2"
       ],
       "evidence": "Arcadia 2026 page lists Bellevue Library, Thursdays \"2:30 - 5:00pm\", 115 Atlantic St SW; the calendar (modified 2026-06-25) has an open-ended weekly Thursday 3:00-5:00pm series from 2026-05-21. Start-time conflict (2:30 vs 3:00) remains; no 2026 end date, cancellation or winter schedule published (DC Health says May-December)."
+    },
+    {
+      "id": "cafb-mobile-market-ward-memorial-ame",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "3rd Saturday of each month, 8am-12pm (CAFB); Lemontree lists 8-11am, so come early. Walk-up or drive-thru, first come first served until food runs out. Remaining 2026 dates: Oct 17, Nov 21, Dec 19."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/",
+        "https://www.foodhelpline.org/locations/mayfair_6"
+      ],
+      "evidence": "CAFB Get Help Map source layer (last edited 2026-09-28) still lists agency 21528-MOMK-01 at 241 42nd St NE, 3rd Saturday 8:00 AM-12:00 PM. Lemontree/foodhelpline (fetched 2026-10-11) independently lists the 3rd-Saturday distribution with upcoming dates Oct 17, Nov 21, Dec 19 (weekdays match 2026) but 8-11am hours."
+    },
+    {
+      "id": "cafb-mobile-market-congress-heights-family-success-center",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "3rd Monday of each month, 11am-2pm; walk-up. Expected remaining 2026 dates (from the monthly pattern, not separately published): Oct 19, Nov 16, Dec 21. Call ahead, especially in December."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/",
+        "https://feedam.org/resource/170283"
+      ],
+      "evidence": "CAFB Get Help Map source layer (last edited 2026-09-28) still lists 22629-MOMK-01 at 1345 Savannah St SE, 3rd Monday 11:00 AM-2:00 PM, phone (202) 889-1425. No operator or 2026 news source found; FeedAM shows Monday 11-2 but undated, so this rests on CAFB data only."
+    },
+    {
+      "id": "cafb-mobile-market-southern-hills-community-center",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "4th Tuesday of each month, 11am-2pm; walk-up. Expected remaining 2026 dates (from the monthly pattern, not separately published): Oct 27, Nov 24, Dec 22. Call CAFB or check its Get Help map before going, especially in December."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/",
+        "https://directory.plentiful.org/district-of-columbia/washington/southern-hills-community-center-f49fa17d"
+      ],
+      "evidence": "CAFB Get Help Map source layer (last edited 2026-09-28) still lists 17115-MOMK-01 at 4335 4th St SE, 4th Tuesday 11:00 AM-2:00 PM (no phone). Plentiful directory also shows a 4th-Tuesday monthly distribution here (11am-4pm, undated); no operator source found."
+    },
+    {
+      "id": "cafb-mobile-market-frederick-douglass-community-center",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "2nd Thursday of each month, 10am-1pm. Lemontree says on-site registration is required. The October date (Oct 8) has passed; remaining 2026 dates: Nov 12 and Dec 10.",
+        "eligibility": "Lemontree listing says on-site registration is required; no other rules published"
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/",
+        "https://www.foodhelpline.org/resources/frederick-douglass-community-center"
+      ],
+      "evidence": "CAFB Get Help Map source layer (last edited 2026-09-28) still lists 18530-MOMK-01 at 2000 Alabama Ave SE, 2nd Thursday 10:00 AM-1:00 PM, (202) 317-1490. Lemontree/foodhelpline (fetched 2026-10-11) shows the same time with upcoming dates Thu Nov 12, Thu Dec 10 and Jan 14 and says \"On-site registration required\"."
+    },
+    {
+      "id": "cafb-mobile-market-ambassador-baptist-church",
+      "verdict": "updated",
+      "changes": {
+        "schedule_note": "2nd Saturday of each month, 8-10am (CAFB; Lemontree says until 10:30am); walk-up, first come first served until food runs out. The October date (Oct 10) has passed; remaining 2026 dates: Nov 14 and Dec 12."
+      },
+      "confidence": "medium",
+      "sources": [
+        "https://services.arcgis.com/oCjyzxNy34f0pJCV/arcgis/rest/services/Get_Help_Map_Source_Data/FeatureServer/0",
+        "https://www.capitalareafoodbank.org/what-we-do/direct-food-distribution-programs/mobile-markets/",
+        "https://www.foodhelpline.org/resources/ambassador-baptist-church"
+      ],
+      "evidence": "CAFB Get Help Map source layer (last edited 2026-09-28) still lists 19067-MOMK-01 at 1408 Minnesota Ave SE, 2nd Saturday 8:00-10:00 AM. Lemontree/foodhelpline (fetched 2026-10-11) lists 2nd-Saturday 8:00-10:30am with upcoming Nov 14 and Dec 12 and notes no distribution in the fourth week of December (older directories also mention a 4th Saturday, not confirmed for 2026)."
     }
   ],
   "new_resources": []

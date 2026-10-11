@@ -1,0 +1,72 @@
+{
+  "applied": "2026-10-11T13:25:30.083Z",
+  "updated": [
+    "udc-east-capitol-farmers-market",
+    "cafb-mobile-market-ward-memorial-ame",
+    "cafb-mobile-market-congress-heights-family-success-center",
+    "cafb-mobile-market-southern-hills-community-center",
+    "cafb-mobile-market-frederick-douglass-community-center",
+    "cafb-mobile-market-ambassador-baptist-church",
+    "allen-chapel-ame-church-pantry",
+    "good-success-christian-church-pantry",
+    "temple-of-praise-free-groceries",
+    "lidl-skyland-town-center",
+    "dol-marion-barry-avenue-market",
+    "marthas-table-market-the-commons",
+    "bread-for-the-city-southeast-free-farmers-market",
+    "hc-fort-drum-market",
+    "hc-a-1-grocery",
+    "hc-minnesota-big-market",
+    "hc-surprise-grocery",
+    "hc-texas-avenue-convenience",
+    "hc-thomas-and-sons-food-market"
+  ],
+  "confirmed": [
+    "freshfarm-thearc",
+    "freshfarm-anacostia-community-museum",
+    "freshfarm-minnesota-ave",
+    "freshfarm-kenilworth-rec-center",
+    "freshfarm-cesar-chavez",
+    "freshfarm-simon-elementary-farm-stand",
+    "dol-kelly-miller-farmers-market",
+    "dol-anacostia-farmers-market",
+    "arcadia-mobile-market-parkside-mayfair",
+    "arcadia-mobile-market-oxon-run",
+    "arcadia-mobile-market-bellevue-library",
+    "bread-for-the-city-southeast-food-pantry",
+    "friends-of-douglass-community-center-pantry",
+    "brighter-day-ministries-food-pantry",
+    "covenant-baptist-food-pantry",
+    "assumption-outreach-food-pantry",
+    "dupont-park-sda-church-pantry",
+    "salvation-army-solomon-g-brown-pantry",
+    "our-lady-of-perpetual-help-pantry",
+    "paramount-baptist-church-pantry",
+    "urban-outreach-inc-pantry",
+    "greater-fellowship-missionary-baptist-church-pantry",
+    "children-of-mine-pantry",
+    "giant-alabama-ave-se",
+    "safeway-alabama-ave-se",
+    "safeway-40th-st-ne",
+    "thearc-farm-food-and-farm-fridays",
+    "dpr-lederer-gardens-veggie-giveaway"
+  ],
+  "removed_closed": [
+    "ward-8-farmers-market"
+  ],
+  "moved_unverifiable": [
+    "new-macedonia-baptist-church-pantry",
+    "hc-ken-mart"
+  ],
+  "promoted": [
+    "hillcrest-children-family-center-pantry",
+    "atonement-food-pantry",
+    "hc-stanton-supermarket",
+    "hc-shipley-super-market",
+    "hc-chesapeake-big-market"
+  ],
+  "added": [],
+  "skipped_new": [
+    "peace-lutheran-ward-7-food-center (not east of river or low confidence)"
+  ]
+}
